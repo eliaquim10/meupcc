@@ -25,7 +25,7 @@ import tensorflow as tf
 import random
 
 from tensorflow import keras
-from Util import readBase,trata
+from Util import readBase,trata,arrays
 
 import numpy as np
 
@@ -81,12 +81,16 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
                                                        padding='post',
                                                        maxlen=256)
 
-len(train_data[0]), len(train_data[1])
+
+
+# print(train_data[0])
+# print(train_data[1])
+# len(train_data[0]), len(train_data[1])
 
 
 
 # input shape is the vocabulary count used for the movie reviews (10,000 words)np
-vocab_size = 10000
+vocab_size = 2282
 
 model = keras.Sequential()
 model.add(keras.layers.Embedding(vocab_size, 16))
@@ -102,12 +106,12 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
 
 print(len(train_data))
 
-x_val = train_data[:100]
-partial_x_train = train_data[100:200]
+x_val = train_data[:159]
+partial_x_train = train_data[159:]
 
 
-y_val = train_labels[:100]
-partial_y_train = train_labels[100:200]
+y_val = train_labels[:159]
+partial_y_train = train_labels[159:]
 
 history = model.fit(partial_x_train,
                     partial_y_train,

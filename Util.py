@@ -30,6 +30,18 @@ def readBase(csvFile = str):
             except IndexError:
                 pass
         return base
+def arrays(array, maxlen):
+    i = len(array)-1
+    # data
+    print(array[0])
+    tam = 0
+    while (i>=0):
+        l = len(array[i])
+        tam = maxlen - l
+        w = [numpy.int64(0)]*tam
+        array[i] += w
+        i-=1
+    return array
 
 def trata(base,porc_traing):
     data = []
@@ -76,10 +88,11 @@ def trata(base,porc_traing):
                     w.append(numpy.int64(j))
                 j+=1
             n += 1
-        data_number.append(tuple([w]))
+        data_number.append(w)
         k += 1
 
     print(maxlen)
+    print(str(len(data_number)))
 
     train_data = data_number[0:int(l*porc_traing)]
     train_labels = data[0:int(l*porc_traing)]
