@@ -82,7 +82,7 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
                                                        maxlen=256)
 
 
-# eliaquim-m-n
+# eliaquim-m
 # print(train_data[0])
 # print(train_data[1])
 # len(train_data[0]), len(train_data[1])
