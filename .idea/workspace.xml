@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.03" />
+    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.03">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +41,13 @@
     <session id="258129356">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="4" />
-          <entry key="project.open.time.40" value="2" />
+          <entry key="project.open.time.40" value="3" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="2" />
@@ -57,7 +60,7 @@
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -133,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
-              <caret line="84" column="12" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+              <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -202,7 +205,7 @@
     </option>
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_COMMON_BRANCH" value="master" />
+    <option name="RECENT_COMMON_BRANCH" value="meupcc" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -328,7 +331,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
@@ -651,14 +654,20 @@
       <option name="project" value="LOCAL" />
       <updated>1545481250185</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="1.03">
+      <created>1545482346068</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1545482346068</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.17927383" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.18154311" />
       <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.15957446" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -671,8 +680,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030257" side_tool="true" visible="true" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.4969743" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50378215" side_tool="true" visible="true" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.49621785" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" weight="0.32786885" />
       <window_info anchor="bottom" id="SVN Repositories" order="13" sideWeight="0.49924356" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -700,6 +709,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$/pcc" />
+    </ignored-roots>
     <MESSAGE value="1.01" />
     <MESSAGE value="1.02" />
     <MESSAGE value="1.03" />
@@ -939,13 +952,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/colecao_dourada_2_class_unbalanced.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experimento/e2/sce/balanced/colecao_dourada_2_class_balanced.csv">
@@ -1022,7 +1035,7 @@
     <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="84" column="12" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+          <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
           </folding>
