@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.03">
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +66,7 @@
         <counts>
           <entry key="csv" value="8" />
           <entry key="dummy" value="4" />
-          <entry key="py" value="2905" />
+          <entry key="py" value="2909" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
@@ -75,7 +74,7 @@
         <counts>
           <entry key="CSV" value="8" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="2905" />
+          <entry key="Python" value="2909" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -127,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-727">
-              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="208">
+              <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -139,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+            <state relative-caret-position="204">
+              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -279,18 +278,18 @@
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
-      <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
-      <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e6" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e5" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e4" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e3" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
+      <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
+      <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -500,13 +499,35 @@
       <option name="project" value="LOCAL" />
       <updated>1545443419188</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1.03">
+      <created>1545448558454</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545448558454</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1.03">
+      <created>1545448583691</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545448583691</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1.03">
+      <created>1545448991578</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545448991578</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.17700455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.17700455" />
       <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.15957446" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -519,8 +540,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49848714" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49848714" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49926794" weight="0.32786885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -852,20 +873,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+    <entry file="file://$PROJECT_DIR$/teste.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-727">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#1142#1165#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teste.py">
+    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        <state relative-caret-position="208">
+          <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+          <folding>
+            <element signature="e#1142#1165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
