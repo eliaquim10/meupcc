@@ -85,14 +85,13 @@ def trata(base,porc_traing):
             t = len(all_words)
             while(j<t):#percorre as palavras que está no contexto
                 if (data[k][0][n] == all_words[j]):
-                    w.append(numpy.int64(j))
+                    w.append(numpy.int64(j+1))
                 j+=1
             n += 1
         data_number.append(w)
         k += 1
 
-    print(maxlen)
-    print(str(len(data_number)))
+    print(str(len(all_words)))
 
     train_data = data_number[0:int(l*porc_traing)]
     train_labels = data[0:int(l*porc_traing)]

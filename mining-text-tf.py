@@ -47,7 +47,6 @@ imdb = keras.datasets.imdb
 # print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
 
 
-
 len(train_data[0]), len(train_data[1])
 
 # A dictionary mapping words to an integer index
@@ -115,7 +114,7 @@ partial_y_train = train_labels[159:]
 
 history = model.fit(partial_x_train,
                     partial_y_train,
-                    epochs=80,
+                    epochs=40,
                     batch_size=512,
                     validation_data=(x_val, y_val),
                     verbose=1)
