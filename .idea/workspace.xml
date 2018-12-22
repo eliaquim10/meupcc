@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.03">
-      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +84,7 @@
           <entry key="cfg" value="2" />
           <entry key="csv" value="33" />
           <entry key="ipynb" value="1" />
-          <entry key="py" value="39" />
+          <entry key="py" value="40" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
         </counts>
@@ -95,7 +95,7 @@
           <entry key="IPNB" value="1" />
           <entry key="Ini" value="2" />
           <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="39" />
+          <entry key="Python" value="40" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -127,14 +127,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+            <state relative-caret-position="-727">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/teste.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -267,6 +276,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -483,12 +493,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545442127850</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1.03">
+      <created>1545443419188</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545443419188</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.17700455" />
       <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.15957446" />
@@ -503,8 +519,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" visible="true" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.49848714" visible="true" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49848714" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49926794" weight="0.32786885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -700,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Codigos/execução/Stopwords.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -845,11 +854,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+        <state relative-caret-position="-727">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
         </state>
       </provider>
     </entry>
