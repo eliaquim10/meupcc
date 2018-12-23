@@ -70,6 +70,7 @@ def trata(base,porc_traing):
             n += 1
         k += 1
 
+    random.shuffle(all_words)
 
     k = 0
     l = len(data)
