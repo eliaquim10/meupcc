@@ -39,7 +39,8 @@ print(tf.__version__)
 imdb = keras.datasets.imdb
 
 (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
-
+print(len(test_data))
+exit()
 
 # print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
 
@@ -79,7 +80,6 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 
 len(train_data[0]), len(train_data[1])
 
-print(train_data[0])
 
 # input shape is the vocabulary count used for the movie reviews (10,000 words)np
 vocab_size = 10000

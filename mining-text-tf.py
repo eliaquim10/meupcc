@@ -22,12 +22,12 @@
 # DEALINGS IN THE SOFTWARE.
 
 import tensorflow as tf
-import random
+# import random
 
 from tensorflow import keras
-from Util import readBase,trata,arrays
+from Util import readBase,trata
 
-import numpy as np
+# import numpy as np
 
 
 # readBase('colecao_dourada_2_class_unbalanced.csv')
@@ -105,22 +105,29 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
 
 print(len(train_data))
 
-x_val = train_data[:159]
-partial_x_train = train_data[159:]
+x_val = train_data[:100]
+partial_x_train = train_data[100:]
 
 
-y_val = train_labels[:159]
-partial_y_train = train_labels[159:]
+y_val = train_labels[:100]
+partial_y_train = train_labels[100:]
 
-history = model.fit(partial_x_train,
-                    partial_y_train,
-                    epochs=40,
-                    batch_size=512,
-                    validation_data=(x_val, y_val),
-                    verbose=1)
+# history = model.fit(partial_x_train,
+#                     partial_y_train,
+#                     epochs=40,
+#                     batch_size=512,
+#                     validation_data=(x_val, y_val),
+#                     verbose=1)
 
 results = model.evaluate(test_data, test_labels)
 
+with tf.Session() as sess:
+    out = sess.run(results)
+    print(out)
+print(out)
+# sess = tf.Session()
+# 
+# print(sess.run(results))
 print(results)
 
 history_dict = history.history
