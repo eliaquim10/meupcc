@@ -40,7 +40,7 @@ imdb = keras.datasets.imdb
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 
-(train_data, train_labels), (test_data, test_labels) = trata(readBase('colecao_dourada_2_class_unbalanced.csv'),0.7)
+(train_data, train_labels), (test_data, test_labels) = trata(readBase('colecao_dourada_2_class_unbalanced.csv'),0.5)
 
 
 
@@ -105,26 +105,26 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
 
 print(len(train_data))
 
-x_val = train_data[:100]
-partial_x_train = train_data[100:]
+x_val = train_data[:50]
+partial_x_train = train_data[50:]
 
 
-y_val = train_labels[:100]
-partial_y_train = train_labels[100:]
+y_val = train_labels[:50]
+partial_y_train = train_labels[50:]
 
-# history = model.fit(partial_x_train,
-#                     partial_y_train,
-#                     epochs=40,
-#                     batch_size=512,
-#                     validation_data=(x_val, y_val),
-#                     verbose=1)
+history = model.fit(partial_x_train,
+                    partial_y_train,
+                    epochs=40,
+                    batch_size=8,
+                    validation_data=(x_val, y_val),
+                    verbose=1)
 
 results = model.evaluate(test_data, test_labels)
 
-with tf.Session() as sess:
-    out = sess.run(results)
-    print(out)
-print(out)
+# with tf.Session() as sess:
+#     out = sess.run(results)
+#     print(out)
+# print(out)
 # sess = tf.Session()
 # 
 # print(sess.run(results))
