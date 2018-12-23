@@ -92,7 +92,7 @@ def trata(base,porc_traing):
         data_number.append(w)
         k += 1
 
-    print(str(len(all_words)))
+    # print(str(len(all_words)))
 
     train_data = data_number[0:int(l*porc_traing)]
     train_labels = data[0:int(l*porc_traing)]
