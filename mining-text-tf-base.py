@@ -42,6 +42,8 @@ imdb = keras.datasets.imdb
 
 print(type(train_data[0]))
 print(type(test_labels[0]))
+print(train_data[0])
+print(type(test_labels))
 exit()
 
 # print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))

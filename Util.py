@@ -54,7 +54,7 @@ def trata(base,porc_traing):
 
 
     while (i>=0):
-        data.append([tknzr.tokenize(base[i][0]),numpy.int64(base[i][1])])
+        data.append([tknzr.tokenize(base[i][0]),numpy.int64(base[i][1])-1])
         i -= 1
 
     k = 0
@@ -69,11 +69,13 @@ def trata(base,porc_traing):
             n += 1
         k += 1
 
+    print(len(all_words))
     random.shuffle(all_words)
 
     k = 0
     l = len(data)
     data_number =[]
+    data_labels =[]
     maxlen=0
     while (k < l):#percore as linhas
         m = len(data[k][0])
@@ -89,15 +91,25 @@ def trata(base,porc_traing):
                 j+=1
             n += 1
         data_number.append(w)
+        data_labels.append(data[k][1])
         k += 1
 
     # print(str(len(all_words)))
     # keras.layers.CuDNNLSTM()
-    train_data = data_number[0:int(l*porc_traing)]
-    train_labels = data[1][0:int(l*porc_traing)]
-    test_data = data_number[int(l*porc_traing):]
-    test_labels = data[1][int(l*porc_traing):]
 
+    train_data = data_number[0:int(l*porc_traing)]
+    test_data = data_number[int(l*porc_traing):]
+
+    # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
+    train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
+    test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
+
+    '''
+    train_data = data_number[0:int(l*porc_traing)]
+    train_labels = [w[1] for w in data[0:int(l*porc_traing)]]
+    test_data = data_number[int(l*porc_traing):]
+    test_labels = [w[1] for w in data[int(l*porc_traing):]]
+    '''
 
     return (train_data,train_labels),(test_data, test_labels)
 
