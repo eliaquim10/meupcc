@@ -54,8 +54,7 @@ def trata(base,porc_traing):
 
 
     while (i>=0):
-        data.append(tuple(
-            [tknzr.tokenize(base[i][0]),numpy.int64(base[i][1])]))
+        data.append([tknzr.tokenize(base[i][0]),numpy.int64(base[i][1])])
         i -= 1
 
     k = 0
@@ -86,18 +85,18 @@ def trata(base,porc_traing):
             t = len(all_words)
             while(j<t):#percorre as palavras que está no contexto
                 if (data[k][0][n] == all_words[j]):
-                    w.append(numpy.int64(j+1))
+                    w.append(j+1)
                 j+=1
             n += 1
         data_number.append(w)
         k += 1
 
     # print(str(len(all_words)))
-
+    # keras.layers.CuDNNLSTM()
     train_data = data_number[0:int(l*porc_traing)]
-    train_labels = data[0:int(l*porc_traing)]
+    train_labels = data[1][0:int(l*porc_traing)]
     test_data = data_number[int(l*porc_traing):]
-    test_labels = data[int(l*porc_traing):]
+    test_labels = data[1][int(l*porc_traing):]
 
 
     return (train_data,train_labels),(test_data, test_labels)
