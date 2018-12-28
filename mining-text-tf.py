@@ -42,7 +42,9 @@ imdb = keras.datasets.imdb
 
 (train_data, train_labels), (test_data, test_labels) = trata(readBase('colecao_dourada_2_class_unbalanced.csv'),0.5)
 
-
+print(type(train_data[0]))
+print(type(test_labels[0]))
+exit()
 
 # print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
 
@@ -115,7 +117,7 @@ partial_y_train = train_labels[50:]
 history = model.fit(partial_x_train,
                     partial_y_train,
                     epochs=40,
-                    batch_size=8,
+                    batch_size=512,
                     validation_data=(x_val, y_val),
                     verbose=1)
 

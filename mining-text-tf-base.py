@@ -39,7 +39,9 @@ print(tf.__version__)
 imdb = keras.datasets.imdb
 
 (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
-print(len(test_data))
+
+print(type(train_data[0]))
+print(type(test_labels[0]))
 exit()
 
 # print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
