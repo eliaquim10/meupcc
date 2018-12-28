@@ -90,10 +90,10 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 vocab_size = 2282
 
 model = keras.Sequential()
-model.add(keras.layers.Embedding(vocab_size, 8))
+model.add(keras.layers.Embedding(vocab_size, 16))
 model.add(keras.layers.GlobalAveragePooling1D())
-model.add(keras.layers.Flatten())
-model.add(keras.layers.Dense(8, activation=tf.nn.relu))
+# model.add(keras.layers.Flatten())
+model.add(keras.layers.Dense(16, activation=tf.nn.relu6))
 model.add(keras.layers.Dense(1, activation=tf.nn.sigmoid))
 
 model.summary()
@@ -104,12 +104,13 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
 
 print(len(train_data))
 
-x_val = train_data[:50]
-partial_x_train = train_data[50:]
+limit = 45
+x_val = train_data[:limit]
+partial_x_train = train_data[limit:]
 
 
-y_val = train_labels[:50]
-partial_y_train = train_labels[50:]
+y_val = train_labels[:limit]
+partial_y_train = train_labels[limit:]
 
 history = model.fit(partial_x_train,
                     partial_y_train,

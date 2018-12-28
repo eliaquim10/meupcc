@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.04">
-      <change beforePath="$PROJECT_DIR$/.idea/pcc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pcc.iml" afterDir="false" />
+    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="mudança da arquitetura e parâmtros da rede">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
     </list>
@@ -21,7 +20,7 @@
     <SUITE FILE_PATH="coverage/untitled$nltk.coverage" NAME="nltk Coverage Results" MODIFIED="1538593846563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pcc" />
     <SUITE FILE_PATH="coverage/untitled$mining_text__2_.coverage" NAME="mining-text (2) Coverage Results" MODIFIED="1538595382329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1546017342391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/meupcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1546030036519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/meupcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1546032646621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$nltk_downloading.coverage" NAME="nltk-downloading Coverage Results" MODIFIED="1545409707979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$mining_text__1_.coverage" NAME="mining-text (1) Coverage Results" MODIFIED="1545013116196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$teste.coverage" NAME="teste Coverage Results" MODIFIED="1538539133079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
@@ -82,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="107" column="33" lean-forward="true" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
+            <state relative-caret-position="179">
+              <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -92,9 +91,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/pcc/lib/python3.6/site-packages/tensorflow/python/keras/layers/cudnn_recurrent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="332" column="45" selection-start-line="332" selection-start-column="40" selection-end-line="332" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="288">
               <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
@@ -118,6 +126,7 @@
       <find>exit</find>
       <find>rando</find>
       <find>prin</find>
+      <find>unit</find>
     </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
@@ -225,7 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,6 +245,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +420,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538518113763</updated>
-      <workItem from="1546028193530" duration="1909000" />
+      <workItem from="1546028193530" duration="2094000" />
+      <workItem from="1546030300279" duration="2343000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <created>1545396864139</created>
@@ -609,23 +619,30 @@
       <option name="project" value="LOCAL" />
       <updated>1546012242824</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="mudança da arquitetura e parâmtros da rede">
+      <created>1546030255943</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1546030255943</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1909000" />
+    <option name="totallyTimeSpent" value="4437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.18996799" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.19210246" />
       <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.15957446" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5875133" visible="true" weight="0.3569869" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969743" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969743" weight="0.3995633" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -636,14 +653,14 @@
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49621785" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" weight="0.32786885" />
       <window_info anchor="bottom" id="SVN Repositories" order="13" sideWeight="0.49924356" weight="0.3295082" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32977587" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.32977587" />
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.3290469" />
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Packages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,7 +685,8 @@
     <MESSAGE value="1.02" />
     <MESSAGE value="1.03" />
     <MESSAGE value="1.04" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.04" />
+    <MESSAGE value="mudança da arquitetura e parâmtros da rede" />
+    <option name="LAST_COMMIT_MESSAGE" value="mudança da arquitetura e parâmtros da rede" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -692,13 +710,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/alice.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -819,6 +830,23 @@
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training_utils.py" />
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/datasets/imdb.py" />
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1061308513/numpy/core/multiarray.py" />
+    <entry file="file://$PROJECT_DIR$/Util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="43" column="27" selection-start-line="42" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Stopwords.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1392">
@@ -839,34 +867,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="43" column="27" selection-start-line="42" selection-end-line="46" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/teste.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="288">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/pcc/lib/python3.6/site-packages/tensorflow/python/keras/layers/cudnn_recurrent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="332" column="45" selection-start-line="332" selection-start-column="40" selection-end-line="332" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="107" column="33" lean-forward="true" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
+        <state relative-caret-position="179">
+          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
           </folding>
