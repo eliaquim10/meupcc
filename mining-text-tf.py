@@ -42,14 +42,9 @@ imdb = keras.datasets.imdb
 
 (train_data, train_labels), (test_data, test_labels) = trata(readBase('colecao_dourada_2_class_unbalanced.csv'),0.5)
 
-print(type(train_data[0]))
-print(type(test_labels[0]))
-exit()
 
 # print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
 
-
-len(train_data[0]), len(train_data[1])
 
 # A dictionary mapping words to an integer index
 '''
@@ -91,7 +86,8 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 
 
 # input shape is the vocabulary count used for the movie reviews (10,000 words)np
-vocab_size = 2282
+# vocab_size = 2282
+vocab_size = 100
 
 model = keras.Sequential()
 model.add(keras.layers.Embedding(vocab_size, 16))
