@@ -25,12 +25,9 @@ import tensorflow as tf
 # import random
 
 from tensorflow import keras
-from Util import readBase,trata
+from Util import readBase,trata_tf
 
 # import numpy as np
-
-
-# readBase('colecao_dourada_2_class_unbalanced.csv')
 
 
 print(tf.__version__)
@@ -40,42 +37,20 @@ imdb = keras.datasets.imdb
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 
-(train_data, train_labels), (test_data, test_labels) = trata(readBase('colecao_dourada_2_class_unbalanced.csv'),0.5)
-
-
-# print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
-
+(train_data, train_labels), (test_data, test_labels) = trata_tf(readBase('colecao_dourada_2_class_unbalanced.csv'),0.5)
 
 # A dictionary mapping words to an integer index
-'''
-word_index = imdb.get_word_index()
-
-# The first indices are reserved
-word_index = {k:(v+3) for k,v in word_index.items()}
-word_index["<PAD>"] = 0
-word_index["<START>"] = 1
-word_index["<UNK>"] = 2  # unknown
-word_index["<UNUSED>"] = 3
-
-reverse_word_index = dict([(value, key) for (key, value) in word_index.items()])
-
-
-
-def decode_review(text):
-    return ' '.join([reverse_word_index.get(i, '?') for i in text])
-
-decode_review(train_data[0])
-'''
+vocab_size = 2267
 
 train_data = keras.preprocessing.sequence.pad_sequences(train_data,
                                                         value=0,
                                                         padding='post',
-                                                        maxlen=256)
+                                                        maxlen=vocab_size)
 
 test_data = keras.preprocessing.sequence.pad_sequences(test_data,
                                                        value=0,
                                                        padding='post',
-                                                       maxlen=256)
+                                                       maxlen=vocab_size)
 
 
 # eliaquim-m
@@ -87,13 +62,12 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 
 # input shape is the vocabulary count used for the movie reviews (10,000 words)np
 # vocab_size = 2282
-vocab_size = 2282
 
 model = keras.Sequential()
-model.add(keras.layers.Embedding(vocab_size, 8))
+model.add(keras.layers.Embedding(vocab_size, 16))
 model.add(keras.layers.GlobalAveragePooling1D())
-model.add(keras.layers.Flatten())
-model.add(keras.layers.Dense(8, activation=tf.nn.relu))
+# model.add(keras.layers.Flatten())
+model.add(keras.layers.Dense(4, activation=tf.nn.relu6))
 model.add(keras.layers.Dense(1, activation=tf.nn.sigmoid))
 
 model.summary()
@@ -102,14 +76,14 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-print(len(train_data))
 
-x_val = train_data[:50]
-partial_x_train = train_data[50:]
+limit = 35
+x_val = train_data[:limit]
+partial_x_train = train_data[limit:]
 
 
-y_val = train_labels[:50]
-partial_y_train = train_labels[50:]
+y_val = train_labels[:limit]
+partial_y_train = train_labels[limit:]
 
 history = model.fit(partial_x_train,
                     partial_y_train,
@@ -121,12 +95,9 @@ history = model.fit(partial_x_train,
 results = model.evaluate(test_data, test_labels)
 
 # with tf.Session() as sess:
-#     out = sess.run(results)
-#     print(out)
-# print(out)
-# sess = tf.Session()
-# 
-# print(sess.run(results))
+#     results = sess.run(history)
+
+
 print(results)
 
 history_dict = history.history
