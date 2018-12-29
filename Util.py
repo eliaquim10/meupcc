@@ -169,15 +169,14 @@ def trata_tf(base,porc_traing):
     t = len(all_words)
     while (k < l):#percore as linhas
         m = len(data[k][0])
-        n = 0
         w =[]
-        j =0
+        j = 0
         entrou = 1
         while(j<t):#percorre as palavras que está no contexto
+            n = 0
             while (n < m):#percorre as palavras da linha
                 if (all_words[j][0] == data[k][0][n]):
-                    tfidf = tf_idf(frenq_word_doc[n][1],m,t,all_words[j][1])
-                    print(tfidf)
+                    tfidf = tf_idf(frenq_word_doc[n][1],m,all_words[j][1],t)
                     w.append(tfidf)
                     # w.append(frenq_word_doc[n][1]/m)
                     entrou = 0
@@ -207,7 +206,7 @@ def palavra_contexto(word,context):
         j+=1
     return None
 def tf_idf(term,len_doc,term_docs,len_docs):
-    return (term/len_doc)*(-math.log2(len_docs/term_docs))
+    return (term/len_doc)/(math.log(len_docs/term_docs,10))
 
 def remocaoacento(base):
     vida = '^áéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕçÇ'
