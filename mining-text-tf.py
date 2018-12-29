@@ -66,8 +66,8 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 model = keras.Sequential()
 model.add(keras.layers.Embedding(vocab_size, 16))
 model.add(keras.layers.GlobalAveragePooling1D())
-# model.add(keras.layers.Flatten())
-model.add(keras.layers.Dense(4, activation=tf.nn.relu6))
+model.add(keras.layers.Flatten())
+model.add(keras.layers.Dense(16, activation=tf.nn.relu6))
 model.add(keras.layers.Dense(1, activation=tf.nn.sigmoid))
 
 model.summary()
@@ -77,7 +77,7 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
               metrics=['accuracy'])
 
 
-limit = 35
+limit = 45
 x_val = train_data[:limit]
 partial_x_train = train_data[limit:]
 
