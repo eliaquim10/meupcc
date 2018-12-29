@@ -4,6 +4,7 @@ import numpy as np
 import random
 import nltk
 import numpy
+import math
 
 def readBase(csvFile = str):
     base = []
@@ -77,14 +78,15 @@ def trata(base,porc_traing):
     data_number =[]
     data_labels =[]
     maxlen=0
+    t = len(all_words)
     while (k < l):#percore as linhas
         m = len(data[k][0])
         n = 0
         w =[]
-        if m>maxlen: maxlen = m
+        if m>maxlen:
+            maxlen = m
         while (n < m):#percorre as palavras da linha
             j =0
-            t = len(all_words)
             while(j<t):#percorre as palavras que está no contexto
                 if (data[k][0][n] == all_words[j]):
                     w.append(j+1)
@@ -113,6 +115,99 @@ def trata(base,porc_traing):
 
     return (train_data,train_labels),(test_data, test_labels)
 
+def trata_tf(base,porc_traing):
+    data = []
+
+    random.shuffle(base)
+
+    tknzr = nltk.tokenize.TweetTokenizer()
+
+    i = len(base) - 1
+
+
+    while (i>=0):
+        data.append([
+            remocaopontos(tknzr.tokenize(base[i][0])),
+            numpy.int64(base[i][1])-1])
+        i -= 1
+
+    k = 0
+    l = len(data)
+    all_words = []
+    frenq_word_doc = []
+    while (k < l):# olha cada op
+        m = len(data[k][0])
+        n = 0
+        while (n < m):# olha cada palavra da op
+            entrou = 1
+            resul = palavra_contexto(data[k][0][n],all_words)
+            if(resul!=None):# Tem a palavra? none-que nao tem no dic
+                all_words[resul][1] +=1
+            else:
+                all_words.append([data[k][0][n],1])
+
+            resul = palavra_contexto(data[k][0][n],frenq_word_doc)
+            if(resul!=None):# Tem a palavra? none-que nao tem na op
+                frenq_word_doc[resul][1] +=1
+            else:
+                frenq_word_doc.append([data[k][0][n],1])
+            n += 1
+        k += 1
+
+    # print([(all_words[i],all_words_f[i])for i in range(len(all_words)) if (all_words_f[i]>50)])
+    # print(all_words_f)
+
+    random.shuffle(all_words)
+
+
+
+    k = 0
+    l = len(data)
+    data_number =[]
+    data_labels =[]
+    maxlen=0
+    t = len(all_words)
+    while (k < l):#percore as linhas
+        m = len(data[k][0])
+        n = 0
+        w =[]
+        j =0
+        entrou = 1
+        while(j<t):#percorre as palavras que está no contexto
+            while (n < m):#percorre as palavras da linha
+                if (all_words[j][0] == data[k][0][n]):
+                    tfidf = tf_idf(frenq_word_doc[n][1],m,t,all_words[j][1])
+                    print(tfidf)
+                    w.append(tfidf)
+                    # w.append(frenq_word_doc[n][1]/m)
+                    entrou = 0
+                n += 1
+            if(entrou):
+                w.append(0)
+            j+=1
+        data_number.append(w)
+        data_labels.append(data[k][1])
+        k += 1
+
+
+    train_data = data_number[0:int(l*porc_traing)]
+    test_data = data_number[int(l*porc_traing):]
+
+    # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
+    train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
+    test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
+
+    return (train_data,train_labels),(test_data, test_labels)
+
+def palavra_contexto(word,context):
+    j=0
+    while(j < len(context)): # olha todas as palavras no dicionario
+        if (word == context[j][0]):
+            return j
+        j+=1
+    return None
+def tf_idf(term,len_doc,term_docs,len_docs):
+    return (term/len_doc)*(-math.log2(len_docs/term_docs))
 
 def remocaoacento(base):
     vida = '^áéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕçÇ'
@@ -126,7 +221,7 @@ def remocaoacento(base):
     return base2
 
 def remocaopontos(base):
-    vida = ['.',',','!','?','<','>',']','[','*','(',')','+','-',';',':','...']
+    vida = ['.',',','!','?','<','>',']','[','*','(',')','+','-',';',':','...','$', '%', '\'', '..', '"', '/']
     base2 = []
     for row in base:
         if (row not in vida):
