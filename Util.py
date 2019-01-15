@@ -157,9 +157,19 @@ def trata_tf(base,porc_traing):
     # print([(all_words[i],all_words_f[i])for i in range(len(all_words)) if (all_words_f[i]>50)])
     # print(all_words_f)
 
-    random.shuffle(all_words)
+    # random.shuffle(all_words)
+    i = len(all_words) - 1
+    words_all = []
+    while(i>=0):
+        j = len(all_words[i][0]) - 1
+        while(j>=0):
+            words_all.append(all_words[i][0][j])
+            j-=1
+        i-=1
 
 
+    print(words_all)
+    exit()
 
     k = 0
     l = len(data)
