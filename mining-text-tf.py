@@ -25,7 +25,7 @@ import tensorflow as tf
 # import random
 
 from tensorflow import keras
-from Util import readBase,trata_tf,trata_tf_2
+from Util import readBase,trata_tf,trata_tf_2,trata_tf_3
 
 # import numpy as np
 
@@ -37,11 +37,12 @@ imdb = keras.datasets.imdb
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 
-(train_data, train_labels), (test_data, test_labels) = trata_tf_2(readBase('colecao_dourada_2_class_unbalanced.csv'),0.5)
+(train_data, train_labels), (test_data, test_labels) = trata_tf_3(readBase('colecao_dourada_2_class_unbalanced.csv'),0.5)
 
 # A dictionary mapping words to an integer index
 # vocab_size = 2267
-vocab_size = 822577
+vocab_size = 59200
+# vocab_size = 822577
 
 train_data = keras.preprocessing.sequence.pad_sequences(train_data,
                                                         value=0,
