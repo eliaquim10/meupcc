@@ -200,6 +200,7 @@ def trata_tf(base,porc_traing):
 
     return (train_data,train_labels),(test_data, test_labels)
 def trata_tf_2(base,porc_traing):
+    # montar base baseado se tem a palavra/character , com a sequencia
     data = []
 
     random.shuffle(base)
@@ -307,6 +308,99 @@ def trata_tf_2(base,porc_traing):
 
     return (train_data,train_labels),(test_data, test_labels)
 
+
+
+
+def trata_tf_3(base,porc_traing):
+    # montar base baseado se tem a palavra/character , não a sequencia
+    data = []
+
+    random.shuffle(base)
+
+    tknzr = nltk.tokenize.TweetTokenizer()
+
+    i = len(base) - 1
+
+    while (i>=0):
+        data.append([
+            remocaopontos(tknzr.tokenize(base[i][0])),
+            numpy.int64(base[i][1])-1])
+        i -= 1
+
+    k = 0
+    l = len(data)
+    all_words = []
+    while (k < l):# olha cada op
+        m = len(data[k][0])
+        n = 0
+        while (n < m):# olha cada palavra da op
+
+            resul = palavra_contexto(data[k][0][n],all_words)
+            if(not (data[k][0][n] in all_words)):# Tem a palavra?
+                all_words.append(data[k][0][n])
+            n += 1
+        k += 1
+    #monta o dicionario de palavras
+
+
+    i = len(all_words) - 1
+    character_words_all = []
+    while(i>=0):
+        j = len(all_words[i]) - 1
+        while(j>=0):
+            character_words_all.append(all_words[i][j])
+            j-=1
+        i-=1
+    # monta um dicionario com todas as palavras ordenado os caracteres
+
+
+    k = 0
+    l = len(data)
+    data_number =[]
+    data_labels =[]
+    t = len(character_words_all)
+    sum_letra = 0
+    while(k < l):
+        sum_letra += len(base[k][0])
+        k+=1
+    k=0
+
+    while (k < l):#percore as linhas
+        m = len(data[k][0])
+        numbers =[0]*t
+        n = 0
+
+        while (n < m):#percorre as palavras da linha
+            numbers = palavra(numbers,character_words_all,data[k][0][n])
+            n+=1
+
+        data_number.append(numbers)
+        data_labels.append(data[k][1])
+        k += 1
+
+
+    train_data = data_number[0:int(l*porc_traing)]
+    test_data = data_number[int(l*porc_traing):]
+
+    # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
+    train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
+    test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
+
+    return (train_data,train_labels),(test_data, test_labels)
+
+def palavra(numero_caracter,palavras_caracter,palavra):
+    i = len(palavras_caracter) - 1
+    l = len(palavra) - 1
+
+    while(i>=0):
+        while(l>=0):
+            if(palavras_caracter[i]==palavra[l]):
+                numero_caracter[i] = 1
+            l-=1
+        i-=1
+    return numero_caracter
+
+
 def contar_letra_base(base , charac):
     i = 0
     for w in base:
@@ -349,6 +443,10 @@ def remocaopontos(base):
         if (row not in vida):
             base2.append(row)
     return base2
+
+def remocao_ponto(c):
+    vida = ['.',',','!','?','<','>',']','[','*','(',')','+','-',';',':','...','$', '%', '\'', '..', '"', '/']
+    return (c not in vida)
 
 def precisionRecallFmeasure(classifier, gold):
     #results = classifier.classify_many([fs for (fs, l) in gold])
