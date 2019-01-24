@@ -158,23 +158,15 @@ def trata_tf(base,porc_traing):
     # print(all_words_f)
 
     # random.shuffle(all_words)
-    i = len(all_words) - 1
-    words_all = []
-    while(i>=0):
-        j = len(all_words[i][0]) - 1
-        while(j>=0):
-            words_all.append(all_words[i][0][j])
-            j-=1
-        i-=1
-
-
-    print(words_all)
-    exit()
 
     k = 0
     l = len(data)
     data_number =[]
     data_labels =[]
+
+    tam = 0
+    for w in data:
+        tam+=len(w[0])
     maxlen=0
     t = len(all_words)
     while (k < l):#percore as linhas
@@ -186,7 +178,7 @@ def trata_tf(base,porc_traing):
             n = 0
             while (n < m):#percorre as palavras da linha
                 if (all_words[j][0] == data[k][0][n]):
-                    tfidf = tf_idf(frenq_word_doc[n][1],m,all_words[j][1],t)
+                    tfidf = tf_idf(frenq_word_doc[n][1],m,all_words[j][1],tam)
                     w.append(tfidf)
                     # w.append(frenq_word_doc[n][1]/m)
                     entrou = 0
@@ -207,6 +199,127 @@ def trata_tf(base,porc_traing):
     test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
 
     return (train_data,train_labels),(test_data, test_labels)
+def trata_tf_2(base,porc_traing):
+    data = []
+
+    random.shuffle(base)
+
+    tknzr = nltk.tokenize.TweetTokenizer()
+
+    i = len(base) - 1
+
+
+    while (i>=0):
+        data.append([
+            remocaopontos(tknzr.tokenize(base[i][0])),
+            numpy.int64(base[i][1])-1])
+        i -= 1
+
+    k = 0
+    l = len(data)
+    all_words = []
+    while (k < l):# olha cada op
+        m = len(data[k][0])
+        n = 0
+        while (n < m):# olha cada palavra da op
+
+            resul = palavra_contexto(data[k][0][n],all_words)
+            if(not (data[k][0][n] in all_words)):# Tem a palavra?
+                all_words.append(data[k][0][n])
+            n += 1
+        k += 1
+
+    # print([(all_words[i],all_words_f[i])for i in range(len(all_words)) if (all_words_f[i]>50)])
+    # print(all_words_f)
+
+    # random.shuffle(all_words)
+    i = len(all_words) - 1
+    character_words_all = []
+    while(i>=0):
+        j = len(all_words[i]) - 1
+        while(j>=0):
+            character_words_all.append(all_words[i][j])
+            j-=1
+        i-=1
+
+
+
+    k = 0
+    l = len(data)
+    data_number =[]
+    data_labels =[]
+    t = len(character_words_all)
+    character_words_all_number = [0]*t
+    sum_letra = 0
+    while(k < l):
+        sum_letra += len(base[k][0])
+        k+=1
+    k=0
+    maxlen=0
+    while (k < l):#percore as linhas
+        m = len(data[k][0])
+        w =[]
+        j = 0
+        entrou = 1
+        while(j<t):#percorre as character que está no contexto
+            n = 0
+            while (n < m):#percorre as palavras da linha
+                h = len(data[k][0][n]) - 1
+                while (h >= 0):#percorre as palavras da linha
+                    if (character_words_all[j] == data[k][0][n][h]):
+                        w.append(1)
+                        h = -1
+                        entrou = 0
+
+                    '''
+                    if (character_words_all[j] == data[k][0][n][h]):
+                        print(str(k)+" "+str(j)+" "+str(n)+" "+str(h))
+                        if(character_words_all_number[j]==0):
+                            character_words_all_number[j] = contar_letra_base(base,character_words_all[j])
+                            character_number_doc = contar_letra_doc(base[k][0],character_words_all[j])
+                            tfidf = tf_idf(character_number_doc,len(base[k][0]),character_words_all_number[j],sum_letra)
+                            w.append(tfidf)
+                            h = -1
+                            entrou = 0
+                        else:
+                            character_number_doc = contar_letra_doc(base[k][0],character_words_all[j])
+                            tfidf = tf_idf(character_number_doc,len(base[k][0]),character_words_all_number[j],sum_letra)
+                            w.append(tfidf)
+                            h = -1
+                            entrou = 0
+                    '''
+                    h-=1
+                n += 1
+            if(entrou):
+                w.append(0)
+            j+=1
+        data_number.append(w)
+        data_labels.append(data[k][1])
+        k += 1
+
+
+    train_data = data_number[0:int(l*porc_traing)]
+    test_data = data_number[int(l*porc_traing):]
+
+    # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
+    train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
+    test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
+
+    return (train_data,train_labels),(test_data, test_labels)
+
+def contar_letra_base(base , charac):
+    i = 0
+    for w in base:
+        for c in w[0]:
+            if(charac == c):
+                i+=1
+    return i
+def contar_letra_doc(document , charac):
+    i = 0
+    for w in document:
+        if(charac == w):
+            i+=1
+    return i
 
 def palavra_contexto(word,context):
     j=0
@@ -336,32 +449,3 @@ def precisionRecallFmeasure(classifier, gold):
     else:
         return 0
 '''
-
-def write_results(resultados =[], times =[], silhoetes =[], path = str):
-
-    '''
-    Função responsável por escrever um arquivo csv com todos os resultados obtidos
-    :param resultados: resultados de cada iteração do PSO
-    :param times: o tempo de execução para cada iteração do PSO
-    :param silhoetes: Avaliação da semelhança dos clusters antes e depois da execução do PSO
-    em cada execução
-    :param path: caminho e nome do arquivo a ser salvo
-    '''
-
-
-    with open(path, "wb") as csv_file:
-        writer = csv.writer(csv_file, delimiter=',')
-        writer.writerow([" ", "Classe 0", "Classe 1","Classe 2", "All Class"])
-        writer.writerow(["Execution Number","Precision/Recall/F-Score",
-        "Precision/Recall/F-Score","Precision/Recall/F-Score",
-        "Precision/Recall/F-Score/Support",
-        "Silhouette Coefficient","Time (seconds)"])
-
-    print_vetor = [[z+1, a[0], a[1], a[2],np.mean(a, axis=1), b, c]for z, a, b, c in zip(range(0,len(resultados)),resultados,silhoetes,times)]
-
-    for i in range(len(print_vetor)):
-        writer.writerow(print_vetor[i])
-
-    media = np.array(reduce(operator.add, np.mean(np.array(resultados), axis=2)))/len(resultados)
-    writer.writerow([" ","Precison", "Recall", "F-Score"])
-    writer.writerow(["Media Final:",media[0], media[1], media[2]])
