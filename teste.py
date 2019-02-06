@@ -47,6 +47,6 @@ def writes(path,base):
         for w in base:
             csv_file.writelines(w[0]+';'+w[1]+'\n')
 
-path = 'data_set\data_base-dilva-1000.csv'
+path = 'data_set\data_base_dilva_1000.csv'
 base = readBase(path)
 print(base)
