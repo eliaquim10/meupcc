@@ -353,6 +353,7 @@ def trata_tf_3(base,porc_traing):
         i-=1
     # monta um dicionario com todas as palavras ordenado os caracteres
 
+    character_words_all = character_words_all[::-1]
 
     k = 0
     l = len(data)
@@ -371,7 +372,7 @@ def trata_tf_3(base,porc_traing):
         n = 0
 
         while (n < m):#percorre as palavras da linha
-            numbers = palavra(numbers,character_words_all,data[k][0][n])
+            numbers = palavra_1(numbers,character_words_all,data[k][0][n],all_words)
             n+=1
 
         data_number.append(numbers)
@@ -398,6 +399,26 @@ def palavra(numero_caracter,palavras_caracter,palavra):
                 numero_caracter[i] = 1
             l-=1
         i-=1
+
+    return numero_caracter
+def palavra_1(numero_caracter,palavras_caracter,palavra,palavras):
+    i = 0
+    boolean = False
+    k = i
+
+    while(i<len(palavras)):
+        if(palavras[i]==palavra):
+            boolean = True
+            break
+        else:
+            if(not boolean):
+                k +=len(palavras[i])
+        i+=1
+    li = k
+    ls = (k + len(palavra))
+    while(li<ls):
+        numero_caracter[li] = 1
+        li+=1
     return numero_caracter
 
 

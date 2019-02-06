@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.08">
+    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.09&#10;a nivel de character">
+      <change afterPath="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +20,13 @@
     <SUITE FILE_PATH="coverage/pcc$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1545013846035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master" />
     <SUITE FILE_PATH="coverage/pcc$mining_text.coverage" NAME="mining-text Coverage Results" MODIFIED="1541784473060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/untitled$mining_text__1_.coverage" NAME="mining-text (1) Coverage Results" MODIFIED="1538595130717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1547518668771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1548725009937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$nltk.coverage" NAME="nltk Coverage Results" MODIFIED="1538593846563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pcc" />
     <SUITE FILE_PATH="coverage/pcc$nltk.coverage" NAME="nltk Coverage Results" MODIFIED="1538596226928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$Util__1_.coverage" NAME="Util (1) Coverage Results" MODIFIED="1545054457025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$mining_text__1_.coverage" NAME="mining-text (1) Coverage Results" MODIFIED="1545013116196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$cria.coverage" NAME="cria Coverage Results" MODIFIED="1545013098885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1548307178770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1548828284248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$mining_text_tf_base.coverage" NAME="mining-text-tf-base Coverage Results" MODIFIED="1546017162519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meupcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1546030036519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$Stopwords__1_.coverage" NAME="Stopwords (1) Coverage Results" MODIFIED="1545053411665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Codigos/execução" />
@@ -35,7 +38,7 @@
     <SUITE FILE_PATH="coverage/untitled$mining_text.coverage" NAME="mining-text Coverage Results" MODIFIED="1538595086297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1545013862646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
     <SUITE FILE_PATH="coverage/pcc$nltk_downloading.coverage" NAME="nltk-downloading Coverage Results" MODIFIED="1545409707979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1545013548789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1549416069464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$nltk__1_.coverage" NAME="nltk (1) Coverage Results" MODIFIED="1538595188800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$nltk__3_.coverage" NAME="nltk (3) Coverage Results" MODIFIED="1538596310427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
   </component>
@@ -56,33 +59,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stopwords.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
-              <folding>
-                <element signature="e#24#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nltk-downloading.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="884">
+              <caret line="74" column="55" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="18" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -90,20 +70,58 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_set/data_base.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/teste.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="14756">
+              <caret line="1000" column="96" selection-start-line="1000" selection-start-column="96" selection-end-line="1000" selection-end-column="96" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="833">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="365" column="7" lean-forward="true" selection-start-line="365" selection-start-column="7" selection-end-line="365" selection-end-column="7" />
+            <state relative-caret-position="51">
+              <caret line="8" selection-start-line="8" selection-end-line="10" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <element signature="e#927#1140#0" />
-                <element signature="e#1175#2989#0" />
-                <element signature="e#8951#9061#0" />
-                <element signature="e#9107#9190#0" />
-                <element signature="e#9232#9389#0" />
-                <element signature="e#9439#9494#0" />
-                <marker date="1548307174615" expanded="true" signature="11807:11869" ph="..." />
               </folding>
             </state>
           </provider>
@@ -128,9 +146,28 @@
       <find>exit</find>
       <find>tf</find>
       <find>Dense</find>
-      <find>metrics</find>
       <find>prin</find>
+      <find>remocaopontos</find>
+      <find>add</find>
+      <find>def add</find>
+      <find>recurrent_activation</find>
+      <find>sig</find>
+      <find>sigm</find>
+      <find>gru</find>
+      <find>gpu</find>
+      <find>_learning_rate</find>
+      <find>learning_rate</find>
+      <find>exp</find>
+      <find>metrics</find>
+      <find>;</find>
+      <find>Perdemos não</find>
+      <find>vanderson oliveira;Sim;CADA UM</find>
+      <find>vamos conhecer antes de criticar.</find>
+      <find>quantas besteiras,,vamos conhecer antes de criticar.</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Rebase.Settings">
     <option name="SHOW_TAGS" value="true" />
@@ -202,22 +239,32 @@
         <option value="$PROJECT_DIR$/experimento/e1/sce/unbalanced/colecao_dourada_2_class_unbalanced.csv" />
         <option value="$PROJECT_DIR$/experimento/e1/sce/unbalanced/colecao_dourada_3_class_unbalanced.csv" />
         <option value="$PROJECT_DIR$/experimento/e5/sce/balanced/colecao_dourada_2_class_balanced.csv" />
-        <option value="$PROJECT_DIR$/Stopwords.py" />
         <option value="$PROJECT_DIR$/nltk-downloading.py" />
         <option value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/requirements.txt" />
         <option value="$PROJECT_DIR$/mining-text-tf-base.py" />
-        <option value="$PROJECT_DIR$/mining-text-tf.py" />
         <option value="$PROJECT_DIR$/Util.py" />
+        <option value="$PROJECT_DIR$/mining-text-tf.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.csv" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/data_base.csv" />
+        <option value="$PROJECT_DIR$/data_base.csv" />
+        <option value="$PROJECT_DIR$/data_base-dilva-1000.csv" />
+        <option value="$PROJECT_DIR$/data_base-silvia-1000.csv" />
+        <option value="$PROJECT_DIR$/data_set/data_base-vinicius-a-2000-1.csv" />
+        <option value="$PROJECT_DIR$/Stopwords.py" />
+        <option value="$PROJECT_DIR$/teste.py" />
+        <option value="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="53" />
-    <option name="y" value="90" />
-    <option name="width" value="1374" />
-    <option name="height" value="735" />
+    <option name="x" value="-5" />
+    <option name="y" value="-733" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -241,6 +288,11 @@
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
+            <path>
+              <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="data_set" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -250,23 +302,24 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="hsqldb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="csv" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/plots" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e6" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e5" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e4" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e3" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
       <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
       <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\data_set" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e6" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e5" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e4" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -281,29 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mining-text-tf">
-    <configuration name="Stopwords" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pcc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stopwords.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.teste">
     <configuration name="Util" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pcc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -392,20 +423,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="teste" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pcc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teste.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.Stopwords" />
       <item itemvalue="Python.Util" />
       <item itemvalue="Python.mining-text-tf-base" />
       <item itemvalue="Python.mining-text-tf" />
       <item itemvalue="Python.nltk-downloading" />
+      <item itemvalue="Python.teste" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.teste" />
         <item itemvalue="Python.mining-text-tf" />
         <item itemvalue="Python.Util" />
         <item itemvalue="Python.mining-text-tf-base" />
         <item itemvalue="Python.nltk-downloading" />
-        <item itemvalue="Python.Stopwords" />
       </list>
     </recent_temporary>
   </component>
@@ -435,7 +488,17 @@
       <workItem from="1548263072432" duration="447000" />
       <workItem from="1548296118201" duration="1868000" />
       <workItem from="1548298267803" duration="5153000" />
-      <workItem from="1548305026433" duration="2754000" />
+      <workItem from="1548305026433" duration="2861000" />
+      <workItem from="1548360051233" duration="4843000" />
+      <workItem from="1548364930523" duration="2249000" />
+      <workItem from="1548379994841" duration="1565000" />
+      <workItem from="1548718714611" duration="8662000" />
+      <workItem from="1548736413294" duration="1972000" />
+      <workItem from="1548818649992" duration="11394000" />
+      <workItem from="1549163803408" duration="3382000" />
+      <workItem from="1549213214350" duration="2360000" />
+      <workItem from="1549242302588" duration="1614000" />
+      <workItem from="1549413508476" duration="2607000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <created>1545396864139</created>
@@ -661,22 +724,29 @@
       <option name="project" value="LOCAL" />
       <updated>1548305083665</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="1.09&#10;a nivel de character">
+      <created>1548307953772</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1548307953772</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56538000" />
+    <option name="totallyTimeSpent" value="97293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-776" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.15425532" />
       <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.15957446" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.58472013" visible="true" weight="0.35188216" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58472013" visible="true" weight="0.30278233" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969743" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -691,8 +761,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32902735" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3275076" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32978722" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.3290469" />
       <window_info anchor="right" id="R Graphics" order="6" />
       <window_info anchor="right" id="R Packages" order="7" />
@@ -723,7 +793,8 @@
     <MESSAGE value="1.06" />
     <MESSAGE value="1.07" />
     <MESSAGE value="1.08" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.08" />
+    <MESSAGE value="1.09&#10;a nivel de character" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.09&#10;a nivel de character" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -743,6 +814,11 @@
           <line>156</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mining-text-tf.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -761,179 +837,240 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Codigos/colecao_dourada3.csv">
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/load_library.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Codigos/colecao_dourada2.csv">
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/logging.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Codigos/colecao_dourada.csv">
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/macros.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Codigos/execução/sce/unbalanced/colecao_dourada_2_class_unbalanced.csv">
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/mem.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/mutex.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/net.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/notification.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/null_file_system.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/platform.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/png.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/prefetch.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/protobuf.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/protobuf_internal.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/regexp.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/setround.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/snappy.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stacktrace.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stacktrace_handler.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stream_executor.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stream_executor_no_cuda.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/strong_hash.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/context.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
+        <state relative-caret-position="-496" />
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/byte_order.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/abi.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/types.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/tracing.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/thread_annotations.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/tensor_coding.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/subprocess.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/cuda.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-313451744/math.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="279" column="9" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/colecao_dourada2.csv">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/data_base.csv" />
+    <entry file="file://$USER_HOME$/Dropbox/pic/Codigos/dados_Corrigido.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="459">
+          <caret line="7442" lean-forward="true" selection-end-line="7442" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/momentum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="105">
+          <caret line="70" column="23" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Codigos/execução/Util.py">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="105">
+          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/encodings/cp1252.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1061308513/builtins.py" />
-    <entry file="file://$PROJECT_DIR$/Codigos/execução/Stopwords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="756" column="85" lean-forward="true" selection-start-line="756" selection-start-column="85" selection-end-line="756" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Codigos/execução/Suavizacao+Stopwords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="785" selection-start-line="785" selection-end-line="792" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experimento3/colecao_dourada_2_class_unbalanced.csv" />
-    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/balanced/balanceando.py" />
-    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/balanced/colecao_dourada_2_class_balanced.csv" />
-    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/balanced/colecao_dourada_3_class_balanced.csv" />
-    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/unbalanced/colecao_dourada_2_class_unbalanced.csv" />
-    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/unbalanced/colecao_dourada_3_class_unbalanced.csv" />
-    <entry file="file://$PROJECT_DIR$/experimento/e6/sce/balanced/colecao_dourada_2_class_balanced.csv" />
-    <entry file="file://$PROJECT_DIR$/experimento/e5/sce/balanced/colecao_dourada_2_class_balanced.csv" />
-    <entry file="file://$PROJECT_DIR$/experimento/e4/sce/balanced/colecao_dourada_2_class_balanced.csv" />
-    <entry file="file://$PROJECT_DIR$/experimento/e3/sce/balanced/colecao_dourada_2_class_balanced.csv" />
+    <entry file="file://$PROJECT_DIR$/data_base-vinicius-a-2000.csv" />
+    <entry file="file://$PROJECT_DIR$/data_base-dilva-1000.csv" />
+    <entry file="file://$PROJECT_DIR$/data_base.csv" />
+    <entry file="file://$PROJECT_DIR$/data_base-silvia-1000.csv" />
     <entry file="file://$PROJECT_DIR$/colecao_dourada_2_class_unbalanced.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="145" selection-start-line="38" selection-start-column="145" selection-end-line="38" selection-end-column="145" />
         </state>
       </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experimento/e2/sce/balanced/colecao_dourada_2_class_balanced.csv" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/preprocessing/sequence.py" />
-    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+    <entry file="file://$PROJECT_DIR$/data_set/data_base-dilva-1000.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
         </state>
       </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/keras/__init__.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/cudnn_recurrent.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/models.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training_utils.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/datasets/imdb.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1061308513/numpy/core/multiarray.py" />
-    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="43" column="27" selection-start-line="42" selection-end-line="46" selection-end-column="6" />
+    <entry file="file://$PROJECT_DIR$/data_set/data_base.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Codigos/Util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1993" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teste.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$USER_HOME$/Downloads/data_base-vinicius-a-2000.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <caret line="12" column="49" selection-end-line="1001" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/random.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/embeddings.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_breakpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="266" selection-start-line="266" selection-end-line="266" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/sequential.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/checkpointable/base.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/base_layer.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/network.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/recurrent.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/nn_ops.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/core.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/pooling.py" />
     <entry file="file://$PROJECT_DIR$/Stopwords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
-          <folding>
-            <element signature="e#24#79#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="124">
+          <caret line="714" column="4" selection-start-line="714" selection-start-column="4" selection-end-line="716" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nltk-downloading.py">
+    <entry file="file://$PROJECT_DIR$/data_set/data_base-silvia-1000.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="10" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="884">
+          <caret line="74" column="55" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="18" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util.py">
+    <entry file="file://$PROJECT_DIR$/teste.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="365" column="7" lean-forward="true" selection-start-line="365" selection-start-column="7" selection-end-line="365" selection-end-column="7" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-            <element signature="e#927#1140#0" />
-            <element signature="e#1175#2989#0" />
-            <element signature="e#8951#9061#0" />
-            <element signature="e#9107#9190#0" />
-            <element signature="e#9232#9389#0" />
-            <element signature="e#9439#9494#0" />
-            <marker date="1548307174615" expanded="true" signature="11807:11869" ph="..." />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="14756">
+          <caret line="1000" column="96" selection-start-line="1000" selection-start-column="96" selection-end-line="1000" selection-end-column="96" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
       </provider>
     </entry>
   </component>
