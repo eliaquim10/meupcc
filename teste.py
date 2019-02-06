@@ -18,42 +18,27 @@ model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test, y_test)'''
 import csv
 
-def readBase(csvFile1 = str,csvFile2 = str):
-    base1 = []
-    base2 = []
-    i= True
+def readBase(csvFile = str):
+    base = [0]*6
+    i= False
     j=0
-    with open(csvFile1, newline='\n',encoding='utf-8') as csvFile1:
+    with open(csvFile, newline='\n',encoding='utf-8') as csvFile:
 
-        spamreader = csv.reader(csvFile1, delimiter=';', quotechar='|')
-
-        for row in spamreader:
-            try:
-                temp1 = row[0].lower()
-                base1.append(temp1[0])
-            except IndexError:
-                pass
-
-    with open(csvFile2, newline='\n',encoding='utf-8') as csvFile2:
-
-        spamreader = csv.reader(csvFile2, delimiter=';', quotechar='|')
+        spamreader = csv.reader(csvFile, delimiter=';', quotechar='|')
 
         for row in spamreader:
             try:
-                print(row)
                 if(i):
-                    temp1 = row[0].lower()
-                    temp2 = row[1].lower()
-                    base2.append([temp1, temp2])
-                    i = False
+                    temp = int(row[0])
+                    if(temp==4):
+                        print(row[1])
+                    base[temp - 1]+=1
                 else:
-                    temp1 = row[1].lower()
-                    base2.append([base1[j], temp1])
+                    print(row)
+                    i = True
             except IndexError:
                 pass
-            finally:
-                j+=1
-        return base2
+        return base
 
 
 def writes(path,base):
@@ -62,6 +47,6 @@ def writes(path,base):
         for w in base:
             csv_file.writelines(w[0]+';'+w[1]+'\n')
 
-path = 'data_set\data_base_vinicius_a_2000'
-base = readBase(path + '_1.csv',path + '.csv')
-writes(path + '_2.csv',base)
+path = 'data_set\data_base-dilva-1000.csv'
+base = readBase(path)
+print(base)
