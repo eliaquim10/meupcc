@@ -23,6 +23,7 @@
 
 import tensorflow as tf
 # import random
+import math
 
 from tensorflow import keras
 from Util import readBase,trata_tf,trata_tf_2,trata_tf_3
@@ -66,21 +67,24 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 # vocab_size = 2282
 
 model = keras.Sequential()
-model.add(keras.layers.Embedding(vocab_size, 8))
+model.add(keras.layers.Embedding(vocab_size, 64))
 # model.add(keras.layers.GlobalAveragePooling1D())
-model.add(keras.layers.LSTM(4))
+
+model.add(keras.layers.LSTM(32,recurrent_activation='softmax'))
 # model.add(keras.layers.Flatten())
-model.add(keras.layers.Dense(4, activation=tf.nn.relu6))
-model.add(keras.layers.Dense(1, activation=tf.nn.sigmoid))
+# model.add(keras.layers.Dense(32, activation=tf.nn.relu6))
+# model.add(keras.layers.Dense(16, activation=tf.nn.sigmoid))
+model.add(keras.layers.Dense(1, activation=tf.nn.softmax))
 
 model.summary()
+
+
 
 model.compile(optimizer=tf.train.AdamOptimizer(),
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-
-limit = 75
+limit = 45
 x_val = train_data[:limit]
 partial_x_train = train_data[limit:]
 
@@ -109,6 +113,7 @@ history_dict.keys()
 
 ## Inicio da classificação
 import matplotlib.pyplot as plt
+
 
 acc = history.history['acc']
 val_acc = history.history['val_acc']
