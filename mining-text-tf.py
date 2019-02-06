@@ -28,11 +28,7 @@ import math
 from tensorflow import keras
 from Util import readBase,trata_tf,trata_tf_2,trata_tf_3
 
-# import numpy as np
-
-
 print(tf.__version__)
-
 
 imdb = keras.datasets.imdb
 
