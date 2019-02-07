@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1&#10;Aumento da base">
-      <change afterPath="$PROJECT_DIR$/data_set/data_base_dilva_1000.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/data_base_g_3000.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base-1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_set/data_base-1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base-dilva-1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_d_1000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_silvia_1000.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_set/data_base_s_1000.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_set/data_base_v_a_2000.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +38,7 @@
     <SUITE FILE_PATH="coverage/untitled$mining_text.coverage" NAME="mining-text Coverage Results" MODIFIED="1538595086297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1545013862646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
     <SUITE FILE_PATH="coverage/pcc$nltk_downloading.coverage" NAME="nltk-downloading Coverage Results" MODIFIED="1545409707979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1549420286905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1549424704922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$nltk__1_.coverage" NAME="nltk (1) Coverage Results" MODIFIED="1538595188800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$nltk__3_.coverage" NAME="nltk (3) Coverage Results" MODIFIED="1538596310427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
   </component>
@@ -65,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+            <state relative-caret-position="2142">
+              <caret line="131" selection-start-line="131" selection-end-line="131" selection-end-column="26" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -75,35 +71,68 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_set/data_base-1.csv">
+        <entry file="file://$PROJECT_DIR$/data_set/data_base_g_3000.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="16864">
+              <caret line="992" column="53" selection-start-line="992" selection-start-column="53" selection-end-line="992" selection-end-column="53" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_set/data_base_s_1000.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="3859">
+              <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="60" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data_set/data_base-1.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="363">
+              <caret line="738" column="82" selection-start-line="738" selection-start-column="82" selection-end-line="738" selection-end-column="82" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_set/data_base_v_a_2000.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="17000">
+              <caret line="1000" column="2" selection-start-line="1000" selection-start-column="2" selection-end-line="1000" selection-end-column="96" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="969">
+              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_set/data_base_dilva_1000.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49980">
+              <caret line="2989" column="42" selection-start-line="2989" selection-start-column="38" selection-end-line="2989" selection-end-column="42" />
             </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -118,10 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>random</find>
-      <find>model_cgp</find>
-      <find>Não'</find>
-      <find>rando</find>
       <find>exit</find>
       <find>tf</find>
       <find>Dense</find>
@@ -147,7 +172,11 @@
       <find>Dubai talvez seja</find>
       <find>quantas</find>
       <find>quantas besteiras,,vamos conhecer antes de criticar.</find>
+      <find>copy(</find>
       <find>vive de rodeio não tem apenas um,</find>
+      <find>colo</find>
+      <find>CADA UM TEM A</find>
+      <find>CADA UM TEM A CULTURA QUE QUER,DIVERSIDADES EXISTEM NO MUNDO TODO E CADA UM GOSTA DO QUE QUER.</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -237,18 +266,19 @@
         <option value="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv" />
         <option value="$PROJECT_DIR$/mining-text-tf.py" />
         <option value="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv" />
-        <option value="$PROJECT_DIR$/teste.py" />
         <option value="$PROJECT_DIR$/data_set/data_base-silvia-1000.csv" />
         <option value="$PROJECT_DIR$/data_set/data_base.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base-1.csv" />
         <option value="$PROJECT_DIR$/data_set/data_base-dilva-1000.csv" />
         <option value="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv" />
+        <option value="$PROJECT_DIR$/teste.py" />
+        <option value="$PROJECT_DIR$/data_set/data_base-1.csv" />
+        <option value="$PROJECT_DIR$/data_set/data_base_g_3000.csv" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-5" />
-    <option name="y" value="-733" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -260,17 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="pcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pcc" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -287,6 +306,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pcc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,18 +328,18 @@
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
-      <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
-      <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\data_set" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e6" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e5" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e4" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
+      <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
+      <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -488,7 +518,10 @@
       <workItem from="1549163803408" duration="3382000" />
       <workItem from="1549213214350" duration="2360000" />
       <workItem from="1549242302588" duration="1614000" />
-      <workItem from="1549413508476" duration="7698000" />
+      <workItem from="1549413508476" duration="11443000" />
+      <workItem from="1549480162587" duration="1216000" />
+      <workItem from="1549522205273" duration="421000" />
+      <workItem from="1549522831007" duration="549000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <created>1545396864139</created>
@@ -735,22 +768,36 @@
       <option name="project" value="LOCAL" />
       <updated>1549416239852</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="1.1&#10;Aumento da base">
+      <created>1549422041089</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1549422041089</updated>
+    </task>
+    <task id="LOCAL-00037" summary="1.1&#10;Aumento da base">
+      <created>1549422556947</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1549422556947</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102384000" />
+    <option name="totallyTimeSpent" value="108315000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-776" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.15425532" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.16111952" />
       <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.15957446" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58358663" visible="true" weight="0.30278233" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58358663" weight="0.30278233" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969743" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -765,7 +812,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.3275076" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.2912254" />
       <window_info anchor="right" id="Database" order="4" weight="0.32978722" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.3290469" />
       <window_info anchor="right" id="R Graphics" order="6" />
@@ -806,6 +853,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -868,15 +929,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/macros.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/mem.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/mutex.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/net.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -971,7 +1023,7 @@
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/momentum.py">
@@ -999,7 +1051,7 @@
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/data_base-vinicius-a-2000.csv">
@@ -1009,7 +1061,7 @@
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Stopwords.py">
@@ -1029,16 +1081,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="342">
-          <caret line="1001" lean-forward="true" selection-start-column="17" selection-end-line="1001" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="115">
@@ -1046,76 +1089,81 @@
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv" />
+    <entry file="file://$PROJECT_DIR$/data_set/data_base-dilva-1000.csv" />
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_1000.csv" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-313451744/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="1421" column="41" lean-forward="true" selection-start-line="1421" selection-start-column="41" selection-end-line="1421" selection-end-column="41" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+        <state relative-caret-position="2142">
+          <caret line="131" selection-start-line="131" selection-end-line="131" selection-end-column="26" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base-1.csv">
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_g_3000.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="16864">
+          <caret line="992" column="53" selection-start-line="992" selection-start-column="53" selection-end-line="992" selection-end-column="53" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base-silvia-1000.csv">
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_s_1000.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        <state relative-caret-position="3859">
+          <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="60" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base-dilva-1000.csv">
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_a_2000.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-16587">
-          <caret line="10" column="26" lean-forward="true" selection-end-line="1001" />
+        <state relative-caret-position="17000">
+          <caret line="1000" column="2" selection-start-line="1000" selection-start-column="2" selection-end-line="1000" selection-end-column="96" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/teste.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="969">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_dilva_1000.csv">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49980">
+          <caret line="2989" column="42" selection-start-line="2989" selection-start-column="38" selection-end-line="2989" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base-1.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="363">
+          <caret line="738" column="82" selection-start-line="738" selection-start-column="82" selection-end-line="738" selection-end-column="82" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
   </component>
