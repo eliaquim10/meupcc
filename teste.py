@@ -35,7 +35,7 @@ def readBase(csvFile = str):
                     base.append(classes.copy())
                 else:
                     i = True
-            except IndexError:
+            except Exception:
                 pass
     return base
 
@@ -63,13 +63,14 @@ def mostra_grafico(base,path):
     iro = coluna(base,6)
 
     tempos = range(1, len(base) + 1)
+
     plt.plot(tempos, pos, 'k', label='Positivo')
     plt.plot(tempos, neg, 'b', label='Negativo')
     plt.plot(tempos, amb, 'r', label='Ambos')
     plt.plot(tempos, neu, 'p', label='Neutro')
     plt.plot(tempos, des, 'g', label='Descarte')
     plt.plot(tempos, iro, 'y', label='Ironia')
-    plt.title('classes')
+    plt.title(path)
     plt.xlabel('opiniao')
     plt.ylabel('classes')
     plt.legend()
@@ -77,12 +78,17 @@ def mostra_grafico(base,path):
     plt.show()
     plt.clf()   # clear figure
 
-path = 'data_set\data_base_d_1000.csv'
+path = 'data_set\data_base_d_q_1000.csv'
 base = readBase(path)
 
 mostra_grafico(base,path)
 
 path = 'data_set\data_base_v_a_2000.csv'
+base = readBase(path)
+
+mostra_grafico(base,path)
+
+path = 'data_set\data_base_s_1000.csv'
 base = readBase(path)
 
 mostra_grafico(base,path)
