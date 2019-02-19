@@ -17,6 +17,8 @@ model.compile(optimizer='adam',
 model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test, y_test)'''
 import csv
+import sklearn.metrics as metricas
+import Codigos.Recurso as Re
 
 def readBase(csvFile = str):
     classes = [0]*6
@@ -38,7 +40,27 @@ def readBase(csvFile = str):
             except Exception:
                 pass
     return base
+def readBase(csvFile = str,c = bool):
+    classes = [0]*6
+    base = []
+    i= False
+    j=0
+    with open(csvFile, newline='\n',encoding='utf-8') as csvFile:
 
+        spamreader = csv.reader(csvFile, delimiter=';', quotechar='|')
+
+        for row in spamreader:
+            try:
+                if(i):
+                    temp1 = row[0]
+                    temp2 = row[1:]
+                    base.append([temp1,temp2])
+                else:
+                    i = True
+                    c = i
+            except Exception:
+                pass
+    return base
 
 def writes(path,base):
     with open(path,mode='w', encoding='utf-8') as csv_file:
@@ -63,7 +85,6 @@ def mostra_grafico(base,path):
     iro = coluna(base,6)
 
     tempos = range(1, len(base) + 1)
-
     plt.plot(tempos, pos, 'k', label='Positivo')
     plt.plot(tempos, neg, 'b', label='Negativo')
     plt.plot(tempos, amb, 'r', label='Ambos')
@@ -77,20 +98,25 @@ def mostra_grafico(base,path):
 
     plt.show()
     plt.clf()   # clear figure
-
+'''
 path = 'data_set\data_base_d_q_1000.csv'
-base = readBase(path)
-
-mostra_grafico(base,path)
-
-path = 'data_set\data_base_v_a_2000.csv'
-base = readBase(path)
-
-mostra_grafico(base,path)
+base1 = readBase(path,True)
+print(base1)
+# mostra_grafico(base1,path)
 
 path = 'data_set\data_base_s_1000.csv'
-base = readBase(path)
+base2 = readBase(path,True)
+print(base2)
+mostra_grafico(base2,path)
 
-mostra_grafico(base,path)
+path = 'data_set\data_base_v_a_2000.csv'
+base3 = readBase(path)
 
+mostra_grafico(base3,path)
 
+c = metricas.cohen_kappa_score(base1,base2)
+print(c)
+'''
+
+path = 'data_set\data_base_v_a_2000.csv'
+base4 = readBase(path)

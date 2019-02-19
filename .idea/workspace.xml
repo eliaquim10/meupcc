@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1&#10;Aumento da base">
+    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 s&#10;Aumento da base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_dilva_1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_s_1000.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_set/data_base_s_1000.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +34,7 @@
     <SUITE FILE_PATH="coverage/untitled$mining_text.coverage" NAME="mining-text Coverage Results" MODIFIED="1538595086297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1545013862646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
     <SUITE FILE_PATH="coverage/pcc$nltk_downloading.coverage" NAME="nltk-downloading Coverage Results" MODIFIED="1545409707979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1549949570693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1550477119151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$nltk__1_.coverage" NAME="nltk (1) Coverage Results" MODIFIED="1538595188800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$nltk__3_.coverage" NAME="nltk (3) Coverage Results" MODIFIED="1538596310427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
   </component>
@@ -59,11 +57,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+            <state relative-caret-position="2142">
               <caret line="131" selection-start-line="131" selection-end-line="131" selection-end-column="26" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stopwords.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -74,7 +81,7 @@
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-1035">
+            <state relative-caret-position="15708">
               <caret line="924" column="1" selection-start-line="924" selection-start-column="1" selection-end-line="924" selection-end-column="1" />
             </state>
           </provider>
@@ -85,14 +92,54 @@
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="1190">
+              <caret line="70" column="120" selection-start-line="70" selection-start-column="120" selection-end-line="70" selection-end-column="120" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/teste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-333">
-              <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="342">
+              <caret line="56" column="46" lean-forward="true" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+              <folding>
+                <element signature="e#570#580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-313451744/builtins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31603">
+              <caret line="1859" column="15" selection-start-line="1859" selection-start-column="8" selection-end-line="1859" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_set/Eliaquim.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_set/data_base_d_q_1000.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -108,12 +155,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>exit</find>
-      <find>tf</find>
-      <find>Dense</find>
-      <find>prin</find>
       <find>remocaopontos</find>
-      <find>add</find>
       <find>def add</find>
       <find>recurrent_activation</find>
       <find>sig</find>
@@ -138,6 +180,11 @@
       <find>colo</find>
       <find>CADA UM TEM A</find>
       <find>CADA UM TEM A CULTURA QUE QUER,DIVERSIDADES EXISTEM NO MUNDO TODO E CADA UM GOSTA DO QUE QUER.</find>
+      <find>coh</find>
+      <find>i=</find>
+      <find>,,'</find>
+      <find>kap</find>
+      <find>add</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -239,10 +286,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-52" />
+    <option name="width" value="1372" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -262,7 +308,7 @@
             <path>
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="data_set" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="plots" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -290,18 +336,18 @@
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
+      <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
+      <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\data_set" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e6" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e5" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e4" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
-      <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
-      <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -484,7 +530,13 @@
       <workItem from="1549480162587" duration="1216000" />
       <workItem from="1549522205273" duration="421000" />
       <workItem from="1549522831007" duration="1939000" />
-      <workItem from="1549948857786" duration="1263000" />
+      <workItem from="1549948857786" duration="2779000" />
+      <workItem from="1549952232678" duration="2759000" />
+      <workItem from="1549975479727" duration="7804000" />
+      <workItem from="1550459010958" duration="498000" />
+      <workItem from="1550466805677" duration="8777000" />
+      <workItem from="1550523516288" duration="572000" />
+      <workItem from="1550588886772" duration="687000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <created>1545396864139</created>
@@ -752,22 +804,29 @@
       <option name="project" value="LOCAL" />
       <updated>1549523514226</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="1.1 s&#10;Aumento da base">
+      <created>1549950142892</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1549950142893</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110968000" />
+    <option name="totallyTimeSpent" value="133581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.1633888" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.17776097" />
       <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.15957446" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58358663" visible="true" weight="0.30278233" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.58358663" weight="0.28477904" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969743" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -782,7 +841,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.4969743" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.290469" />
       <window_info anchor="right" id="Database" order="4" weight="0.32978722" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.3290469" />
       <window_info anchor="right" id="R Graphics" order="6" />
@@ -856,7 +915,8 @@
     <MESSAGE value="1.08" />
     <MESSAGE value="1.09&#10;a nivel de character" />
     <MESSAGE value="1.1&#10;Aumento da base" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1&#10;Aumento da base" />
+    <MESSAGE value="1.1 s&#10;Aumento da base" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1 s&#10;Aumento da base" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -881,6 +941,11 @@
           <line>105</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/teste.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -899,73 +964,23 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/png.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/prefetch.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/protobuf.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/protobuf_internal.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/regexp.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/setround.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/snappy.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stacktrace.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stacktrace_handler.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stream_executor.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stream_executor_no_cuda.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/strong_hash.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/context.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-496" />
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/byte_order.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/abi.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/types.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/tracing.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/thread_annotations.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/tensor_coding.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/subprocess.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/cuda.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105" />
-      </provider>
-    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/regexp.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/setround.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/snappy.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stacktrace.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stacktrace_handler.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stream_executor.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/stream_executor_no_cuda.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/strong_hash.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/context.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/byte_order.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/abi.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/types.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/tracing.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/thread_annotations.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/tensor_coding.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/subprocess.h" />
+    <entry file="file://C:/ProgramData/Anaconda3/pkgs/tensorflow-base-1.9.0-eigen_py36h45df0d8_0/Lib/site-packages/tensorflow/include/tensorflow/core/platform/cuda.h" />
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-313451744/math.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -984,20 +999,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/momentum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/momentum.py" />
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py" />
     <entry file="file://$PROJECT_DIR$/data_base-vinicius-a-2000.csv" />
     <entry file="file://$PROJECT_DIR$/data_base-dilva-1000.csv" />
     <entry file="file://$PROJECT_DIR$/data_base.csv" />
@@ -1022,23 +1025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stopwords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="714" column="4" selection-start-line="714" selection-start-column="4" selection-end-line="716" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="10" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base.csv">
       <provider editor-type-id="csv-table-editor">
@@ -1053,13 +1039,6 @@
     <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base-dilva-1000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base_d_1000.csv" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-313451744/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="1421" column="41" lean-forward="true" selection-start-line="1421" selection-start-column="41" selection-end-line="1421" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base-1.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -1090,19 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/pcc.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="2989" column="42" selection-start-line="2989" selection-start-column="38" selection-end-line="2989" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_g_3000.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -1113,9 +1079,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_m_3000.csv" />
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="3104" column="4" selection-start-line="3104" selection-start-column="4" selection-end-line="3104" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/Util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1074">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/Recurso.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2005">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/sklearn/metrics/classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1072">
+          <caret line="372" column="54" selection-start-line="372" selection-start-column="54" selection-end-line="372" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
+        <state relative-caret-position="2142">
           <caret line="131" selection-start-line="131" selection-end-line="131" selection-end-column="26" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
@@ -1123,19 +1128,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_m_3000.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_q_1000.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-column="17" />
+    <entry file="file://$PROJECT_DIR$/Stopwords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1144,15 +1140,55 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-1035">
+        <state relative-caret-position="15708">
           <caret line="924" column="1" selection-start-line="924" selection-start-column="1" selection-end-line="924" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/pcc.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="120" selection-start-line="70" selection-start-column="120" selection-end-line="70" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-313451744/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31603">
+          <caret line="1859" column="15" selection-start-line="1859" selection-start-column="8" selection-end-line="1859" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/Eliaquim.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_q_1000.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/teste.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="342">
+          <caret line="56" column="46" lean-forward="true" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+          <folding>
+            <element signature="e#570#580#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
