@@ -20,11 +20,10 @@ import csv
 import sklearn.metrics as metricas
 import Codigos.Recurso as Re
 
-def readBase(csvFile = str):
+def readBase1(csvFile = str):
     classes = [0]*6
     base = []
     i= False
-    j=0
     with open(csvFile, newline='\n',encoding='utf-8') as csvFile:
 
         spamreader = csv.reader(csvFile, delimiter=';', quotechar='|')
@@ -40,8 +39,7 @@ def readBase(csvFile = str):
             except Exception:
                 pass
     return base
-def readBase(csvFile = str,c = bool):
-    classes = [0]*6
+def readBase2(csvFile = str):
     base = []
     i= False
     j=0
@@ -52,13 +50,14 @@ def readBase(csvFile = str,c = bool):
         for row in spamreader:
             try:
                 if(i):
-                    temp1 = row[0]
-                    temp2 = row[1:]
-                    base.append([temp1,temp2])
+                    temp = int(row[0])
+                    base.append(temp)
+                    # print(j)
+                    j+=1
                 else:
                     i = True
-                    c = i
             except Exception:
+                print(j)
                 pass
     return base
 
@@ -98,25 +97,32 @@ def mostra_grafico(base,path):
 
     plt.show()
     plt.clf()   # clear figure
-'''
+
 path = 'data_set\data_base_d_q_1000.csv'
-base1 = readBase(path,True)
+base1 = readBase1(path)
 print(base1)
-# mostra_grafico(base1,path)
 
 path = 'data_set\data_base_s_1000.csv'
-base2 = readBase(path,True)
+base2 = readBase1(path)
 print(base2)
-mostra_grafico(base2,path)
+
 
 path = 'data_set\data_base_v_a_2000.csv'
-base3 = readBase(path)
+base3 = readBase2(path)
 
-mostra_grafico(base3,path)
+print(len(base3))
 
-c = metricas.cohen_kappa_score(base1,base2)
+
+path = 'data_set\data_base_v_o_2000_1.csv'
+base4 = readBase2(path)
+
+
+c = metricas.cohen_kappa_score(base3,base4)
 print(c)
-'''
 
-path = 'data_set\data_base_v_a_2000.csv'
-base4 = readBase(path)
+
+
+mostra_grafico(base1,path)
+mostra_grafico(base2,path)
+mostra_grafico(base3,path)
+mostra_grafico(base4,path)
