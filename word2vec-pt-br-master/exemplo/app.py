@@ -68,7 +68,7 @@ def hello():
         json_data = json.dumps(data_array)
         print(json_data)
 
-    	return jsonify({request.args.get('most_similar'): data_array})
+        return jsonify({request.args.get('most_similar'): data_array})
 
     if (request.args.get('context')):
         return jsonify({'context': model.doesnt_match(request.args.get('context').split())})
@@ -121,7 +121,7 @@ def hello():
             print (data_array)
         
             json_data = json.dumps(data_array)
-            print json_data
+            print (json_data)
 
             return jsonify({request.args.get('operation'): data_array})
         
@@ -151,7 +151,7 @@ def hello():
         return json_data
 
     if request.args.get('mais_distante'):
-    	return jsonify({'mais_distante': model.doesnt_match(request.args.get('mais_distante').split())})
+        return jsonify({'mais_distante': model.doesnt_match(request.args.get('mais_distante').split())})
 
 if __name__ == "__main__":
     app.run()

@@ -25,7 +25,7 @@ import tensorflow as tf
 import random
 
 from tensorflow import keras
-from Util import readBase,trata
+from Util import readBase,trata,matriz_confusao
 
 import numpy as np
 
@@ -34,17 +34,21 @@ import numpy as np
 
 
 print(tf.__version__)
+# import time
+# # NAME = "test1-{}".format(int(time.time()))
+# # tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
 
 
 imdb = keras.datasets.imdb
 
 (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 
-print(type(train_data[0]))
-print(type(test_labels[0]))
-print(train_data[0])
-print(type(test_labels))
-exit()
+
+# print(type(train_data[0]))
+# print(type(test_labels[0]))
+# print(train_data[0])
+# print(type(test_labels))
+# exit()
 
 # print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
 
@@ -81,6 +85,37 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
                                                        value=word_index["<PAD>"],
                                                        padding='post',
                                                        maxlen=256)
+# def transfor(matriz):
+#     i = 0
+#     j = 0
+#     l = len(matriz)
+#     result= []
+#     q = 0
+#     print(l)
+#     while(i<l):
+#         w = []
+#         while(j<l):
+#             r = matriz[i][j]+matriz[i][j+1]+matriz[i+1][j]+matriz[i+1][j+1]
+#
+#             r= r & 0xff
+#             if(q<r):
+#                 q = 0 + r
+#             w.append(r)
+#             j+=2
+#         result.append(w.copy())
+#         i+=2
+#     return result
+# import matplotlib.pyplot as plt
+# i = 0
+# w =[]
+# while(i<256):
+#     w.append([u for u in train_data[i].copy()])
+#     i+=1
+# w = transfor(w)
+# print(w)
+# # w = transfor(w)
+# plt.imshow(w)
+# plt.show()
 
 len(train_data[0]), len(train_data[1])
 
@@ -114,17 +149,36 @@ history = model.fit(partial_x_train,
                     validation_data=(x_val, y_val),
                     verbose=1)
 
-results = model.evaluate(test_data, test_labels)
+# results = model.evaluate(test_data, test_labels)
+results = model.predict(x = test_data)
+d = []
+for w in results:
+    if(w<0.5):
+        d.append(0)
+    else:
+        d.append(1)
+
 
 print(results)
+print(type(test_labels[0]))
+
+matriz = matriz_confusao(test_labels,d)
+
+print('aqui')
+print(matriz)
+# print(results)
+exit()
 
 history_dict = history.history
 history_dict.keys()
 
 
 ## Inicio da classificação
+
 import matplotlib.pyplot as plt
 
+plt.show(partial_x_train[0:512])
+exit()
 acc = history.history['acc']
 val_acc = history.history['val_acc']
 loss = history.history['loss']

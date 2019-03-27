@@ -31,6 +31,7 @@ def readBase(csvFile = str):
             except IndexError:
                 pass
         return base
+
 def arrays(array, maxlen):
     i = len(array)-1
     # data
@@ -47,7 +48,7 @@ def arrays(array, maxlen):
 def trata(base,porc_traing):
     data = []
 
-    random.shuffle(base)
+    # random.shuffle(base)
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
@@ -115,7 +116,7 @@ def trata(base,porc_traing):
 
     return (train_data,train_labels),(test_data, test_labels)
 
-def trata_tf(base,porc_traing):
+def trata_tf_palavra(base, porc_traing):
     data = []
 
     random.shuffle(base)
@@ -123,7 +124,6 @@ def trata_tf(base,porc_traing):
     tknzr = nltk.tokenize.TweetTokenizer()
 
     i = len(base) - 1
-
 
     while (i>=0):
         data.append([
@@ -199,16 +199,16 @@ def trata_tf(base,porc_traing):
     test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
 
     return (train_data,train_labels),(test_data, test_labels)
-def trata_tf_2(base,porc_traing):
+
+def trata_tf_tf_idf(base, porc_traing):
     # montar base baseado se tem a palavra/character , com a sequencia
     data = []
 
-    random.shuffle(base)
+    # random.shuffle(base)
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
     i = len(base) - 1
-
 
     while (i>=0):
         data.append([
@@ -216,88 +216,65 @@ def trata_tf_2(base,porc_traing):
             numpy.int64(base[i][1])-1])
         i -= 1
 
-    k = 0
+
+
+    i = 0
+    sum_palavra = 0
     l = len(data)
     all_words = []
-    while (k < l):# olha cada op
-        m = len(data[k][0])
+    while (i < l):# olha cada op
+        sum_palavra += len(base[i][0])
+        m = len(data[i][0])
         n = 0
         while (n < m):# olha cada palavra da op
-
-            resul = palavra_contexto(data[k][0][n],all_words)
-            if(not (data[k][0][n] in all_words)):# Tem a palavra?
-                all_words.append(data[k][0][n])
+            resul = palavra_contexto(data[i][0][n],all_words)
+            if(not (data[i][0][n] in all_words)):# Tem a palavra?
+                all_words.append(data[i][0][n])
             n += 1
-        k += 1
+        i += 1
+
 
     # print([(all_words[i],all_words_f[i])for i in range(len(all_words)) if (all_words_f[i]>50)])
     # print(all_words_f)
 
     # random.shuffle(all_words)
-    i = len(all_words) - 1
-    character_words_all = []
-    while(i>=0):
-        j = len(all_words[i]) - 1
-        while(j>=0):
-            character_words_all.append(all_words[i][j])
-            j-=1
-        i-=1
+    i = 0
 
+    t_all_word = len(all_words)
+    data_documents =[]
+    while (i < l):#percorre as palavras da linha
 
+        w=[0]*t_all_word
+        j=0
+        while(j<t_all_word): #percore todas as palavras do dicionario
+            if(w[j]==0):
+                w[j] = contar_palavra_doc(data[i][0], all_words[j])
+            j+=1
+        data_documents.append(w)
+        i+=1
 
-    k = 0
-    l = len(data)
+    i = 0
+    words_all_number = [0]*t_all_word
+    while(i<t_all_word):#quantidade por palavra
+        if(words_all_number[i]==0):
+            words_all_number[i] = contar_palvra(data, all_words[i])
+        i+=1
+
+    i=0
     data_number =[]
     data_labels =[]
-    t = len(character_words_all)
-    character_words_all_number = [0]*t
-    sum_letra = 0
-    while(k < l):
-        sum_letra += len(base[k][0])
-        k+=1
-    k=0
-    maxlen=0
-    while (k < l):#percore as linhas
-        m = len(data[k][0])
-        w =[]
+    while (i < l):#percore as linhas
+        m = len(data[i][0])
+        w =[0]*t_all_word
         j = 0
-        entrou = 1
-        while(j<t):#percorre as character que está no contexto
-            n = 0
-            while (n < m):#percorre as palavras da linha
-                h = len(data[k][0][n]) - 1
-                while (h >= 0):#percorre as palavras da linha
-                    if (character_words_all[j] == data[k][0][n][h]):
-                        w.append(1)
-                        h = -1
-                        entrou = 0
-
-                    '''
-                    if (character_words_all[j] == data[k][0][n][h]):
-                        print(str(k)+" "+str(j)+" "+str(n)+" "+str(h))
-                        if(character_words_all_number[j]==0):
-                            character_words_all_number[j] = contar_letra_base(base,character_words_all[j])
-                            character_number_doc = contar_letra_doc(base[k][0],character_words_all[j])
-                            tfidf = tf_idf(character_number_doc,len(base[k][0]),character_words_all_number[j],sum_letra)
-                            w.append(tfidf)
-                            h = -1
-                            entrou = 0
-                        else:
-                            character_number_doc = contar_letra_doc(base[k][0],character_words_all[j])
-                            tfidf = tf_idf(character_number_doc,len(base[k][0]),character_words_all_number[j],sum_letra)
-                            w.append(tfidf)
-                            h = -1
-                            entrou = 0
-                    '''
-                    h-=1
-                n += 1
-            if(entrou):
-                w.append(0)
+        while(j<t_all_word):#percorre as character que está no contexto
+            if(data_documents[i][j]!=0):
+                w[j] = tf_idf(data_documents[i][j],len(data[i][0]),words_all_number[j],sum_palavra)
             j+=1
+        # print(len(w))
         data_number.append(w)
-        data_labels.append(data[k][1])
-        k += 1
-
+        data_labels.append(data[i][1])
+        i += 1
 
     train_data = data_number[0:int(l*porc_traing)]
     test_data = data_number[int(l*porc_traing):]
@@ -308,14 +285,11 @@ def trata_tf_2(base,porc_traing):
 
     return (train_data,train_labels),(test_data, test_labels)
 
-
-
-
 def trata_tf_3(base,porc_traing):
     # montar base baseado se tem a palavra/character , não a sequencia
     data = []
 
-    random.shuffle(base)
+    # random.shuffle(base)
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
@@ -379,6 +353,7 @@ def trata_tf_3(base,porc_traing):
         data_labels.append(data[k][1])
         k += 1
 
+    # random.shuffle(data_number)
 
     train_data = data_number[0:int(l*porc_traing)]
     test_data = data_number[int(l*porc_traing):]
@@ -401,6 +376,7 @@ def palavra(numero_caracter,palavras_caracter,palavra):
         i-=1
 
     return numero_caracter
+
 def palavra_1(numero_caracter,palavras_caracter,palavra,palavras):
     i = 0
     boolean = False
@@ -421,18 +397,18 @@ def palavra_1(numero_caracter,palavras_caracter,palavra,palavras):
         li+=1
     return numero_caracter
 
-
-def contar_letra_base(base , charac):
+def contar_palvra(data, palavra):
     i = 0
-    for w in base:
+    for w in data:
         for c in w[0]:
-            if(charac == c):
+            if(palavra == c):
                 i+=1
     return i
-def contar_letra_doc(document , charac):
+
+def contar_palavra_doc(document, palavra):
     i = 0
-    for w in document:
-        if(charac == w):
+    for word in document:
+        if(palavra == word):
             i+=1
     return i
 
@@ -443,6 +419,7 @@ def palavra_contexto(word,context):
             return j
         j+=1
     return None
+
 def tf_idf(term,len_doc,term_docs,len_docs):
     return (term/len_doc)/(math.log(len_docs/term_docs,10))
 
@@ -469,102 +446,10 @@ def remocao_ponto(c):
     vida = ['.',',','!','?','<','>',']','[','*','(',')','+','-',';',':','...','$', '%', '\'', '..', '"', '/']
     return (c not in vida)
 
-def precisionRecallFmeasure(classifier, gold):
-    #results = classifier.classify_many([fs for (fs, l) in gold])
-    #correct = [l == r for ((fs, l), r) in zip(gold, results)]
-
-    testclas = classifier.classify_many([fs for (fs, l) in gold])
-    testgold = [l for (fs, l) in gold]
-
-    h=0
-    #cont = 0
-    tpos=0
-    fpos=0
-    tneg=0
-    fneg=0
-    tneu=0
-    fneu=0
-    fneuPos=0
-    fneuNeg=0
-    fnegPos=0
-    fnegNeu=0
-    fposNeg=0
-    fposNeu=0
-    while(h<len(testgold)):
-        if (testgold[h]==testclas[h])and (testclas[h]== u"positivo"):
-            tpos=tpos+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"positivo"):
-            fpos=fpos+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"positivo") and (testgold[h]==u'negativo'):
-            fposNeg=fposNeg+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"positivo") and (testgold[h]==u'neutro'):
-            fposNeu=fposNeu+1
-        if (testgold[h]==testclas[h])and (testclas[h]== u"negativo"):
-            tneg=tneg+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"negativo"):
-            fneg=fneg+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"negativo") and (testgold[h]==u'positivo'):
-            fnegPos=fnegPos+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"negativo") and (testgold[h]==u'neutro'):
-            fnegNeu=fnegNeu+1
-        if (testgold[h]==testclas[h])and (testclas[h]== u"neutro"):
-            tneu=tneu+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"neutro"):
-            fneu=fneu+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"neutro") and (testgold[h]==u'positivo'):
-            fneuPos=fneuPos+1
-        if (testgold[h]!=testclas[h])and (testclas[h]== u"neutro") and (testgold[h]==u'negativo'):
-            fneuNeg=fneuNeg+1
-        h=h+1
-
-#-------------------------
-    precisionPos = float(tpos)/(tpos+fpos)
-    precisionNeg = float(tneg)/(tneg+fneg)
-    if((len(set([l for (fs, l) in gold])))==3):
-        precisionNeu = float(tneu)/(tneu+fneu)
-    else:
-        precisionNeu = 0
-    precision = float(precisionPos+precisionNeg+precisionNeu)/(len(set([l for (fs, l) in gold])))
-#--------------------------
-    recallPos = float(tpos)/(tpos+fnegPos+fneuPos)
-    recallNeg = float(tneg)/(tneg+fposNeg+fneuNeg)
-    if((len(set([l for (fs, l) in gold])))==3):
-        recallNeu = float(tneu)/(tneu+fnegNeu+fposNeu)
-    else:
-        recallNeu = 0
-    recall = float(recallPos+recallNeg+recallNeu)/(len(set([l for (fs, l) in gold])))
-#---------------------------
-    if((len(set([l for (fs, l) in gold])))==3):
-        mc = '''
-             Pos   Neg   Neu\n
-        Pos   '''+str(tpos)+"    "+str(fposNeg)+"    "+str(fposNeu)+'''\n
-        Neg   '''+str(fnegPos)+"    "+str(tneg)+"    "+str(fnegNeu)+'''\n
-        Neu   '''+str(fneuPos)+"    "+str(fneuNeg)+"    "+str(tneu)
-    if((len(set([l for (fs, l) in gold])))==2):
-        mc ='''
-               Pos   Neg \n
-        Pos    '''+str(tpos)+"   "+str(fpos)+'''\n
-        Neg    '''+str(fneg)+'''   '''+str(tneg)
-#---------------------------
-
-    fmeasure = (2*precision*recall)/(precision+recall)
-    fmeasurePos = (2*precisionPos*recallPos)/(precisionPos+recallPos)
-    fmeasureNeg = (2*precisionNeg*recallNeg)/(precisionNeg+recallNeg)
-    fmeasureNeu = (2*precisionNeu*recallNeu)/(precisionNeu+recallNeu)
-#---------------------------
-
-    string = "precision: "+str(precision)+"  precisionPos: "+str(precisionPos)+'  precisionNeg: '+str(precisionNeg)+'  precisionNeu: '+str(precisionNeu)+"" \
-             "\n recall: "+str(recall)+"  recallPos: "+str(recallPos)+"  recallNeg: "+str(recallNeg)+"  recallnNeu: "+str(recallNeu)+"" \
-             "\n F-measure: "+str(fmeasure)+"  f-measurePos: "+str(fmeasurePos)+"  f-measureNeg: "+str(fmeasureNeg)+"  f-measureNeu: "+str(fmeasureNeu)+"" \
-                                                                                                                                                                                "\n"+str(len(set([l for (fs, l) in gold])))+"\nf-measure: "+str(fmeasure)
-    return string
-'''
-    if correct:
-        return float(sum(correct))/len(correct)
-    #acuracia = float(sum(x == y for x, y in izip(reference, test))) / len(test)
-    #precision = float(len(reference.intersection(test)))/len(test)
-    #recal    = float(len(reference.intersection(test)))/len(reference)
-    #fmeasure =
-    else:
-        return 0
-'''
+def matriz_confusao(label,predicao):
+    w = [[0]*2]*2
+    i = 0
+    while(i<len(label)):
+        w[label[i]][predicao[i]]+=1
+        i+=1
+    return w
