@@ -98,31 +98,39 @@ def mostra_grafico(base,path):
     plt.show()
     plt.clf()   # clear figure
 
-path = 'data_set\data_base_d_q_1000.csv'
-base1 = readBase1(path)
-print(base1)
+def mostra_graficos(bases,paths):
+    i = 0
+    l = len(bases)
+    while(i<l):
+        mostra_grafico(bases[i],paths[i])
+        i+=1
 
-path = 'data_set\data_base_s_1000.csv'
-base2 = readBase1(path)
-print(base2)
+def bases(paths,grafico):
+    if(grafico):
+        base1 = readBase1(paths[0])
+        base2 = readBase1(paths[1])
+        base3 = readBase1(paths[2])
+        base4 = readBase1(paths[3])
+    else:
+        base1 = readBase2(paths[0])
+        base2 = readBase2(paths[1])
+        base3 = readBase2(paths[2])
+        base4 = readBase2(paths[3])
+
+    return base1 ,base2 ,base3 ,base4
+paths = ['data_set\data_base_d_q_1000.csv',
+         'data_set\data_base_s_1000.csv',
+         'data_set\data_base_v_a_2000.csv',
+         'data_set\data_base_v_o_2000_1.csv']
+
+base1 ,base2 ,base3 ,base4 = bases(paths,False)
 
 
-path = 'data_set\data_base_v_a_2000.csv'
-base3 = readBase2(path)
 
-print(len(base3))
-
-
-path = 'data_set\data_base_v_o_2000_1.csv'
-base4 = readBase2(path)
+kappa_meninas = metricas.cohen_kappa_score(base1,base2)
+print(kappa_meninas)
+kappa_meninos = metricas.cohen_kappa_score(base3,base4)
+print(kappa_meninos)
 
 
-c = metricas.cohen_kappa_score(base3,base4)
-print(c)
-
-
-
-mostra_grafico(base1,path)
-mostra_grafico(base2,path)
-mostra_grafico(base3,path)
-mostra_grafico(base4,path)
+# mostra_graficos([base1 ,base2 ,base3 ,base4],paths)

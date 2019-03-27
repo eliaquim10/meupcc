@@ -24,21 +24,28 @@
 import tensorflow as tf
 # import random
 import math
-
 from tensorflow import keras
-from Util import readBase,trata_tf,trata_tf_2,trata_tf_3
-
+from Util import readBase,trata_tf_palavra,trata_tf_tf_idf,trata_tf_3
+import time
 print(tf.__version__)
 
-imdb = keras.datasets.imdb
+# gpu =  tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
+# sess = tf.Session(tf.ConfigProto(gpu_options=gpu))
+
+# imdb = keras.datasets.imdb
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 
-(train_data, train_labels), (test_data, test_labels) = trata_tf_3(readBase('colecao_dourada_2_class_unbalanced.csv'),0.5)
+(train_data, train_labels), (test_data, test_labels) = trata_tf_3(readBase('colecao_dourada_2_class_unbalanced.csv'), 0.5)
+
+# NAME = "test1-{}".format(int(time.time()))
+# tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
+
 
 # A dictionary mapping words to an integer index
+vocab_size = 10000
 # vocab_size = 2267
-vocab_size = 59200
+# vocab_size = 59200
 # vocab_size = 822577
 
 train_data = keras.preprocessing.sequence.pad_sequences(train_data,
@@ -64,12 +71,12 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 
 model = keras.Sequential()
 model.add(keras.layers.Embedding(vocab_size, 64))
-# model.add(keras.layers.GlobalAveragePooling1D())
+model.add(keras.layers.GlobalAveragePooling1D())
 
-model.add(keras.layers.LSTM(32,recurrent_activation='softmax'))
-# model.add(keras.layers.Flatten())
-# model.add(keras.layers.Dense(32, activation=tf.nn.relu6))
-# model.add(keras.layers.Dense(16, activation=tf.nn.sigmoid))
+# model.add(keras.layers.LSTM(32,recurrent_activation='softmax'))
+model.add(keras.layers.Flatten())
+model.add(keras.layers.Dense(32, activation=tf.nn.relu6))
+model.add(keras.layers.Dense(16, activation=tf.nn.sigmoid))
 model.add(keras.layers.Dense(1, activation=tf.nn.softmax))
 
 model.summary()
@@ -80,7 +87,8 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-limit = 45
+# limit = vocab_size
+limit = 100
 x_val = train_data[:limit]
 partial_x_train = train_data[limit:]
 
@@ -88,6 +96,8 @@ partial_x_train = train_data[limit:]
 y_val = train_labels[:limit]
 partial_y_train = train_labels[limit:]
 
+
+sess = tf.Session()
 history = model.fit(partial_x_train,
                     partial_y_train,
                     epochs=30,
@@ -95,13 +105,30 @@ history = model.fit(partial_x_train,
                     validation_data=(x_val, y_val),
                     verbose=1)
 
+
+# sess
 results = model.evaluate(test_data, test_labels)
 
+
+# model.save('epic_num_reader.model')
+# new_model = keras.models.load_model('epic_num_reader.model')
+# predictions = model.predict(test_data)
+test = tf.metrics.Accuracy()
+print(test(1,1))
+exit()
+# print(predictions)
+
+import numpy as np
+for w in predictions:
+    print(w)
+exit()
+# exit()
 # with tf.Session() as sess:
 #     results = sess.run(history)
 
 
 print(results)
+
 
 history_dict = history.history
 history_dict.keys()
