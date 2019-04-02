@@ -118,6 +118,19 @@ def bases(paths,grafico):
         base4 = readBase2(paths[3])
 
     return base1 ,base2 ,base3 ,base4
+def helper(base1,base2):
+    b1 = []
+    b2 = []
+    pol = [1,2]
+    i = 0
+    while(i<len(base1)):
+        if(base1[i] in pol):
+            if(base2[i] in pol):
+                b1.append(base1[i])
+                b2.append(base2[i])
+        i+=1
+    return b1,b2
+
 paths = ['data_set\data_base_d_q_1000.csv',
          'data_set\data_base_s_1000.csv',
          'data_set\data_base_v_a_2000.csv',
@@ -125,7 +138,14 @@ paths = ['data_set\data_base_d_q_1000.csv',
 
 base1 ,base2 ,base3 ,base4 = bases(paths,False)
 
-
+base1,base2 = helper(base1,base2)
+base3,base4 = helper(base3,base4)
+print('meninas')
+print(len(base1))
+print('meninos')
+print(len(base3))
+print('\n')
+# print(base3)
 
 kappa_meninas = metricas.cohen_kappa_score(base1,base2)
 print(kappa_meninas)

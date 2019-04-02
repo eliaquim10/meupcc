@@ -5,6 +5,7 @@ import random
 import nltk
 import numpy
 import math
+import gensim
 
 def readBase(csvFile = str):
     base = []
@@ -203,32 +204,50 @@ def trata_tf_palavra(base, porc_traing):
 def trata_tf_tf_idf(base, porc_traing):
     # montar base baseado se tem a palavra/character , com a sequencia
     data = []
-
+    w2v = gensim.models.KeyedVectors.load_word2vec_format("skip_s50.txt")
     # random.shuffle(base)
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
     i = len(base) - 1
-
+    #tokenização e remoção de pontuação
     while (i>=0):
-        data.append([
-            remocaopontos(tknzr.tokenize(base[i][0])),
-            numpy.int64(base[i][1])-1])
+        data.append([remocaopontos(tknzr.tokenize(base[i][0])), numpy.int64(base[i][1])-1])
         i -= 1
 
 
+    i = 0
+
+    # word to vector
+    dataset =[[]*(len(base)),0]
+    for opinion_class in data:
+        for word in opinion_class[0]:
+            try:
+                similiar_word = w2v.most_similar(word, topn=10)
+                j = 0
+                while(j<len(similiar_word)):
+                    dataset[i][0].append(similiar_word[j])
+            except Exception:
+                pass
+        i+=1
+    print(dataset[0])
+    print(dataset[50])
+    exit()
 
     i = 0
-    sum_palavra = 0
+    sum_words = 0
     l = len(data)
-    all_words = []
+    all_words = {}
     while (i < l):# olha cada op
-        sum_palavra += len(base[i][0])
+        sum_words += len(base[i][0])
         m = len(data[i][0])
         n = 0
         while (n < m):# olha cada palavra da op
             resul = palavra_contexto(data[i][0][n],all_words)
-            if(not (data[i][0][n] in all_words)):# Tem a palavra?
+            if(data[i][0][n] not in all_words):# Tem a palavra?
+                all_words.append(data[i][0][n])
+                all_words.append(data[i][0][n])
+            else:
                 all_words.append(data[i][0][n])
             n += 1
         i += 1
@@ -269,7 +288,7 @@ def trata_tf_tf_idf(base, porc_traing):
         j = 0
         while(j<t_all_word):#percorre as character que está no contexto
             if(data_documents[i][j]!=0):
-                w[j] = tf_idf(data_documents[i][j],len(data[i][0]),words_all_number[j],sum_palavra)
+                w[j] = tf_idf(data_documents[i][j],len(data[i][0]),words_all_number[j],sum_words)
             j+=1
         # print(len(w))
         data_number.append(w)
@@ -290,8 +309,11 @@ def trata_tf_3(base,porc_traing):
     data = []
 
     # random.shuffle(base)
-
+    # C:\Users\User\PycharmProjects\pcc\word2vec-pt-br-master\exemplo\skip_s50.txt
+    w2v = gensim.models.KeyedVectors.load_word2vec_format("word2vec-pt-br-master/exemplo/skip_s50.txt")
     tknzr = nltk.tokenize.TweetTokenizer()
+
+
 
     i = len(base) - 1
 
@@ -300,6 +322,27 @@ def trata_tf_3(base,porc_traing):
             remocaopontos(tknzr.tokenize(base[i][0])),
             numpy.int64(base[i][1])-1])
         i -= 1
+
+
+    i = 0
+
+    # word to vector
+    dataset =[]
+    
+    for opinion_class in data:
+        dataset.append([[],0])
+        for word in opinion_class[0]:
+            try:
+                similiar_word = w2v.most_similar(word, topn=10)
+                j = 0
+                for words,freq in similiar_word:
+                    dataset[i][0].append(words)
+            except Exception:
+                pass
+        i+=1
+    print(dataset)
+    exit()
+    print(dataset[50][0])
 
     k = 0
     l = len(data)

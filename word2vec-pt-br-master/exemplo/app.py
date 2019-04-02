@@ -22,9 +22,13 @@ class DummyModel(object):
             return True
         return qualquer_coisa
 
-model = DummyModel()
+# model = DummyModel()
 
-model = gensim.models.KeyedVectors.load_word2vec_format("wiki.pt.trigram.vector", binary=True)
+# model = gensim.models.KeyedVectors.load_word2vec_format("wiki.pt.trigram.vector", binary=True)
+model = gensim.models.KeyedVectors.load_word2vec_format("skip_s50.txt")
+
+# sent_similiar = lambda x: w2v[x] if x in w2v.vocab() else x
+
 
 @app.route('/', methods=['GET'])
 def index():
@@ -128,6 +132,9 @@ def hello():
 
     if request.args.get('graph'):
         similares = model.most_similar(request.args.get('graph'), topn=10)
+
+        print('aqui')
+        print(similares)
         data_array = []
 
         if request.args.get('type') is "Global":

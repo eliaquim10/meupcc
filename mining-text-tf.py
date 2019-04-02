@@ -27,6 +27,7 @@ import math
 from tensorflow import keras
 from Util import readBase,trata_tf_palavra,trata_tf_tf_idf,trata_tf_3
 import time
+
 print(tf.__version__)
 
 # gpu =  tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
@@ -40,6 +41,9 @@ print(tf.__version__)
 
 # NAME = "test1-{}".format(int(time.time()))
 # tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
+# c = [1,2,3]
+# c.
+# model.most_similar(, topn=10)
 
 
 # A dictionary mapping words to an integer index
