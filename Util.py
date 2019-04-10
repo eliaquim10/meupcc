@@ -5,7 +5,7 @@ import random
 import nltk
 import numpy
 import math
-import gensim
+
 
 def readBase(csvFile = str):
     base = []
@@ -118,93 +118,133 @@ def trata(base,porc_traing):
     return (train_data,train_labels),(test_data, test_labels)
 
 def trata_tf_palavra(base, porc_traing):
+    b_w2v = True
+    if(b_w2v):
+        import gensim
+        w2v = gensim.models.KeyedVectors.load_word2vec_format("word2vec-pt-br-master/exemplo/skip_s50-1.txt")
+    # montar base baseado se tem a palavra/character , com a sequencia
     data = []
-
-    random.shuffle(base)
+    # random.shuffle(base)
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
-    i = len(base) - 1
-
+    # i = len(base) - 1
+    i = 300
+    #tokenização e remoção de pontuação
     while (i>=0):
-        data.append([
-            remocaopontos(tknzr.tokenize(base[i][0])),
-            numpy.int64(base[i][1])-1])
+        data.append([remocaopontos(tknzr.tokenize(base[i][0])), numpy.int64(base[i][1])-1])
         i -= 1
 
-    k = 0
-    l = len(data)
-    all_words = []
-    frenq_word_doc = []
-    while (k < l):# olha cada op
-        m = len(data[k][0])
+    # pegar todas as palavras
+    i = 0
+    len_data = len(data)
+    all_words = {}
+    while (i < len_data):# olha cada op
+        m = len(data[i][0])
         n = 0
         while (n < m):# olha cada palavra da op
-            entrou = 1
-            resul = palavra_contexto(data[k][0][n],all_words)
-            if(resul!=None):# Tem a palavra? none-que nao tem no dic
-                all_words[resul][1] +=1
+            if(data[i][0][n] not in all_words):# Tem a palavra?
+                all_words[data[i][0][n]] = 1
             else:
-                all_words.append([data[k][0][n],1])
-
-            resul = palavra_contexto(data[k][0][n],frenq_word_doc)
-            if(resul!=None):# Tem a palavra? none-que nao tem na op
-                frenq_word_doc[resul][1] +=1
-            else:
-                frenq_word_doc.append([data[k][0][n],1])
+                all_words[data[i][0][n]] += 1
             n += 1
-        k += 1
+        i += 1
 
-    # print([(all_words[i],all_words_f[i])for i in range(len(all_words)) if (all_words_f[i]>50)])
-    # print(all_words_f)
+    i = 0
+    # distancia de palavra com no maximo 5
+    data_documents =[]
+    while (i < len_data):#percorre as palavras da linha
 
-    # random.shuffle(all_words)
+        words=[]
+        for word in all_words:
+            # number = 5 - contar_palavra_doc(data[i][0], word)
+            number = 10
+            # if(number>=2):
+            try:
+                similiar_words = w2v.most_similar(word, topn=number)
 
-    k = 0
-    l = len(data)
+                words.append(word)
+                # print(similiar_words)
+                for similiar_word,freq in similiar_words:
+                    if(freq>0.9):
+                        words.append(similiar_word)
+                    else:
+                        break
+            except Exception:
+                words.append(word)
+            # else:
+            #     words.append(word)
+        data_documents.append(words.copy())
+        print(' - ' + str(i))
+        i+=1
+
+    # pega todas as palavras
+    i = 0
+    sum_words = 0
+    len_data = len(data_documents)
+    all_words = {}
+    while (i < len_data):# olha cada op
+        m = len(data_documents[i])
+        sum_words += m
+        n = 0
+        while (n < m):# olha cada palavra da op
+            if(data_documents[i][n] not in all_words):# Tem a palavra?
+                all_words[data_documents[i][n]] = 1
+            else:
+                all_words[data_documents[i][n]] += 1
+            n += 1
+        i += 1
+
+    len_all_word = len(all_words)
+    data_documents_numbers =[]
+    while (i < len_data):#percorre as palavras da linha
+
+        words=[]
+        for word in all_words:
+            words.append(contar_palavra_doc(data_documents[i], word))
+        data_documents_numbers.append(words.copy())
+        i+=1
+
+
+
+    words_all_number = []
+    for p,q in all_words.items():
+        words_all_number.append(q)
+
+    i=0
     data_number =[]
     data_labels =[]
-
-    tam = 0
-    for w in data:
-        tam+=len(w[0])
-    maxlen=0
-    t = len(all_words)
-    while (k < l):#percore as linhas
-        m = len(data[k][0])
+    while (i < len_data):#percore as linhas
         w =[]
         j = 0
-        entrou = 1
-        while(j<t):#percorre as palavras que está no contexto
-            n = 0
-            while (n < m):#percorre as palavras da linha
-                if (all_words[j][0] == data[k][0][n]):
-                    tfidf = tf_idf(frenq_word_doc[n][1],m,all_words[j][1],tam)
-                    w.append(tfidf)
-                    # w.append(frenq_word_doc[n][1]/m)
-                    entrou = 0
-                n += 1
-            if(entrou):
+        while(j<len_all_word):#percorre as character que está no contexto
+            if(data_documents_numbers[i][j]!=0):
+                w.append(
+                    tf_idf(data_documents_numbers[i][j],len(data[i][0]),words_all_number[j],sum_words))
+            else:
                 w.append(0)
             j+=1
+        # print(len(w))
         data_number.append(w)
-        data_labels.append(data[k][1])
-        k += 1
+        data_labels.append(data[i][1])
+        i += 1
+
+    train_data = data_number[0:int(len_data*porc_traing)]
+    test_data = data_number[int(len_data*porc_traing):]
 
 
-    train_data = data_number[0:int(l*porc_traing)]
-    test_data = data_number[int(l*porc_traing):]
-
-    # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
-    train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
-    test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
+    train_labels = np.array(data_labels[0:int(len_data*porc_traing)], dtype=np.int64)
+    test_labels = np.array(data_labels[int(len_data*porc_traing):], dtype=np.int64)
 
     return (train_data,train_labels),(test_data, test_labels)
 
 def trata_tf_tf_idf(base, porc_traing):
+    b_w2v = True
+    if(b_w2v):
+        import gensim
+        w2v = gensim.models.KeyedVectors.load_word2vec_format("word2vec-pt-br-master/exemplo/skip_s50-1.txt")
     # montar base baseado se tem a palavra/character , com a sequencia
     data = []
-    w2v = gensim.models.KeyedVectors.load_word2vec_format("skip_s50.txt")
     # random.shuffle(base)
 
     tknzr = nltk.tokenize.TweetTokenizer()
@@ -215,78 +255,78 @@ def trata_tf_tf_idf(base, porc_traing):
         data.append([remocaopontos(tknzr.tokenize(base[i][0])), numpy.int64(base[i][1])-1])
         i -= 1
 
+    if(b_w2v):
+        i = 0
+        dataset = []
+        # word to vector
+        for opinion_class in data:
+            dataset.append([[],opinion_class[1]])
+            for word in opinion_class[0]:
+                try:
+                    similiar_words = w2v.most_similar(word, topn=5)
 
-    i = 0
+                    dataset[i][0].append(word)
+                    dataset[i][0] += list(similiar_words.keys())
 
-    # word to vector
-    dataset =[[]*(len(base)),0]
-    for opinion_class in data:
-        for word in opinion_class[0]:
-            try:
-                similiar_word = w2v.most_similar(word, topn=10)
-                j = 0
-                while(j<len(similiar_word)):
-                    dataset[i][0].append(similiar_word[j])
-            except Exception:
-                pass
-        i+=1
-    print(dataset[0])
-    print(dataset[50])
-    exit()
+                    # for similiar_word,freq in similiar_words:
+                    #     dataset[i][0].append(similiar_word)
+                except Exception:
+                    dataset[i][0].append(word)
+            i+=1
+        data = dataset.copy()
 
     i = 0
     sum_words = 0
-    l = len(data)
+    len_data = len(data)
     all_words = {}
-    while (i < l):# olha cada op
+    while (i < len_data):# olha cada op
         sum_words += len(base[i][0])
         m = len(data[i][0])
         n = 0
         while (n < m):# olha cada palavra da op
-            resul = palavra_contexto(data[i][0][n],all_words)
             if(data[i][0][n] not in all_words):# Tem a palavra?
-                all_words.append(data[i][0][n])
-                all_words.append(data[i][0][n])
+                all_words[data[i][0][n]] = 1
             else:
-                all_words.append(data[i][0][n])
+                all_words[data[i][0][n]] += 1
             n += 1
         i += 1
 
-
-    # print([(all_words[i],all_words_f[i])for i in range(len(all_words)) if (all_words_f[i]>50)])
-    # print(all_words_f)
+    # for p,q in all_words.items():
+    #     try:
+    #         print(p,' - ', q)
+    #     except Exception:
+    #         pass
+    # exit()
 
     # random.shuffle(all_words)
     i = 0
 
-    t_all_word = len(all_words)
+    len_all_word = len(all_words)
     data_documents =[]
-    while (i < l):#percorre as palavras da linha
+    while (i < len_data):#percorre as palavras da linha
 
-        w=[0]*t_all_word
+        w=[0]*len_all_word
         j=0
-        while(j<t_all_word): #percore todas as palavras do dicionario
+        for word in all_words:
             if(w[j]==0):
-                w[j] = contar_palavra_doc(data[i][0], all_words[j])
+                w[j] = contar_palavra_doc(data[i][0], word)
             j+=1
-        data_documents.append(w)
+        data_documents.append(w.copy())
         i+=1
 
-    i = 0
-    words_all_number = [0]*t_all_word
-    while(i<t_all_word):#quantidade por palavra
-        if(words_all_number[i]==0):
-            words_all_number[i] = contar_palvra(data, all_words[i])
-        i+=1
+
+    words_all_number = []
+    for p,q in all_words.items():
+        words_all_number.append(q)
 
     i=0
     data_number =[]
     data_labels =[]
-    while (i < l):#percore as linhas
+    while (i < len_data):#percore as linhas
         m = len(data[i][0])
-        w =[0]*t_all_word
+        w =[0]*len_all_word
         j = 0
-        while(j<t_all_word):#percorre as character que está no contexto
+        while(j<len_all_word):#percorre as character que está no contexto
             if(data_documents[i][j]!=0):
                 w[j] = tf_idf(data_documents[i][j],len(data[i][0]),words_all_number[j],sum_words)
             j+=1
@@ -295,16 +335,23 @@ def trata_tf_tf_idf(base, porc_traing):
         data_labels.append(data[i][1])
         i += 1
 
-    train_data = data_number[0:int(l*porc_traing)]
-    test_data = data_number[int(l*porc_traing):]
+    train_data = data_number[0:int(len_data*porc_traing)]
+    test_data = data_number[int(len_data*porc_traing):]
+
+    # print(len(train_data[0]))
+    # print(len([ x for x in train_data[0] if x > 0 ]))
+    # print(len(train_data[1]))
+    # print(len([ x for x in train_data[1] if x > 0 ]))
+    # exit()
 
     # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
-    train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
-    test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
+    train_labels = np.array(data_labels[0:int(len_data*porc_traing)], dtype=np.int64)
+    test_labels = np.array(data_labels[int(len_data*porc_traing):], dtype=np.int64)
 
     return (train_data,train_labels),(test_data, test_labels)
 
 def trata_tf_3(base,porc_traing):
+    import gensim
     # montar base baseado se tem a palavra/character , não a sequencia
     data = []
 

@@ -36,22 +36,23 @@ print(tf.__version__)
 # imdb = keras.datasets.imdb
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
-
-(train_data, train_labels), (test_data, test_labels) = trata_tf_3(readBase('colecao_dourada_2_class_unbalanced.csv'), 0.5)
+dir = 'data_set\colecao_dourada_2_class_unbalanced.csv'
+(train_data, train_labels), (test_data, test_labels) = trata_tf_tf_idf(readBase(dir), 0.5)
 
 # NAME = "test1-{}".format(int(time.time()))
 # tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
-# c = [1,2,3]
-# c.
-# model.most_similar(, topn=10)
+
 
 
 # A dictionary mapping words to an integer index
-vocab_size = 10000
-# vocab_size = 2267
-# vocab_size = 59200
-# vocab_size = 822577
-
+# print(len(train_data[0]))
+# exit()
+vocab_size = len(train_data[0])
+# vocab_size = 10000
+# # vocab_size = 2267
+# # vocab_size = 59200
+# # vocab_size = 822577
+#
 train_data = keras.preprocessing.sequence.pad_sequences(train_data,
                                                         value=0,
                                                         padding='post',
@@ -92,7 +93,7 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
               metrics=['accuracy'])
 
 # limit = vocab_size
-limit = 100
+limit = 200
 x_val = train_data[:limit]
 partial_x_train = train_data[limit:]
 
@@ -101,7 +102,7 @@ y_val = train_labels[:limit]
 partial_y_train = train_labels[limit:]
 
 
-sess = tf.Session()
+# sess = tf.Session()
 history = model.fit(partial_x_train,
                     partial_y_train,
                     epochs=30,
@@ -109,23 +110,23 @@ history = model.fit(partial_x_train,
                     validation_data=(x_val, y_val),
                     verbose=1)
 
-
 # sess
 results = model.evaluate(test_data, test_labels)
 
 
 # model.save('epic_num_reader.model')
 # new_model = keras.models.load_model('epic_num_reader.model')
-# predictions = model.predict(test_data)
-test = tf.metrics.Accuracy()
-print(test(1,1))
-exit()
+predictions = model.predict(test_data)
 # print(predictions)
 
-import numpy as np
-for w in predictions:
-    print(w)
-exit()
+path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
+with open(path,mode='w', encoding='utf-8') as csv_file:
+    #writer = csv.writer(csv_file)
+    for w in predictions:
+        csv_file.writelines(str(w)+'\n')
+
+# for w in predictions:
+#     print(w)
 # exit()
 # with tf.Session() as sess:
 #     results = sess.run(history)
