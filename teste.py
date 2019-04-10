@@ -43,15 +43,15 @@ def readBase2(csvFile = str):
     base = []
     i= False
     j=0
-    with open(csvFile, newline='\n',encoding='utf-8') as csvFile:
+    with open(csvFile, newline='\n',encoding='windows-1252') as csvFile:
 
         spamreader = csv.reader(csvFile, delimiter=';', quotechar='|')
 
         for row in spamreader:
             try:
                 if(i):
-                    temp = int(row[0])
-                    base.append(temp)
+                    # temp = int(row[0])
+                    base.append(row[0])
                     # print(j)
                     j+=1
                 else:
@@ -61,11 +61,16 @@ def readBase2(csvFile = str):
                 pass
     return base
 
-def writes(path,base):
+def writes(path,base1,base2):
+    i = 501
     with open(path,mode='w', encoding='utf-8') as csv_file:
         #writer = csv.writer(csv_file)
-        for w in base:
-            csv_file.writelines(w[0]+';'+w[1]+'\n')
+        for w in base1:
+            csv_file.writelines(str(i)+';'+w[0]+';'+w[1:]+'\n')
+            i+=1
+        for w in base2:
+            csv_file.writelines(str(i)+';'+w[0]+';'+w[1:]+'\n')
+            i+=1
 
 def coluna(base, c =int):
     column = []
@@ -105,19 +110,11 @@ def mostra_graficos(bases,paths):
         mostra_grafico(bases[i],paths[i])
         i+=1
 
-def bases(paths,grafico):
-    if(grafico):
-        base1 = readBase1(paths[0])
-        base2 = readBase1(paths[1])
-        base3 = readBase1(paths[2])
-        base4 = readBase1(paths[3])
-    else:
-        base1 = readBase2(paths[0])
-        base2 = readBase2(paths[1])
-        base3 = readBase2(paths[2])
-        base4 = readBase2(paths[3])
+def bases(paths,dir):
+    base1 = readBase2(dir + paths[0])
+    base2 = readBase2(dir + paths[1])
+    return base1 ,base2
 
-    return base1 ,base2 ,base3 ,base4
 def helper(base1,base2):
     b1 = []
     b2 = []
@@ -131,26 +128,18 @@ def helper(base1,base2):
         i+=1
     return b1,b2
 
-paths = ['data_set\data_base_d_q_1000.csv',
-         'data_set\data_base_s_1000.csv',
-         'data_set\data_base_v_a_2000.csv',
-         'data_set\data_base_v_o_2000_1.csv']
+dir = 'data_set/'
+paths = ['data_base_d_s_1000.csv',
+         'data_base_v_v_2000.csv']
 
-base1 ,base2 ,base3 ,base4 = bases(paths,False)
+base1 ,base2 = bases(paths,dir)
 
-base1,base2 = helper(base1,base2)
-base3,base4 = helper(base3,base4)
-print('meninas')
-print(len(base1))
-print('meninos')
-print(len(base3))
-print('\n')
+# exit()
+writes(dir+'teste_'+paths[0],base1,base2)
+
+
+
 # print(base3)
-
-kappa_meninas = metricas.cohen_kappa_score(base1,base2)
-print(kappa_meninas)
-kappa_meninos = metricas.cohen_kappa_score(base3,base4)
-print(kappa_meninos)
 
 
 # mostra_graficos([base1 ,base2 ,base3 ,base4],paths)

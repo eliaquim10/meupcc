@@ -25,7 +25,7 @@ class DummyModel(object):
 # model = DummyModel()
 
 # model = gensim.models.KeyedVectors.load_word2vec_format("wiki.pt.trigram.vector", binary=True)
-model = gensim.models.KeyedVectors.load_word2vec_format("skip_s50.txt")
+model = gensim.models.KeyedVectors.load_word2vec_format("skip_s50-1.txt")
 
 # sent_similiar = lambda x: w2v[x] if x in w2v.vocab() else x
 
@@ -84,6 +84,7 @@ def hello():
 
         if array_words[1] == '-':
             similares = model.most_similar(negative=[array_words[0], array_words[2]])
+            # similares.
             data_array = []
 
             number_nearest_words = len(similares)

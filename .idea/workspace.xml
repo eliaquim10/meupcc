@@ -4,6 +4,13 @@
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_d_q_1000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_g_3000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_j_3000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_s_1000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_v_a_2000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_v_o_2000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_set/data_base_v_o_2000_1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" afterDir="false" />
@@ -63,19 +70,55 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="71" />
+            <state relative-caret-position="45">
+              <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="58" />
+              <folding>
+                <element signature="e#1142#1165#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+        <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="-3774" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5287">
+              <caret line="346" column="52" selection-start-line="346" selection-start-column="46" selection-end-line="346" selection-end-column="52" />
               <folding>
-                <element signature="e#1142#1165#0" expanded="true" />
+                <element signature="e#55166#57139#0" />
+                <element signature="e#57637#64706#1" />
+                <element signature="e#64922#65462#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3553">
+              <caret line="313" column="39" lean-forward="true" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
+              <folding>
+                <element signature="e#24#34#0" expanded="true" />
+                <element signature="e#140#896#0" />
+                <element signature="e#929#1142#0" />
+                <element signature="e#1177#2993#0" />
               </folding>
             </state>
           </provider>
@@ -84,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2108">
-              <caret line="126" column="28" selection-start-line="128" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+            <state relative-caret-position="266">
+              <caret line="72" column="16" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="72" selection-end-column="16" />
               <folding>
                 <element signature="e#570#580#0" expanded="true" />
               </folding>
@@ -94,34 +137,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
+        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/poincare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="139" selection-start-line="139" selection-end-line="139" />
-              <folding>
-                <element signature="e#1142#1165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="233" column="21" selection-start-line="233" selection-start-column="21" selection-end-line="233" selection-end-column="21" />
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/keyedvectors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="337" selection-start-line="337" selection-end-line="337" />
+            <state relative-caret-position="18207">
+              <caret line="1086" column="8" selection-start-line="1086" selection-start-column="8" selection-end-line="1086" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -137,18 +156,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sigm</find>
-      <find>gru</find>
-      <find>gpu</find>
-      <find>_learning_rate</find>
-      <find>learning_rate</find>
       <find>exp</find>
       <find>metrics</find>
       <find>;</find>
       <find>Perdemos não</find>
       <find>vanderson oliveira;Sim;CADA UM</find>
       <find>vamos conhecer antes de criticar.</find>
-      <find>print</find>
       <find>Babaca</find>
       <find>Dubai talvez seja</find>
       <find>quantas</find>
@@ -167,6 +180,12 @@
       <find>ffl</find>
       <find>model</find>
       <find>model.</find>
+      <find>words</find>
+      <find>voca</find>
+      <find>print</find>
+      <find>vocab_size</find>
+      <find>accura</find>
+      <find>exit</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -265,15 +284,16 @@
         <option value="$PROJECT_DIR$/data_set/data_base_v_o_2000_1.csv" />
         <option value="$PROJECT_DIR$/mining-text-tf-base.py" />
         <option value="$PROJECT_DIR$/teste.py" />
+        <option value="$PROJECT_DIR$/data_set/colecao_dourada_2_class_unbalanced.csv" />
         <option value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" />
-        <option value="$PROJECT_DIR$/mining-text-tf.py" />
         <option value="$PROJECT_DIR$/Util.py" />
+        <option value="$PROJECT_DIR$/mining-text-tf.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="229" />
+    <option name="y" value="-17" />
     <option name="width" value="1040" />
     <option name="height" value="784" />
   </component>
@@ -306,13 +326,7 @@
             <path>
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="word2vec-pt-br-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="word2vec-pt-br-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="exemplo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="plots" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -477,9 +491,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.mining-text-tf" />
-        <item itemvalue="Python.Util" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.teste" />
+        <item itemvalue="Python.Util" />
         <item itemvalue="Python.mining-text-tf-base" />
       </list>
     </recent_temporary>
@@ -557,7 +571,21 @@
       <workItem from="1554138349494" duration="3587000" />
       <workItem from="1554146415743" duration="2009000" />
       <workItem from="1554240709720" duration="2392000" />
-      <workItem from="1554244508391" duration="1990000" />
+      <workItem from="1554244508391" duration="6691000" />
+      <workItem from="1554260632132" duration="7274000" />
+      <workItem from="1554298942498" duration="592000" />
+      <workItem from="1554301187487" duration="3219000" />
+      <workItem from="1554310400848" duration="2271000" />
+      <workItem from="1554314506109" duration="1229000" />
+      <workItem from="1554319466124" duration="158000" />
+      <workItem from="1554320801855" duration="1950000" />
+      <workItem from="1554324172213" duration="998000" />
+      <workItem from="1554328250053" duration="2972000" />
+      <workItem from="1554843809759" duration="10068000" />
+      <workItem from="1554856611119" duration="353000" />
+      <workItem from="1554864907238" duration="2188000" />
+      <workItem from="1554913838960" duration="3783000" />
+      <workItem from="1554917876882" duration="2512000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <created>1545396864139</created>
@@ -860,11 +888,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553712227353</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="1.1 v&#10;Aumento da base">
+      <created>1554246599081</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1554246599081</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211800000" />
+    <option name="totallyTimeSpent" value="256068000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -879,20 +914,20 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49388754" visible="true" weight="0.2655068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49388754" visible="true" weight="0.14977308" />
       <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info id="Favorites" order="2" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5824508" weight="0.2667758" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5816944" visible="true" weight="0.2913257" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969743" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4969743" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.41754916" side_tool="true" weight="0.2667758" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969743" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4183056" side_tool="true" weight="0.2667758" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49621785" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" weight="0.32569557" />
       <window_info anchor="bottom" id="SVN Repositories" order="13" sideWeight="0.49924356" weight="0.3295082" />
@@ -900,7 +935,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.33963692" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.33963692" />
       <window_info anchor="right" id="Database" order="4" weight="0.3290469" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.3290469" />
       <window_info anchor="right" id="R Graphics" order="6" />
@@ -983,7 +1018,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mining-text-tf.py</url>
-          <line>136</line>
+          <line>137</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -996,19 +1031,14 @@
           <line>46</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Util.py</url>
-          <line>328</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1554141274542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
     <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1554242312304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1554245705794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1553716112798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1554917976205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1554918574210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1554303283081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
@@ -1025,40 +1055,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data_base-silvia-1000.csv" />
-    <entry file="file://$PROJECT_DIR$/colecao_dourada_2_class_unbalanced.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="306">
-          <caret line="38" column="145" selection-start-line="38" selection-start-column="145" selection-end-line="38" selection-end-column="145" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/data_base-vinicius-a-2000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="49" selection-end-line="1001" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv" />
-    <entry file="file://$PROJECT_DIR$/data_set/data_base.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="115">
-          <caret line="167" column="37" selection-start-line="167" selection-start-column="30" selection-end-line="167" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv" />
-    <entry file="file://$PROJECT_DIR$/data_set/data_base-dilva-1000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base_d_1000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base-1.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
@@ -1070,16 +1066,7 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_g_3000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="342">
-          <caret line="992" column="53" selection-start-line="992" selection-start-column="53" selection-end-line="992" selection-end-column="53" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_g_3000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base_d_m_3000.csv" />
     <entry file="file://$PROJECT_DIR$/Codigos/Util.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1109,16 +1096,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_q_1000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret selection-end-column="17" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_q_1000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/Eliaquim.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-16746">
@@ -1129,36 +1107,9 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_o_2000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="238">
-          <caret line="323" column="37" selection-start-line="323" selection-start-column="37" selection-end-line="323" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_a_2000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="68">
-          <caret line="978" column="3" lean-forward="true" selection-start-line="978" selection-start-column="3" selection-end-line="978" selection-end-column="3" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_o_2000_1.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="68">
-          <caret line="978" column="3" lean-forward="true" selection-start-line="978" selection-start-column="3" selection-end-line="978" selection-end-column="3" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_o_2000.csv" />
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_a_2000.csv" />
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_o_2000_1.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/pcc.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="1190">
@@ -1169,16 +1120,7 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_s_1000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="325">
-          <caret line="924" column="1" selection-start-line="924" selection-start-column="1" selection-end-line="924" selection-end-column="1" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_s_1000.csv" />
     <entry file="file://$PROJECT_DIR$/epic_num_reader.model">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75326" />
@@ -1237,13 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="300" selection-start-line="300" selection-end-line="300" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="319" selection-start-line="319" selection-end-line="319" />
         </state>
       </provider>
     </entry>
@@ -1321,45 +1256,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="1736" column="41" selection-start-line="1736" selection-start-column="41" selection-end-line="1736" selection-end-column="41" />
-          <folding>
-            <element signature="e#55166#57139#0" />
-            <element signature="e#57637#70679#0" />
-            <element signature="e#57637#64706#1" />
-            <element signature="e#64922#65462#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="126" column="28" selection-start-line="128" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
-          <folding>
-            <element signature="e#570#580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-          <folding>
-            <element signature="e#1142#1165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/keyedvectors.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1368,22 +1266,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="106">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_s_1000.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/teste_data_base_d_s_1000.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="46" selection-end-line="496" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_set/colecao_dourada_2_class_unbalanced.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="364">
+          <caret line="815" selection-start-line="815" selection-end-line="815" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5287">
+          <caret line="346" column="52" selection-start-line="346" selection-start-column="46" selection-end-line="346" selection-end-column="52" />
+          <folding>
+            <element signature="e#55166#57139#0" />
+            <element signature="e#57637#64706#1" />
+            <element signature="e#64922#65462#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/poincare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18207">
+          <caret line="1086" column="8" selection-start-line="1086" selection-start-column="8" selection-end-line="1086" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="72" column="16" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="72" selection-end-column="16" />
+          <folding>
+            <element signature="e#570#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="233" column="21" selection-start-line="233" selection-start-column="21" selection-end-line="233" selection-end-column="21" />
+        <state relative-caret-position="3553">
+          <caret line="313" column="39" lean-forward="true" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#140#896#0" />
+            <element signature="e#929#1142#0" />
+            <element signature="e#1177#2993#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/eu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3774" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="58" />
+          <folding>
+            <element signature="e#1142#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>
