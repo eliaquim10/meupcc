@@ -128,8 +128,8 @@ def trata_tf_palavra(base, porc_traing):
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
-    # i = len(base) - 1
-    i = 300
+    i = len(base) - 1
+    # i = 5
     #tokenização e remoção de pontuação
     while (i>=0):
         data.append([remocaopontos(tknzr.tokenize(base[i][0])), numpy.int64(base[i][1])-1])
@@ -156,22 +156,21 @@ def trata_tf_palavra(base, porc_traing):
     while (i < len_data):#percorre as palavras da linha
 
         words=[]
-        for word in all_words:
+        for word in data[i][0]:
             # number = 5 - contar_palavra_doc(data[i][0], word)
-            number = 10
+            number = 5
             # if(number>=2):
+            words.append(word)
             try:
                 similiar_words = w2v.most_similar(word, topn=number)
 
-                words.append(word)
-                # print(similiar_words)
                 for similiar_word,freq in similiar_words:
                     if(freq>0.9):
                         words.append(similiar_word)
                     else:
                         break
             except Exception:
-                words.append(word)
+                pass
             # else:
             #     words.append(word)
         data_documents.append(words.copy())
@@ -196,15 +195,15 @@ def trata_tf_palavra(base, porc_traing):
         i += 1
 
     len_all_word = len(all_words)
+    i=0
     data_documents_numbers =[]
     while (i < len_data):#percorre as palavras da linha
 
-        words=[]
+        words={}
         for word in all_words:
-            words.append(contar_palavra_doc(data_documents[i], word))
-        data_documents_numbers.append(words.copy())
+            words[word] = contar_palavra_doc(data_documents[i], word)
+        data_documents_numbers.append(list(words.values()))
         i+=1
-
 
 
     words_all_number = []
