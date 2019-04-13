@@ -23,10 +23,10 @@
 
 import tensorflow as tf
 # import random
-import math
+# import math
 from tensorflow import keras
 from Util import readBase,trata_tf_palavra,trata_tf_tf_idf,trata_tf_3
-import time
+# import time
 
 print(tf.__version__)
 
@@ -37,7 +37,7 @@ print(tf.__version__)
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 dir = 'data_set\colecao_dourada_2_class_unbalanced.csv'
-(train_data, train_labels), (test_data, test_labels) = trata_tf_tf_idf(readBase(dir), 0.5)
+(train_data, train_labels), (test_data, test_labels) = trata_tf_palavra(readBase(dir), 0.75)
 
 # NAME = "test1-{}".format(int(time.time()))
 # tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
@@ -73,16 +73,25 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 
 # input shape is the vocabulary count used for the movie reviews (10,000 words)np
 # vocab_size = 2282
-
+n =64
 model = keras.Sequential()
-model.add(keras.layers.Embedding(vocab_size, 64))
+model.add(keras.layers.Embedding(vocab_size, n))
 model.add(keras.layers.GlobalAveragePooling1D())
 
 # model.add(keras.layers.LSTM(32,recurrent_activation='softmax'))
 model.add(keras.layers.Flatten())
-model.add(keras.layers.Dense(32, activation=tf.nn.relu6))
-model.add(keras.layers.Dense(16, activation=tf.nn.sigmoid))
-model.add(keras.layers.Dense(1, activation=tf.nn.softmax))
+n /=2
+model.add(keras.layers.Dense(n, activation=tf.nn.log_softmax))
+n /=2
+model.add(keras.layers.Dense(n, activation=tf.nn.relu6))
+n /=2
+model.add(keras.layers.Dense(n, activation=tf.nn.sigmoid))
+# n /=2
+#
+# n /=2
+# model.add(keras.layers.Dense(1, activation=tf.nn.log_softmax))
+model.add(keras.layers.Dense(1, activation=tf.nn.relu))
+# model.add(keras.layers.Dense(1, activation=tf.nn.softmax))
 
 model.summary()
 
@@ -93,7 +102,7 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
               metrics=['accuracy'])
 
 # limit = vocab_size
-limit = 200
+limit = 100
 x_val = train_data[:limit]
 partial_x_train = train_data[limit:]
 

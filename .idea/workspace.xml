@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
+      <change afterPath="$PROJECT_DIR$/plots/result-1-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/result-1-2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_d_q_1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_g_3000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_j_3000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_s_1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_v_a_2000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_v_o_2000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/data_base_v_o_2000_1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,19 +61,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="58" />
+            <state relative-caret-position="-23">
+              <caret line="85" column="27" lean-forward="true" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -89,9 +73,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/result-1-2.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3774" />
+            <state relative-caret-position="221">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/result-1-1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -109,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3553">
-              <caret line="313" column="39" lean-forward="true" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
+            <state relative-caret-position="136">
+              <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
                 <element signature="e#140#896#0" />
@@ -127,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="72" column="16" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="72" selection-end-column="16" />
+            <state relative-caret-position="1190">
+              <caret line="72" column="16" selection-start-line="65" selection-start-column="3" selection-end-line="72" selection-end-column="16" />
               <folding>
                 <element signature="e#570#580#0" expanded="true" />
               </folding>
@@ -242,6 +242,9 @@
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="eliaquim10" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="meupcc" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Util.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -286,8 +289,8 @@
         <option value="$PROJECT_DIR$/teste.py" />
         <option value="$PROJECT_DIR$/data_set/colecao_dourada_2_class_unbalanced.csv" />
         <option value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" />
-        <option value="$PROJECT_DIR$/Util.py" />
         <option value="$PROJECT_DIR$/mining-text-tf.py" />
+        <option value="$PROJECT_DIR$/Util.py" />
       </list>
     </option>
   </component>
@@ -326,7 +329,13 @@
             <path>
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="plots" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="word2vec-pt-br-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="word2vec-pt-br-master" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="exemplo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -344,18 +353,18 @@
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\PycharmProjects\pcc\log\test1-1553059382" />
-      <recent name="C:\Users\User\PycharmProjects\pcc\log" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\data_set" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e6" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
       <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
       <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\pcc\plots" />
+      <recent name="C:\Users\User\PycharmProjects\pcc\log\test1-1553059382" />
+      <recent name="C:\Users\User\PycharmProjects\pcc\log" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\data_set" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -491,9 +500,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.mining-text-tf" />
+        <item itemvalue="Python.Util" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.teste" />
-        <item itemvalue="Python.Util" />
         <item itemvalue="Python.mining-text-tf-base" />
       </list>
     </recent_temporary>
@@ -585,7 +594,10 @@
       <workItem from="1554856611119" duration="353000" />
       <workItem from="1554864907238" duration="2188000" />
       <workItem from="1554913838960" duration="3783000" />
-      <workItem from="1554917876882" duration="2512000" />
+      <workItem from="1554917876882" duration="6829000" />
+      <workItem from="1555096514080" duration="4703000" />
+      <workItem from="1555123625960" duration="8049000" />
+      <workItem from="1555161346143" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="1.01">
       <created>1545396864139</created>
@@ -895,11 +907,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554246599081</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="1.1 v&#10;Aumento da base">
+      <created>1554920519737</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1554920519737</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256068000" />
+    <option name="totallyTimeSpent" value="273381000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -914,7 +933,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49388754" visible="true" weight="0.14977308" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49388754" visible="true" weight="0.15658094" />
       <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info id="Favorites" order="2" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -935,7 +954,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.33963692" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.33963692" />
       <window_info anchor="right" id="Database" order="4" weight="0.3290469" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.3290469" />
       <window_info anchor="right" id="R Graphics" order="6" />
@@ -1018,7 +1037,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mining-text-tf.py</url>
-          <line>137</line>
+          <line>146</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1031,13 +1050,18 @@
           <line>46</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Util.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1554242312304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1554917976205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1554918574210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1555123158957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
+    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1555127292713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1555131955001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1554303283081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
@@ -1055,17 +1079,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_1000.csv" />
-    <entry file="file://$PROJECT_DIR$/data_set/data_base-1.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="12546">
-          <caret line="738" column="82" selection-start-line="738" selection-start-column="82" selection-end-line="738" selection-end-column="82" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_g_3000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base_d_m_3000.csv" />
     <entry file="file://$PROJECT_DIR$/Codigos/Util.py">
@@ -1098,26 +1111,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_d_q_1000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/Eliaquim.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-16746">
           <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_v_o_2000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base_v_a_2000.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/data_base_v_o_2000_1.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/pcc.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="1190">
           <caret line="70" column="120" selection-start-line="70" selection-start-column="120" selection-end-line="70" selection-end-column="120" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_s_1000.csv" />
@@ -1274,19 +1287,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_d_s_1000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/teste_data_base_d_s_1000.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="46" selection-end-line="496" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
@@ -1300,19 +1313,53 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/colecao_dourada_2_class_unbalanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="364">
           <caret line="815" selection-start-line="815" selection-end-line="815" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/eu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+        <state relative-caret-position="215">
+          <caret line="97" column="61" lean-forward="true" selection-start-line="97" selection-start-column="61" selection-end-line="97" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="85" column="27" lean-forward="true" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+          <folding>
+            <element signature="e#1142#1165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/result-1-2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/result-1-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1328,6 +1375,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/teste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="72" column="16" selection-start-line="65" selection-start-column="3" selection-end-line="72" selection-end-column="16" />
+          <folding>
+            <element signature="e#570#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/poincare.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18207">
@@ -1335,47 +1392,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="72" column="16" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="72" selection-end-column="16" />
-          <folding>
-            <element signature="e#570#580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3553">
-          <caret line="313" column="39" lean-forward="true" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
+        <state relative-caret-position="136">
+          <caret line="160" column="22" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
             <element signature="e#140#896#0" />
             <element signature="e#929#1142#0" />
             <element signature="e#1177#2993#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plots/eu.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3774" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="58" />
-          <folding>
-            <element signature="e#1142#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>
