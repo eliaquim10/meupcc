@@ -39,9 +39,9 @@ print(tf.__version__)
 dir = 'data_set\colecao_dourada_2_class_unbalanced.csv'
 (train_data, train_labels), (test_data, test_labels) = trata_tf_palavra(readBase(dir), 0.75)
 
+
 # NAME = "test1-{}".format(int(time.time()))
 # tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
-
 
 
 # A dictionary mapping words to an integer index
@@ -77,8 +77,8 @@ n =64
 model = keras.Sequential()
 model.add(keras.layers.Embedding(vocab_size, n))
 model.add(keras.layers.GlobalAveragePooling1D())
-
-# model.add(keras.layers.LSTM(32,recurrent_activation='softmax'))
+# n /=2
+# model.add(keras.layers.LSTM(n,recurrent_activation='softmax'))
 model.add(keras.layers.Flatten())
 n /=2
 model.add(keras.layers.Dense(n, activation=tf.nn.log_softmax))
@@ -102,43 +102,47 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
               metrics=['accuracy'])
 
 # limit = vocab_size
-limit = 100
-x_val = train_data[:limit]
-partial_x_train = train_data[limit:]
+# limit = 10
+# x_val = train_data[:limit]
+# partial_x_train = train_data[limit:]
+#
+#
+# y_val = train_labels[:limit]
+# partial_y_train = train_labels[limit:]
+
+with tf.Session() as sess:
+    # sess = tf.Session()
+    history = model.fit(train_data,
+                        train_labels,
+                        epochs=30,
+                        batch_size=1,
+                        validation_split =0.1,
+                        verbose=1)
+
+    # sess
+    results = model.evaluate(test_data, test_labels)
 
 
-y_val = train_labels[:limit]
-partial_y_train = train_labels[limit:]
+    # model.save('epic_num_reader.model')
+    # new_model = keras.models.load_model('epic_num_reader.model')
+    predictions = model.predict(test_data)
+    # print(predictions)
 
+    path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
+    with open(path,mode='w', encoding='utf-8') as csv_file:
+        #writer = csv.writer(csv_file)
+        for w in predictions:
+            csv_file.writelines(str(w)+'\n')
 
-# sess = tf.Session()
-history = model.fit(partial_x_train,
-                    partial_y_train,
-                    epochs=30,
-                    batch_size=1,
-                    validation_data=(x_val, y_val),
-                    verbose=1)
+    # for w in predictions:
+    #     print(w)
+    # exit()
+    # with tf.Session() as sess:
+    #     results = sess.run(history)
+    # s = sess.run(history)
+    # print('---')
+    # print(s)
 
-# sess
-results = model.evaluate(test_data, test_labels)
-
-
-# model.save('epic_num_reader.model')
-# new_model = keras.models.load_model('epic_num_reader.model')
-predictions = model.predict(test_data)
-# print(predictions)
-
-path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
-with open(path,mode='w', encoding='utf-8') as csv_file:
-    #writer = csv.writer(csv_file)
-    for w in predictions:
-        csv_file.writelines(str(w)+'\n')
-
-# for w in predictions:
-#     print(w)
-# exit()
-# with tf.Session() as sess:
-#     results = sess.run(history)
 
 
 print(results)

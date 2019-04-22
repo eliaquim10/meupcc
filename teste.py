@@ -43,19 +43,20 @@ def readBase2(csvFile = str):
     base = []
     i= False
     j=0
-    with open(csvFile, newline='\n',encoding='windows-1252') as csvFile:
-
+    with open(csvFile, newline='\n',encoding='utf-8') as csvFile:
+        # 'windows-1252'
         spamreader = csv.reader(csvFile, delimiter=';', quotechar='|')
 
         for row in spamreader:
             try:
-                if(i):
+                # if(i):
                     # temp = int(row[0])
-                    base.append(row[0])
+                # base.append(row[0])
+                base.append(int(row[0]))
                     # print(j)
-                    j+=1
-                else:
-                    i = True
+                j+=1
+                # else:
+                #     i = True
             except Exception:
                 print(j)
                 pass
@@ -128,14 +129,34 @@ def helper(base1,base2):
         i+=1
     return b1,b2
 
-dir = 'data_set/'
-paths = ['data_base_d_s_1000.csv',
-         'data_base_v_v_2000.csv']
+dir = 'data_set/per_person/'
+paths = ['data_base_d_q_1000.csv',
+         'data_base_s_1000.csv',
+         'data_base_v_a_2000.csv',
+         'data_base_v_o_2000.csv']
 
-base1 ,base2 = bases(paths,dir)
 
-# exit()
-writes(dir+'teste_'+paths[0],base1,base2)
+base1 = readBase2(dir+paths[0])
+base2 = readBase2(dir+paths[1])
+base3 = readBase2(dir+paths[2])
+base4 = readBase2(dir+paths[3])
+
+base1,base2 = helper(base1,base2)
+base3,base4 = helper(base3,base4)
+x_1 = metricas.cohen_kappa_score(base1,base2)
+x_2 = metricas.cohen_kappa_score(base3,base4)
+x_3 = 0.6046
+
+y = (x_1+x_2+x_3)/3
+
+print(x_1)
+print(x_2)
+print(y)
+
+# base1 ,base2 = bases(paths,dir)
+#
+# # exit()
+# writes(dir+'teste_'+paths[0],base1,base2)
 
 
 
