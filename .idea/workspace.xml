@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
-      <change afterPath="$PROJECT_DIR$/bib.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/test1-1553059382/acc_e_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/log/acc_e_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/result-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plots/result-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,11 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
-              <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+            <state relative-caret-position="332">
+              <caret line="68" column="30" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="68" selection-end-column="30" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -75,58 +73,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
+        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/layers/convolutional.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26112">
-              <caret line="1759" column="26" selection-start-line="1759" selection-start-column="26" selection-end-line="1759" selection-end-column="26" />
-              <folding>
-                <element signature="e#55166#57139#0" />
-                <element signature="e#57637#64706#1" />
-                <element signature="e#64922#65462#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="597" column="29" selection-start-line="597" selection-start-column="29" selection-end-line="597" selection-end-column="29" />
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-                <element signature="e#140#896#0" />
-                <element signature="e#929#1142#0" />
-                <element signature="e#1177#2993#0" />
-                <element signature="e#4337#7681#0" />
-                <element signature="e#7721#10458#0" />
-                <element signature="e#10520#10761#0" />
-                <element signature="e#10834#11200#0" />
-                <element signature="e#11240#11351#0" />
-                <element signature="e#11400#11490#0" />
-                <element signature="e#11532#11689#0" />
-                <element signature="e#11740#11795#0" />
-                <element signature="e#11826#12048#0" />
-                <element signature="e#12082#12334#0" />
-                <element signature="e#12362#12494#0" />
-                <element signature="e#12537#12647#0" />
-                <element signature="e#12673#13635#0" />
-                <element signature="e#13665#14090#0" />
-                <element signature="e#14197#14524#0" />
-                <element signature="e#14533#15835#0" />
-                <element signature="e#15716#15972#0" />
-              </folding>
+            <state relative-caret-position="4590">
+              <caret line="278" column="6" selection-start-line="278" selection-start-column="6" selection-end-line="278" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bib.py">
+        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="87" column="37" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="37" />
+            <state relative-caret-position="16337">
+              <caret line="996" column="26" selection-start-line="996" selection-start-column="26" selection-end-line="996" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="149" column="48" lean-forward="true" selection-start-line="149" selection-start-column="48" selection-end-line="149" selection-end-column="48" />
               <folding>
-                <element signature="e#2037#2103#0" expanded="true" />
+                <element signature="e#24#34#0" expanded="true" />
+                <element signature="e#140#896#0" />
+                <element signature="e#929#1142#0" />
+                <element signature="e#1177#2993#0" />
               </folding>
             </state>
           </provider>
@@ -143,7 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>vamos conhecer antes de criticar.</find>
       <find>Babaca</find>
       <find>Dubai talvez seja</find>
       <find>quantas</find>
@@ -173,6 +145,7 @@
       <find>rec</find>
       <find>print</find>
       <find>int6</find>
+      <find>-1</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -277,8 +250,8 @@
         <option value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" />
         <option value="$PROJECT_DIR$/teste.py" />
         <option value="$PROJECT_DIR$/bib.py" />
-        <option value="$PROJECT_DIR$/mining-text-tf.py" />
         <option value="$PROJECT_DIR$/Util.py" />
+        <option value="$PROJECT_DIR$/mining-text-tf.py" />
       </list>
     </option>
   </component>
@@ -296,6 +269,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pcc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -303,16 +287,10 @@
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="pcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pcc" type="462c0819:PsiDirectoryNode" />
+              <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="log" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -331,18 +309,19 @@
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\pcc\log" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
+      <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
+      <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\pcc\data_set\testes" />
       <recent name="C:\Users\User\PycharmProjects\pcc\plots" />
       <recent name="C:\Users\User\PycharmProjects\pcc\log\test1-1553059382" />
       <recent name="C:\Users\User\PycharmProjects\pcc\log" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\data_set" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
-      <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
-      <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -580,14 +559,10 @@
       <workItem from="1555468381327" duration="2091000" />
       <workItem from="1555518240083" duration="13408000" />
       <workItem from="1555538023593" duration="9199000" />
-      <workItem from="1555950409367" duration="5108000" />
-    </task>
-    <task id="LOCAL-00001" summary="1.01">
-      <created>1545396864139</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1545396864139</updated>
+      <workItem from="1555950409367" duration="7437000" />
+      <workItem from="1555958752308" duration="234000" />
+      <workItem from="1555960492143" duration="5181000" />
+      <workItem from="1555968353514" duration="2178000" />
     </task>
     <task id="LOCAL-00002" summary="1.01">
       <created>1545396930247</created>
@@ -925,11 +900,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555453410254</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="1.1 v&#10;Aumento da base">
+      <created>1555955592795</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1555955592796</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308656000" />
+    <option name="totallyTimeSpent" value="318578000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -944,7 +926,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.16792738" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.17473525" />
       <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info id="Favorites" order="2" sideWeight="0.50808316" side_tool="true" weight="0.1633888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1049,12 +1031,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mining-text-tf.py</url>
-          <line>150</line>
+          <line>149</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py</url>
-          <line>1640</line>
+          <line>881</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1074,7 +1056,7 @@
     <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1555123158957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
     <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1555951707095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$bib.coverage" NAME="bib Coverage Results" MODIFIED="1555526288032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1555955501964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1555968917913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1555455810413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
@@ -1092,18 +1074,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_a_2000.csv" />
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_v_o_2000_1.csv" />
-    <entry file="file://$PROJECT_DIR$/data_set/pcc.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="120" selection-start-line="70" selection-start-column="120" selection-end-line="70" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_s_1000.csv" />
     <entry file="file://$PROJECT_DIR$/epic_num_reader.model">
       <provider selected="true" editor-type-id="text-editor">
@@ -1386,74 +1356,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="899" column="6" selection-start-line="899" selection-start-column="6" selection-end-line="899" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plots/result-1-2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26112">
-          <caret line="1759" column="26" selection-start-line="1759" selection-start-column="26" selection-end-line="1759" selection-end-column="26" />
-          <folding>
-            <element signature="e#55166#57139#0" />
-            <element signature="e#57637#64706#1" />
-            <element signature="e#64922#65462#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
-          <folding>
-            <element signature="e#1142#1165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/log/acc_e_2.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="87" column="37" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="37" />
+        <state relative-caret-position="181">
+          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
           <folding>
             <element signature="e#2037#2103#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training_arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="536" column="6" selection-start-line="536" selection-start-column="6" selection-end-line="536" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/layers/convolutional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="278" column="6" selection-start-line="278" selection-start-column="6" selection-end-line="278" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16337">
+          <caret line="996" column="26" selection-start-line="996" selection-start-column="26" selection-end-line="996" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="597" column="29" selection-start-line="597" selection-start-column="29" selection-end-line="597" selection-end-column="29" />
+        <state relative-caret-position="137">
+          <caret line="149" column="48" lean-forward="true" selection-start-line="149" selection-start-column="48" selection-end-line="149" selection-end-column="48" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
             <element signature="e#140#896#0" />
             <element signature="e#929#1142#0" />
             <element signature="e#1177#2993#0" />
-            <element signature="e#4337#7681#0" />
-            <element signature="e#7721#10458#0" />
-            <element signature="e#10520#10761#0" />
-            <element signature="e#10834#11200#0" />
-            <element signature="e#11240#11351#0" />
-            <element signature="e#11400#11490#0" />
-            <element signature="e#11532#11689#0" />
-            <element signature="e#11740#11795#0" />
-            <element signature="e#11826#12048#0" />
-            <element signature="e#12082#12334#0" />
-            <element signature="e#12362#12494#0" />
-            <element signature="e#12537#12647#0" />
-            <element signature="e#12673#13635#0" />
-            <element signature="e#13665#14090#0" />
-            <element signature="e#14197#14524#0" />
-            <element signature="e#14533#15835#0" />
-            <element signature="e#15716#15972#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="68" column="30" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="68" selection-end-column="30" />
+          <folding>
+            <element signature="e#1142#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>

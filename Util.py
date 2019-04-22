@@ -119,7 +119,7 @@ def trata(base,porc_traing):
 
 def trata_tf_palavra(base, porc_traing):
     import nltk
-    b_w2v = False
+    b_w2v = True
 
     # montar base baseado se tem a palavra/character , com a sequencia
     data = []
@@ -128,8 +128,8 @@ def trata_tf_palavra(base, porc_traing):
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
-    # i = len(base) - 1
-    i = 10
+    i = len(base) - 1
+    # i = 50
     #tokenização e remoção de pontuação
     while (i>=0):
         data.append(remocaopontos(tknzr.tokenize(base[i][0])))
@@ -148,10 +148,12 @@ def trata_tf_palavra(base, porc_traing):
     all_words = get_all_words(data)
 
     # data_numbers = get_numbers(data,all_words)
-    data_number = get_data_freq_Count(data, all_words)
+    data_number = get_data_freq_Count_space(data, all_words)
 
     # data_number = get_data_idf(data)
     data_labels =[w for w in label]
+
+
 
     train_data = np.array(data_number[0:int(len_data*porc_traing)], dtype=np.int64)
     test_data = np.array(data_number[int(len_data*porc_traing):], dtype=np.int64)
@@ -367,8 +369,8 @@ def trata_tf_3(base,porc_traing):
 
     # random.shuffle(data_number)
 
-    train_data = data_number[0:int(l*porc_traing)]
-    test_data = data_number[int(l*porc_traing):]
+    train_data = np.array(data_number[0:int(l*porc_traing)], dtype=np.int64)
+    test_data = np.array(data_number[int(l*porc_traing):], dtype=np.int64)
 
     # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
     train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
@@ -588,10 +590,36 @@ def get_data_freq_Count(data, all_words):
     data_number =[]
     len_data = len(data)
     all_word = [word for word in all_words]
+    len_all_word = len(all_word)
+    print(len_all_word)
     random.shuffle(all_word)
     while (i < len_data):#percore as linhas
         w =[]
-        j = 10
+        j = 1
+        for word in all_word:
+            if(word in data[i]):
+                w.append(j)
+            j+=1
+        len_w =len(w)
+        l = len_all_word-len_w
+        if(l>0):
+            w += [0]*(l)
+        data_number.append(w)
+        i += 1
+    return data_number
+
+def get_data_freq_Count_space(data, all_words):
+    import random
+    i=0
+    data_number =[]
+    len_data = len(data)
+    all_word = [word for word in all_words]
+    len_all_word = len(all_word)
+    print(len_all_word)
+    random.shuffle(all_word)
+    while (i < len_data):#percore as linhas
+        w =[]
+        j = 1
         for word in all_word:
             w.append(j if(word in data[i]) else 0)
             j+=1
