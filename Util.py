@@ -128,8 +128,8 @@ def trata_tf_palavra(base, porc_traing):
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
-    i = len(base) - 1
-    # i = 50
+    # i = len(base) - 1
+    i = 50
     #tokenização e remoção de pontuação
     while (i>=0):
         data.append(remocaopontos(tknzr.tokenize(base[i][0])))
