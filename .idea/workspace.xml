@@ -2,167 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38214" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38215" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38216" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38217" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38218" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38219" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38220" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38221" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38222" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38223" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38224" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38225" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38226" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38227" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38228" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38229" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38230" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38231" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38232" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38233" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38234" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38235" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38236" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38237" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38238" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38239" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38240" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38241" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38242" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38243" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38244" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38245" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38246" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38247" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38248" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38249" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38250" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38251" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38252" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38255" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38256" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38257" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38258" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38259" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38260" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38261" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38262" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38263" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38264" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38265" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38266" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38267" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38268" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38269" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38440" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38441" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38442" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38443" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38444" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38445" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38446" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38448" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38449" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38450" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38452" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38453" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38454" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38455" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38456" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38457" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38458" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38459" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38460" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38461" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38462" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38463" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38464" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38465" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38466" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38467" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38468" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38469" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38470" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38471" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38472" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38473" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38474" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38475" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38476" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38477" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38478" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38479" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38480" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38481" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38482" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38483" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38484" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38485" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38486" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38487" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38488" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38489" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38490" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38491" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38492" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38493" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38494" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38495" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38496" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38497" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38498" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38499" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38600" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38601" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38602" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38603" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38604" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38605" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38606" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38608" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38609" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38680" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38681" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38682" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38683" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38684" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38685" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38686" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38687" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38688" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38690" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38691" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38692" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38693" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38694" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38695" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38696" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38697" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38698" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38699" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38830" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38831" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38832" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38833" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38834" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38835" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38836" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38837" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38838" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38839" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38841" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38842" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38843" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38844" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38845" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38846" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38847" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38848" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/result-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plots/result-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executaveis_teste/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/executaveis_teste/Util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+            <state relative-caret-position="162">
+              <caret line="493" column="27" selection-start-line="493" selection-start-column="27" selection-end-line="493" selection-end-column="27" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
                 <element signature="e#140#896#0" />
@@ -250,7 +91,6 @@
                 <element signature="e#12128#12380#0" />
                 <element signature="e#12408#12540#0" />
                 <element signature="e#12583#12693#0" />
-                <element signature="e#12741#14285#0" />
                 <element signature="e#14315#14740#0" />
                 <element signature="e#14779#15086#0" />
                 <element signature="e#15116#16322#0" />
@@ -436,11 +276,6 @@
             <path>
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="executaveis_teste" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -654,14 +489,7 @@
       <workItem from="1555968353514" duration="6540000" />
       <workItem from="1556024179685" duration="3240000" />
       <workItem from="1556195072384" duration="2021000" />
-      <workItem from="1556197139374" duration="2377000" />
-    </task>
-    <task id="LOCAL-00006" summary="1.03">
-      <created>1545441979885</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1545441979885</updated>
+      <workItem from="1556197139374" duration="2686000" />
     </task>
     <task id="LOCAL-00007" summary="1.03">
       <created>1545442127850</created>
@@ -999,11 +827,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556195619412</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="1.1 v&#10;Aumento da base">
+      <created>1556199601778</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1556199601779</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330578000" />
+    <option name="totallyTimeSpent" value="330887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1143,7 +978,7 @@
     <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1555123158957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
     <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1556199198181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
     <SUITE FILE_PATH="coverage/pcc$bib.coverage" NAME="bib Coverage Results" MODIFIED="1555526288032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556199468639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556199691611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1555455810413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
@@ -1431,9 +1266,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Util.py" />
-    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1444,10 +1276,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+        <state relative-caret-position="162">
+          <caret line="493" column="27" selection-start-line="493" selection-start-column="27" selection-end-line="493" selection-end-column="27" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
             <element signature="e#140#896#0" />
@@ -1465,7 +1300,6 @@
             <element signature="e#12128#12380#0" />
             <element signature="e#12408#12540#0" />
             <element signature="e#12583#12693#0" />
-            <element signature="e#12741#14285#0" />
             <element signature="e#14315#14740#0" />
             <element signature="e#14779#15086#0" />
             <element signature="e#15116#16322#0" />

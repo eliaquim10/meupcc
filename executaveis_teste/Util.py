@@ -491,6 +491,7 @@ def embeding(data):
     while (i < len_data):#percorre as palavras da linha
         j=0
         len_opinion = len(data[i])
+        word_embedings = []
         while (j < len_opinion):
             try:
                 word_embedings = word_embeding(data[i][j],5,0.9)
