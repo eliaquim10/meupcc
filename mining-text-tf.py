@@ -27,13 +27,13 @@ import tensorflow as tf
 from tensorflow import keras
 # from tensorflow.python.layers.convolutional import Conv2D
 
-from Util import readBase,trata_tf_palavra,trata_tf_tf_idf,trata_tf_3
+from executaveis_teste.Util import readBase,trata_tf_palavra,trata_tf_tf_idf,trata_tf_3
 # import TensorBoard
 # import time
 
 # print(tf.__version__)
 
-gpu =  tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
+# gpu =  tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
 # sess = tf.Session(tf.ConfigProto(gpu_options=gpu))
 
 # imdb = keras.datasets.imdb
@@ -76,11 +76,15 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 
 # input shape is the vocabulary count used for the movie reviews (10,000 words)np
 # vocab_size = 2282
+
+# with tf.Session(tf.ConfigProto(gpu_options=gpu)) as sess:
+# with tf.Session() as sess:
+
 n =64
 model = keras.Sequential()
 model.add(keras.layers.Embedding(vocab_size, n))
-model.add(keras.layers.GlobalAveragePooling1D())
-model.add(keras.layers.Flatten())
+# model.add(keras.layers.GlobalAveragePooling1D())
+# model.add(keras.layers.Flatten())
 # n /=2
 # model.add(keras.layers.LSTM(n,recurrent_activation='softmax'))
 n /=2
@@ -108,28 +112,28 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
 #
 # y_val = train_labels[:limit]
 # partial_y_train = train_labels[limit:]
-with tf.Session(tf.ConfigProto(gpu_options=gpu)) as sess:
+
 # sess = tf.Session()
-    history = model.fit(train_data,
-                        train_labels,
-                        epochs=30,
-                        batch_size=1,
-                        validation_split =0.2,
-                        verbose=1)
+history = model.fit(train_data,
+                    train_labels,
+                    epochs=30,
+                    batch_size=1,
+                    validation_split =0.2,
+                    verbose=1)
 
-    # sess
-    results = model.evaluate(test_data, test_labels)
+# sess
+# results = model.evaluate(test_data, test_labels)
 
 
-    # model.save('epic_num_reader.model')
-    # new_model = keras.models.load_model('epic_num_reader.model')
-    predictions = model.predict(test_data)
+# model.save('epic_num_reader.model')
+# new_model = keras.models.load_model('epic_num_reader.model')
+predictions = model.predict(test_data)
 
-    path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
-    with open(path,mode='w', encoding='utf-8') as csv_file:
-        #writer = csv.writer(csv_file)
-        for w in predictions:
-            csv_file.writelines(str(w)+'\n')
+path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
+with open(path,mode='w', encoding='utf-8') as csv_file:
+    #writer = csv.writer(csv_file)
+    for w in predictions:
+        csv_file.writelines(str(w)+'\n')
 # sess.run()
 # for w in predictions:
 #     print(w)
@@ -142,7 +146,7 @@ with tf.Session(tf.ConfigProto(gpu_options=gpu)) as sess:
 # print(s)
 
 
-
+'''
 
 history_dict = history.history
 history_dict.keys()
@@ -182,3 +186,4 @@ plt.ylabel('Accuracy')
 plt.legend()
 
 plt.show()
+'''
