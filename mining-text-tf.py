@@ -85,10 +85,10 @@ model = keras.Sequential()
 model.add(keras.layers.Embedding(vocab_size, n))
 # model.add(keras.layers.GlobalAveragePooling1D())
 # model.add(keras.layers.Flatten())
-# n /=2
-# model.add(keras.layers.LSTM(n,recurrent_activation='softmax'))
 n /=2
-model.add(keras.layers.Dense(n, activation=tf.nn.relu))
+model.add(keras.layers.LSTM(n,recurrent_activation='softmax'))
+n /=2
+# model.add(keras.layers.Dense(n, activation=tf.nn.relu))
 
 n /=2
 model.add(keras.layers.Dense(n, activation=tf.nn.sigmoid))

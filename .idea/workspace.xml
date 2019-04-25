@@ -2,24 +2,167 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38214" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38215" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38216" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38217" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38218" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38219" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38220" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38221" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38222" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38223" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38224" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38225" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38226" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38227" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38229" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38230" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38231" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38232" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38233" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38234" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38235" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38236" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38237" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38238" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38239" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38240" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38241" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38242" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38243" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38244" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38245" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38246" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38247" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38248" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38249" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38250" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38251" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38252" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38255" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38256" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38257" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38258" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38259" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38260" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38261" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38262" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38263" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38264" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38265" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38266" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38267" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38268" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38269" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38440" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38441" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38442" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38443" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38444" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38445" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38446" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38448" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38449" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38450" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38452" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38453" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38454" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38455" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38456" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38457" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38458" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38459" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38460" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38461" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38462" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38463" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38464" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38465" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38466" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38467" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38468" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38469" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38470" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38471" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38472" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38473" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38474" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38475" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38476" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38477" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38478" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38479" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38480" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38481" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38482" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38483" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38484" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38485" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38486" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38487" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38488" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38489" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38490" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38491" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38492" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38493" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38494" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38495" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38496" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38497" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38498" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38499" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38600" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38601" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38602" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38603" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38605" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38606" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38680" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38681" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38682" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38683" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38684" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38685" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38686" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38687" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38688" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38690" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38691" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38692" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38693" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38694" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38695" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38696" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38697" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38698" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38699" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38830" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38831" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38832" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38833" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38834" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38835" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38836" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38837" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38838" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38839" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38841" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38842" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38843" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38844" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38845" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38846" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38847" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38848" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stopwords.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alice.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bib.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colecao_dourada2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colecao_dourada_2_class_unbalanced.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/epic_num_reader.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-text-tf-base.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-text.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nltk-downloading.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pcc-teste.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/result-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plots/result-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyvenv.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,20 +216,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="162">
+              <caret line="94" column="7" lean-forward="true" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+              <folding>
+                <element signature="e#1142#1165#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+              <folding>
+                <element signature="e#24#34#0" expanded="true" />
+                <element signature="e#140#896#0" />
+                <element signature="e#929#1142#0" />
+                <element signature="e#1177#2993#0" />
+                <element signature="e#4331#7675#0" />
+                <element signature="e#7715#10504#0" />
+                <element signature="e#10566#10807#0" />
+                <element signature="e#10880#11246#0" />
+                <element signature="e#11286#11397#0" />
+                <element signature="e#11446#11536#0" />
+                <element signature="e#11578#11735#0" />
+                <element signature="e#11786#11841#0" />
+                <element signature="e#11872#12094#0" />
+                <element signature="e#12128#12380#0" />
+                <element signature="e#12408#12540#0" />
+                <element signature="e#12583#12693#0" />
+                <element signature="e#12741#14285#0" />
+                <element signature="e#14315#14740#0" />
+                <element signature="e#14779#15086#0" />
+                <element signature="e#15116#16322#0" />
+                <element signature="e#16372#16628#0" />
+                <element signature="e#16676#17215#0" />
+                <element signature="e#17269#17703#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2346" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -234,6 +412,7 @@
         <option value="$PROJECT_DIR$/Util.py" />
         <option value="$PROJECT_DIR$/plots/result-1.txt" />
         <option value="$PROJECT_DIR$/mining-text-tf.py" />
+        <option value="$PROJECT_DIR$/executaveis_teste/Util.py" />
       </list>
     </option>
   </component>
@@ -261,7 +440,7 @@
             <path>
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="plots" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="executaveis_teste" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -327,56 +506,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/executaveis_teste" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Util.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pcc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="bib" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pcc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bib.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/executaveis_teste/Util.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -407,42 +542,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="teste" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pcc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teste.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.Util" />
-      <item itemvalue="Python.app" />
       <item itemvalue="Python.mining-text-tf" />
-      <item itemvalue="Python.teste" />
-      <item itemvalue="Python.bib" />
+      <item itemvalue="Python.Util" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.mining-text-tf" />
         <item itemvalue="Python.Util" />
-        <item itemvalue="Python.bib" />
-        <item itemvalue="Python.teste" />
-        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -546,21 +653,8 @@
       <workItem from="1555960492143" duration="5181000" />
       <workItem from="1555968353514" duration="6540000" />
       <workItem from="1556024179685" duration="3240000" />
-      <workItem from="1556195072384" duration="425000" />
-    </task>
-    <task id="LOCAL-00004" summary="1.02">
-      <created>1545440922071</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1545440922071</updated>
-    </task>
-    <task id="LOCAL-00005" summary="1.03">
-      <created>1545441347375</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1545441347375</updated>
+      <workItem from="1556195072384" duration="2021000" />
+      <workItem from="1556197139374" duration="2377000" />
     </task>
     <task id="LOCAL-00006" summary="1.03">
       <created>1545441979885</created>
@@ -891,11 +985,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555974806910</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="1.1 v&#10;Aumento da base">
+      <created>1556195537820</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1556195537821</updated>
+    </task>
+    <task id="LOCAL-00054" summary="1.1 v&#10;Aumento da base">
+      <created>1556195619412</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1556195619412</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326605000" />
+    <option name="totallyTimeSpent" value="330578000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -910,7 +1018,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.17700455" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.17927383" />
       <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info id="Favorites" order="2" sideWeight="0.50808316" side_tool="true" weight="0.1633888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1033,9 +1141,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1555123158957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
-    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1555951707095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1556199198181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
     <SUITE FILE_PATH="coverage/pcc$bib.coverage" NAME="bib Coverage Results" MODIFIED="1555526288032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556195503100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556199468639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1555455810413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
@@ -1053,11 +1161,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/epic_num_reader.model">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75326" />
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/keras/layers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1128,13 +1231,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stopwords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Stopwords.py" />
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/metrics/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1192,39 +1289,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_base_d_s_1000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/teste_data_base_d_s_1000.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="46" selection-end-line="496" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py" />
+    <entry file="file://$PROJECT_DIR$/data_set/colecao_dourada_2_class_unbalanced.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-          <folding>
-            <element signature="e#1142#1165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/colecao_dourada_2_class_unbalanced.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="364">
           <caret line="815" selection-start-line="815" selection-end-line="815" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plots/eu.txt">
@@ -1241,43 +1329,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/colecao_dourada2.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret selection-end-column="1" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colecao_dourada_2_class_unbalanced.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="442">
-          <caret line="318" column="69" lean-forward="true" selection-start-line="318" selection-start-column="69" selection-end-line="318" selection-end-column="69" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/colecao_dourada2.csv" />
+    <entry file="file://$PROJECT_DIR$/colecao_dourada_2_class_unbalanced.csv" />
     <entry file="file://$PROJECT_DIR$/data_set/per_person/data_base_v_a_2000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/per_person/data_base_s_1000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/per_person/data_base_v_o_2000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/poincare.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1286,16 +1356,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="147" column="6" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="12" />
-          <folding>
-            <element signature="e#570#580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/teste.py" />
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/client/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -1326,16 +1387,7 @@
     <entry file="file://$PROJECT_DIR$/log/acc_e_2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding>
-            <element signature="e#2037#2103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bib.py" />
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training_arrays.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1378,28 +1430,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util.py">
+    <entry file="file://$PROJECT_DIR$/Util.py" />
+    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="131" column="11" selection-start-line="131" selection-start-column="11" selection-end-line="131" selection-end-column="11" />
+        <state relative-caret-position="162">
+          <caret line="94" column="7" lean-forward="true" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+          <folding>
+            <element signature="e#1142#1165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
             <element signature="e#140#896#0" />
             <element signature="e#929#1142#0" />
             <element signature="e#1177#2993#0" />
+            <element signature="e#4331#7675#0" />
+            <element signature="e#7715#10504#0" />
+            <element signature="e#10566#10807#0" />
+            <element signature="e#10880#11246#0" />
+            <element signature="e#11286#11397#0" />
+            <element signature="e#11446#11536#0" />
+            <element signature="e#11578#11735#0" />
+            <element signature="e#11786#11841#0" />
+            <element signature="e#11872#12094#0" />
+            <element signature="e#12128#12380#0" />
+            <element signature="e#12408#12540#0" />
+            <element signature="e#12583#12693#0" />
+            <element signature="e#12741#14285#0" />
+            <element signature="e#14315#14740#0" />
+            <element signature="e#14779#15086#0" />
+            <element signature="e#15116#16322#0" />
+            <element signature="e#16372#16628#0" />
+            <element signature="e#16676#17215#0" />
+            <element signature="e#17269#17703#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2346" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
         </state>
       </provider>
     </entry>
