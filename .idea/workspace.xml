@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/executaveis_teste/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/executaveis_teste/Util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/result-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plots/result-1.txt" afterDir="false" />
     </list>
@@ -60,44 +58,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+            <state relative-caret-position="272">
+              <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py">
+        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/losses/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
-              <folding>
-                <element signature="e#1142#1165#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="24" column="69" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="221">
+              <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+              <folding>
+                <element signature="e#135#891#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,8 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>copy(</find>
-      <find>vive de rodeio não tem apenas um,</find>
       <find>colo</find>
       <find>CADA UM TEM A</find>
       <find>CADA UM TEM A CULTURA QUE QUER,DIVERSIDADES EXISTEM NO MUNDO TODO E CADA UM GOSTA DO QUE QUER.</find>
@@ -143,6 +135,8 @@
       <find>print</find>
       <find>matri</find>
       <find>matr</find>
+      <find>go_backwards</find>
+      <find>loss</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -245,10 +239,10 @@
         <option value="$PROJECT_DIR$/teste.py" />
         <option value="$PROJECT_DIR$/bib.py" />
         <option value="$PROJECT_DIR$/Util.py" />
-        <option value="$PROJECT_DIR$/plots/result-1.txt" />
         <option value="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" />
-        <option value="$PROJECT_DIR$/mining-text-tf.py" />
+        <option value="$PROJECT_DIR$/plots/result-1.txt" />
         <option value="$PROJECT_DIR$/executaveis_teste/Util.py" />
+        <option value="$PROJECT_DIR$/mining-text-tf.py" />
       </list>
     </option>
   </component>
@@ -516,14 +510,7 @@
       <workItem from="1556195072384" duration="2021000" />
       <workItem from="1556197139374" duration="3326000" />
       <workItem from="1556201959699" duration="393000" />
-      <workItem from="1556224694773" duration="12837000" />
-    </task>
-    <task id="LOCAL-00008" summary="1.03">
-      <created>1545443419188</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1545443419188</updated>
+      <workItem from="1556224694773" duration="20580000" />
     </task>
     <task id="LOCAL-00009" summary="1.03">
       <created>1545448558454</created>
@@ -861,11 +848,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556199843618</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="1.1 v&#10;Aumento da base">
+      <created>1556258592806</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1556258592806</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344757000" />
+    <option name="totallyTimeSpent" value="352500000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -885,7 +879,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50808316" side_tool="true" weight="0.1633888" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5816944" visible="true" weight="0.2913257" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5816944" weight="0.2913257" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969743" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -985,7 +979,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mining-text-tf.py</url>
-          <line>154</line>
+          <line>147</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1005,7 +999,7 @@
     <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1555123158957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
     <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1556199198181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
     <SUITE FILE_PATH="coverage/pcc$bib.coverage" NAME="bib Coverage Results" MODIFIED="1555526288032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556258147351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556266284974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1555455810413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$mining_text_tf_base.coverage" NAME="mining-text-tf-base Coverage Results" MODIFIED="1556255537960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
   </component>
@@ -1024,77 +1018,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/util/compat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/callbacks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="850" column="6" selection-start-line="850" selection-start-column="6" selection-end-line="850" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/matplotlib/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="645" selection-start-line="645" selection-end-line="645" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="2700" selection-start-line="2700" selection-end-line="2700" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/smart_open/smart_open_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="300" selection-start-line="300" selection-end-line="300" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_breakpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/flask/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="880" selection-start-line="880" selection-end-line="880" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/distributed_training_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="327" column="4" lean-forward="true" selection-start-line="327" selection-start-column="4" selection-end-line="327" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stopwords.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/metrics/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa11352.36580/app.py" />
     <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1244,13 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="536" column="6" selection-start-line="536" selection-start-column="6" selection-end-line="536" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/core/protobuf/config_pb2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -1272,13 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="996" column="26" selection-start-line="996" selection-start-column="26" selection-end-line="996" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Util.py" />
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/keyedvectors.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1287,9 +1196,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="1199" column="12" selection-start-line="1199" selection-start-column="6" selection-end-line="1199" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/nn_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/gen_nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7349" column="4" selection-start-line="7349" selection-start-column="4" selection-end-line="7349" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/framework/errors_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="527" selection-start-line="527" selection-end-line="527" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="903" column="6" selection-start-line="903" selection-start-column="6" selection-end-line="903" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
+        <state relative-caret-position="-884">
           <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
@@ -1297,27 +1241,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/recurrent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="118">
+          <caret line="466" column="36" selection-start-line="466" selection-start-column="24" selection-end-line="466" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/cudnn_recurrent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-          <folding>
-            <element signature="e#1142#1165#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-612">
+          <caret line="417" column="53" lean-forward="true" selection-start-line="417" selection-start-column="53" selection-end-line="417" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/losses/losses_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="861" column="4" selection-start-line="861" selection-start-column="4" selection-end-line="861" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/losses/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="24" column="69" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/embeddings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/regularizers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="148" column="26" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="221">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+          <folding>
+            <element signature="e#135#891#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
+          <folding>
+            <element signature="e#1142#1165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

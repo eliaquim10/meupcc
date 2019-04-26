@@ -22,14 +22,10 @@
 # DEALINGS IN THE SOFTWARE.
 
 import tensorflow as tf
-# import random
-# import math
 from tensorflow import keras
-# from tensorflow.python.layers.convolutional import Conv2D
+import numpy as np
 
 from executaveis_teste.Util import readBase,trata_tf_palavra
-# import TensorBoard
-# import time
 
 # print(tf.__version__)
 
@@ -51,12 +47,6 @@ dir = 'data_set\colecao_dourada_2_class_unbalanced.csv'
 # print(len(train_data[0]))
 # exit()
 vocab_size = len(train_data[0])+1
-# vocab_size = 10000
-# vocab_size = 10000
-# # vocab_size = 2267
-# # vocab_size = 59200
-# # vocab_size = 822577
-#
 
 # train_data = keras.preprocessing.sequence.pad_sequences(train_data,
 #                                                         value=0,
@@ -82,62 +72,64 @@ vocab_size = len(train_data[0])+1
 # vocab_size = 2282
 
 # with tf.Session(tf.ConfigProto(gpu_options=gpu)) as sess:
-# with tf.Session() as sess:
+with tf.Session() as sess:
 
-n =32
-model = keras.Sequential()
-model.add(keras.layers.Embedding(vocab_size, n))
-model.add(keras.layers.GlobalAveragePooling1D())
-model.add(keras.layers.Flatten())
-# n /=2
-# model.add(keras.layers.LSTM(n,recurrent_activation='softmax'))
-n /=2
-model.add(keras.layers.Dense(n, activation=tf.nn.relu))
+    # n =np.int32(32)
+    n = 32
+    model = keras.Sequential()
+    model.add(keras.layers.Embedding(vocab_size, n))
+    # model.add(keras.layers.GlobalAveragePooling1D())
+    # model.add(keras.layers.Flatten())
+    # n /=2
+    # model.add(keras.layers.LSTM(n,activation='softmax'))
+    n =np.int32(n/2)
+    model.add(keras.layers.SimpleRNN(n))
+    # n /=2
+    # model.add(keras.layers.Dense(n, activation=tf.nn.tanh))
+    # n /=2
+    # model.add(keras.layers.Dense(n, activation=tf.nn.relu6))
+    #
+    # # n /=2
+    model.add(keras.layers.Dense(1, activation=tf.nn.relu6))
+    # model.add(keras.layers.Dense(1, activation=tf.nn.softmax))
 
-n /=2
-model.add(keras.layers.Dense(n, activation=tf.nn.sigmoid))
-# n /=2
-model.add(keras.layers.Dense(1, activation=tf.nn.relu))
-# model.add(keras.layers.Dense(1, activation=tf.nn.softmax))
+    model.summary()
+    # keras.layers.CuDNNLSTM
 
-model.summary()
+    model.compile(optimizer=tf.train.AdamOptimizer(),
+                  loss='binary_crossentropy',
+                  metrics=['accuracy'])
 
+    # limit = vocab_size
+    # limit = 10
+    # x_val = train_data[:limit]
+    # partial_x_train = train_data[limit:]
+    #
+    #
+    # y_val = train_labels[:limit]
+    # partial_y_train = train_labels[limit:]
 
+    # sess = tf.Session()
+    history = model.fit(train_data,
+                        train_labels,
+                        epochs=30,
+                        batch_size=1,
+                        validation_split =0.2,
+                        verbose=1)
 
-model.compile(optimizer=tf.train.AdamOptimizer(),
-              loss='binary_crossentropy',
-              metrics=['accuracy'])
-
-# limit = vocab_size
-# limit = 10
-# x_val = train_data[:limit]
-# partial_x_train = train_data[limit:]
-#
-#
-# y_val = train_labels[:limit]
-# partial_y_train = train_labels[limit:]
-
-# sess = tf.Session()
-history = model.fit(train_data,
-                    train_labels,
-                    epochs=30,
-                    batch_size=1,
-                    validation_split =0.2,
-                    verbose=1)
-
-# sess
-results = model.evaluate(test_data, test_labels)
+    # sess
+    # results = model.evaluate(test_data, test_labels)
 
 
-# model.save('epic_num_reader.model')
-# new_model = keras.models.load_model('epic_num_reader.model')
-predictions = model.predict(test_data)
+    # model.save('epic_num_reader.model')
+    # new_model = keras.models.load_model('epic_num_reader.model')
+    predictions = model.predict(test_data)
 
-path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
-with open(path,mode='w', encoding='utf-8') as csv_file:
-    #writer = csv.writer(csv_file)
-    for w in predictions:
-        csv_file.writelines(str(w)+'\n')
+    path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
+    with open(path,mode='w', encoding='utf-8') as csv_file:
+        #writer = csv.writer(csv_file)
+        for w in predictions:
+            csv_file.writelines(str(w)+'\n')
 # sess.run()
 # for w in predictions:
 #     print(w)
@@ -151,6 +143,7 @@ with open(path,mode='w', encoding='utf-8') as csv_file:
 
 
 
+'''
 
 history_dict = history.history
 history_dict.keys()
@@ -190,5 +183,4 @@ plt.ylabel('Accuracy')
 plt.legend()
 
 plt.show()
-'''
 '''
