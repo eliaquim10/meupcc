@@ -141,8 +141,6 @@ with tf.Session() as sess:
 # print('---')
 # print(s)
 
-
-
 '''
 
 history_dict = history.history
