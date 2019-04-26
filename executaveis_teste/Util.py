@@ -32,7 +32,7 @@ def readBase(csvFile = str):
 def trata_tf_palavra(base, porc_traing):
     import nltk
     import numpy as np
-    b_w2v = True
+    b_w2v = False
 
     # montar base baseado se tem a palavra/character , com a sequencia
     data = []
@@ -42,7 +42,7 @@ def trata_tf_palavra(base, porc_traing):
     tknzr = nltk.tokenize.TweetTokenizer()
 
     # i = len(base) - 1
-    i = 100
+    i = 50
     #tokenização e remoção de pontuação
     while (i>=0):
         data.append(remocaopontos(tknzr.tokenize(base[i][0])))
@@ -69,8 +69,10 @@ def trata_tf_palavra(base, porc_traing):
 
     data_labels = label.copy()
 
+
+    dttype = np.int64
     ''''''
-    f = lambda x,g: g(x,dtype=np.int64)
+    f = lambda x,g: g(x,dtype=dttype)
 
     data_fraq_1 = data_number[0:int(len_data*porc_traing)]
     data_fraq_2 = data_number[int(len_data*porc_traing):]
@@ -81,8 +83,8 @@ def trata_tf_palavra(base, porc_traing):
     # train_data = np.array(data_number[0:int(len_data*porc_traing)])
     # test_data = np.array(data_number[0:int(len_data*porc_traing)])
 
-    train_labels = np.array(data_labels[0:int(len_data*porc_traing)],dtype=np.int64)
-    test_labels = np.array(data_labels[int(len_data*porc_traing):], dtype=np.int64)
+    train_labels = np.array(data_labels[0:int(len_data*porc_traing)],dtype=dttype)
+    test_labels = np.array(data_labels[int(len_data*porc_traing):], dtype=dttype)
 
     return (train_data,train_labels),(test_data, test_labels)
 
