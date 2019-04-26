@@ -32,7 +32,7 @@ def readBase(csvFile = str):
 def trata_tf_palavra(base, porc_traing):
     import nltk
     import numpy as np
-    b_w2v = False
+    b_w2v = True
 
     # montar base baseado se tem a palavra/character , com a sequencia
     data = []
@@ -41,8 +41,8 @@ def trata_tf_palavra(base, porc_traing):
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
-    # i = len(base) - 1
-    i = 50
+    i = len(base) - 1
+    # i = 50
     #tokenização e remoção de pontuação
     while (i>=0):
         data.append(remocaopontos(tknzr.tokenize(base[i][0])))

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executaveis_teste/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/executaveis_teste/Util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word2vec-pt-br-master.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
+            <state relative-caret-position="2329">
+              <caret line="137" column="1" lean-forward="true" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -82,11 +84,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+            <state relative-caret-position="153">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -236,8 +238,8 @@
         <option value="$PROJECT_DIR$/Util.py" />
         <option value="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" />
         <option value="$PROJECT_DIR$/plots/result-1.txt" />
-        <option value="$PROJECT_DIR$/executaveis_teste/Util.py" />
         <option value="$PROJECT_DIR$/mining-text-tf.py" />
+        <option value="$PROJECT_DIR$/executaveis_teste/Util.py" />
       </list>
     </option>
   </component>
@@ -272,11 +274,6 @@
             <path>
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="plots" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -506,21 +503,7 @@
       <workItem from="1556197139374" duration="3326000" />
       <workItem from="1556201959699" duration="393000" />
       <workItem from="1556224694773" duration="20580000" />
-      <workItem from="1556290165004" duration="2127000" />
-    </task>
-    <task id="LOCAL-00009" summary="1.03">
-      <created>1545448558454</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1545448558454</updated>
-    </task>
-    <task id="LOCAL-00010" summary="1.03">
-      <created>1545448583691</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1545448583691</updated>
+      <workItem from="1556290165004" duration="4655000" />
     </task>
     <task id="LOCAL-00011" summary="1.03">
       <created>1545448991578</created>
@@ -851,11 +834,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556258592806</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="1.1 v&#10;Aumento da base">
+      <created>1556292338297</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1556292338297</updated>
+    </task>
+    <task id="LOCAL-00059" summary="1.1 v&#10;Aumento da base">
+      <created>1556292435852</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1556292435852</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="354627000" />
+    <option name="totallyTimeSpent" value="357155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -870,7 +867,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.18683812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.18683812" />
       <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info id="Favorites" order="2" sideWeight="0.50808316" side_tool="true" weight="0.1633888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -892,7 +889,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.33963692" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.33963692" />
       <window_info anchor="right" id="Database" order="4" weight="0.3290469" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.3290469" />
       <window_info anchor="right" id="R Graphics" order="6" />
@@ -975,7 +972,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mining-text-tf.py</url>
-          <line>147</line>
+          <line>145</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1014,7 +1011,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa11352.36580/app.py" />
     <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1286,16 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
-          <folding>
-            <element signature="e#1142#1165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/losses/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1306,10 +1292,27 @@
     <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/ide.general.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="137" column="1" lean-forward="true" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+          <folding>
+            <element signature="e#1142#1165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        <state relative-caret-position="153">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
