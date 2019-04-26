@@ -222,7 +222,7 @@ def embeding(data,label):
         '''
         print(' - ' + str(i))
         i+=1
-    return data_documents,label_documents
+    return data_documents, label_documents
 
 def get_all_words(data):
     # pegar todas as palavras
