@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
-import csv
-import numpy as np
-import random
-import nltk
-import numpy
 import math
 
 
 def readBase(csvFile = str):
+    import csv
     base = []
 
     with open(csvFile, newline='\n',encoding='utf-8') as csvfile:
@@ -33,90 +29,6 @@ def readBase(csvFile = str):
                 pass
         return base
 
-def arrays(array, maxlen):
-    i = len(array)-1
-    # data
-    print(array[0])
-    tam = 0
-    while (i>=0):
-        l = len(array[i])
-        tam = maxlen - l
-        w = [numpy.int64(0)]*tam
-        array[i] += w
-        i-=1
-    return array
-
-def trata(base,porc_traing):
-    data = []
-
-    # random.shuffle(base)
-
-    tknzr = nltk.tokenize.TweetTokenizer()
-
-    i = len(base) - 1
-
-
-    while (i>=0):
-        data.append([tknzr.tokenize(base[i][0]),numpy.int64(base[i][1])-1])
-        i -= 1
-
-    k = 0
-    l = len(data)
-    all_words = []
-    while (k < l):
-        m = len(data[k][0])
-        n = 0
-        while (n < m):
-            if data[k][0][n] not in all_words:
-                all_words.append(data[k][0][n])
-            n += 1
-        k += 1
-
-    print(len(all_words))
-    random.shuffle(all_words)
-
-    k = 0
-    l = len(data)
-    data_number =[]
-    data_labels =[]
-    maxlen=0
-    t = len(all_words)
-    while (k < l):#percore as linhas
-        m = len(data[k][0])
-        n = 0
-        w =[]
-        if m>maxlen:
-            maxlen = m
-        while (n < m):#percorre as palavras da linha
-            j =0
-            while(j<t):#percorre as palavras que está no contexto
-                if (data[k][0][n] == all_words[j]):
-                    w.append(j+1)
-                j+=1
-            n += 1
-        data_number.append(w)
-        data_labels.append(data[k][1])
-        k += 1
-
-    # print(str(len(all_words)))
-    # keras.layers.CuDNNLSTM()
-
-    train_data = data_number[0:int(l*porc_traing)]
-    test_data = data_number[int(l*porc_traing):]
-
-    # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
-    train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
-    test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
-
-    '''
-    train_data = data_number[0:int(l*porc_traing)]
-    train_labels = [w[1] for w in data[0:int(l*porc_traing)]]
-    test_data = data_number[int(l*porc_traing):]
-    test_labels = [w[1] for w in data[int(l*porc_traing):]]
-    '''
-
-    return (train_data,train_labels),(test_data, test_labels)
-
 def trata_tf_palavra(base, porc_traing):
     import nltk
     import numpy as np
@@ -129,8 +41,8 @@ def trata_tf_palavra(base, porc_traing):
 
     tknzr = nltk.tokenize.TweetTokenizer()
 
-    i = len(base) - 1
-    # i = 50
+    # i = len(base) - 1
+    i = 100
     #tokenização e remoção de pontuação
     while (i>=0):
         data.append(remocaopontos(tknzr.tokenize(base[i][0])))
@@ -142,242 +54,39 @@ def trata_tf_palavra(base, porc_traing):
 
     # distancia de palavra com no maximo 5
     len_data = len(data)
+    # print(len(data))
     if(b_w2v):
-        data = embeding(data)
-
+        data,label = embeding(data,label)
+    # print(len(data))
     # pega todas as palavras
     all_words = get_all_words(data)
 
-    # data_numbers = get_numbers(data,all_words)
-    # data_number = get_data_freq_Count_space(data, all_words)
-
+    # data_number = get_numbers(data,all_words)
+    # data_number = get_data_freq_Count(data,all_words)
+    data_number = get_data_freq_Count_space(data, all_words)
     data_number = get_data_idf(data)
-    data_labels =[w for w in label]
 
 
+    data_labels = label.copy()
 
-    train_data = np.array(data_number[0:int(len_data*porc_traing)], dtype=np.int64)
-    test_data = np.array(data_number[int(len_data*porc_traing):], dtype=np.int64)
+    ''''''
+    f = lambda x,g: g(x,dtype=np.int64)
 
-    train_labels = np.array(data_labels[0:int(len_data*porc_traing)], dtype=np.int64)
-    test_labels = np.array(data_labels[int(len_data*porc_traing):], dtype=np.int64)
-    return (train_data,train_labels),(test_data, test_labels)
+    data_fraq_1 = data_number[0:int(len_data*porc_traing)]
+    data_fraq_2 = data_number[int(len_data*porc_traing):]
 
-def trata_tf_tf_idf(base, porc_traing):
-    b_w2v = True
-    if(b_w2v):
-        import gensim
-        w2v = gensim.models.KeyedVectors.load_word2vec_format("word2vec-pt-br-master/exemplo/skip_s50-1.txt")
-    # montar base baseado se tem a palavra/character , com a sequencia
-    data = []
-    # random.shuffle(base)
+    train_data = np.array([f(w,np.array) for w in data_fraq_1])
+    test_data = np.array([f(w,np.array) for w in data_fraq_2])
 
-    tknzr = nltk.tokenize.TweetTokenizer()
+    # train_data = np.array(data_number[0:int(len_data*porc_traing)])
+    # test_data = np.array(data_number[0:int(len_data*porc_traing)])
 
-    i = len(base) - 1
-    #tokenização e remoção de pontuação
-    while (i>=0):
-        data.append([remocaopontos(tknzr.tokenize(base[i][0])), numpy.int64(base[i][1])-1])
-        i -= 1
-
-    if(b_w2v):
-        i = 0
-        dataset = []
-        # word to vector
-        for opinion_class in data:
-            dataset.append([[],opinion_class[1]])
-            for word in opinion_class[0]:
-                try:
-                    similiar_words = w2v.most_similar(word, topn=5)
-
-                    dataset[i][0].append(word)
-                    dataset[i][0] += list(similiar_words.keys())
-
-                    # for similiar_word,freq in similiar_words:
-                    #     dataset[i][0].append(similiar_word)
-                except Exception:
-                    dataset[i][0].append(word)
-            i+=1
-        data = dataset.copy()
-
-    i = 0
-    sum_words = 0
-    len_data = len(data)
-    all_words = {}
-    while (i < len_data):# olha cada op
-        sum_words += len(base[i][0])
-        m = len(data[i][0])
-        n = 0
-        while (n < m):# olha cada palavra da op
-            if(data[i][0][n] not in all_words):# Tem a palavra?
-                all_words[data[i][0][n]] = 1
-            else:
-                all_words[data[i][0][n]] += 1
-            n += 1
-        i += 1
-
-    # for p,q in all_words.items():
-    #     try:
-    #         print(p,' - ', q)
-    #     except Exception:
-    #         pass
-    # exit()
-
-    # random.shuffle(all_words)
-    i = 0
-
-    len_all_word = len(all_words)
-    data_documents =[]
-    while (i < len_data):#percorre as palavras da linha
-
-        w=[0]*len_all_word
-        j=0
-        for word in all_words:
-            if(w[j]==0):
-                w[j] = contar_palavra_doc(data[i][0], word)
-            j+=1
-        data_documents.append(w.copy())
-        i+=1
-
-
-    words_all_number = []
-    for p,q in all_words.items():
-        words_all_number.append(q)
-
-    i=0
-    data_number =[]
-    data_labels =[]
-    while (i < len_data):#percore as linhas
-        m = len(data[i][0])
-        w =[0]*len_all_word
-        j = 0
-        while(j<len_all_word):#percorre as character que está no contexto
-            if(data_documents[i][j]!=0):
-                w[j] = tf_idf(data_documents[i][j],len(data[i][0]),words_all_number[j],sum_words)
-            j+=1
-        # print(len(w))
-        data_number.append(w)
-        data_labels.append(data[i][1])
-        i += 1
-
-    train_data = data_number[0:int(len_data*porc_traing)]
-    test_data = data_number[int(len_data*porc_traing):]
-
-    # print(len(train_data[0]))
-    # print(len([ x for x in train_data[0] if x > 0 ]))
-    # print(len(train_data[1]))
-    # print(len([ x for x in train_data[1] if x > 0 ]))
-    # exit()
-
-    # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
-    train_labels = np.array(data_labels[0:int(len_data*porc_traing)], dtype=np.int64)
+    train_labels = np.array(data_labels[0:int(len_data*porc_traing)],dtype=np.int64)
     test_labels = np.array(data_labels[int(len_data*porc_traing):], dtype=np.int64)
 
     return (train_data,train_labels),(test_data, test_labels)
 
-def trata_tf_3(base,porc_traing):
-    import gensim
-    # montar base baseado se tem a palavra/character , não a sequencia
-    data = []
 
-    # random.shuffle(base)
-    # C:\Users\User\PycharmProjects\pcc\word2vec-pt-br-master\exemplo\skip_s50.txt
-    w2v = gensim.models.KeyedVectors.load_word2vec_format("word2vec-pt-br-master/exemplo/skip_s50.txt")
-    tknzr = nltk.tokenize.TweetTokenizer()
-
-
-
-    i = len(base) - 1
-
-    while (i>=0):
-        data.append([
-            remocaopontos(tknzr.tokenize(base[i][0])),
-            numpy.int64(base[i][1])-1])
-        i -= 1
-
-
-    i = 0
-
-    # word to vector
-    dataset =[]
-    
-    for opinion_class in data:
-        dataset.append([[],0])
-        for word in opinion_class[0]:
-            try:
-                similiar_word = w2v.most_similar(word, topn=10)
-                j = 0
-                for words,freq in similiar_word:
-                    dataset[i][0].append(words)
-            except Exception:
-                pass
-        i+=1
-    print(dataset)
-    exit()
-    print(dataset[50][0])
-
-    k = 0
-    l = len(data)
-    all_words = []
-    while (k < l):# olha cada op
-        m = len(data[k][0])
-        n = 0
-        while (n < m):# olha cada palavra da op
-
-            resul = palavra_contexto(data[k][0][n],all_words)
-            if(not (data[k][0][n] in all_words)):# Tem a palavra?
-                all_words.append(data[k][0][n])
-            n += 1
-        k += 1
-    #monta o dicionario de palavras
-
-
-    i = len(all_words) - 1
-    character_words_all = []
-    while(i>=0):
-        j = len(all_words[i]) - 1
-        while(j>=0):
-            character_words_all.append(all_words[i][j])
-            j-=1
-        i-=1
-    # monta um dicionario com todas as palavras ordenado os caracteres
-
-    character_words_all = character_words_all[::-1]
-
-    k = 0
-    l = len(data)
-    data_number =[]
-    data_labels =[]
-    t = len(character_words_all)
-    sum_letra = 0
-    while(k < l):
-        sum_letra += len(base[k][0])
-        k+=1
-    k=0
-
-    while (k < l):#percore as linhas
-        m = len(data[k][0])
-        numbers =[0]*t
-        n = 0
-
-        while (n < m):#percorre as palavras da linha
-            numbers = palavra_1(numbers,character_words_all,data[k][0][n],all_words)
-            n+=1
-
-        data_number.append(numbers)
-        data_labels.append(data[k][1])
-        k += 1
-
-    # random.shuffle(data_number)
-
-    train_data = np.array(data_number[0:int(l*porc_traing)], dtype=np.int64)
-    test_data = np.array(data_number[int(l*porc_traing):], dtype=np.int64)
-
-    # train_labels = numpy.ndarray(data_labels[0:int(l*porc_traing)])
-    train_labels = np.array(data_labels[0:int(l*porc_traing)], dtype=np.int64)
-    test_labels = np.array(data_labels[int(l*porc_traing):], dtype=np.int64)
-
-    return (train_data,train_labels),(test_data, test_labels)
 
 def palavra(numero_caracter,palavras_caracter,palavra):
     i = len(palavras_caracter) - 1
@@ -390,26 +99,6 @@ def palavra(numero_caracter,palavras_caracter,palavra):
             l-=1
         i-=1
 
-    return numero_caracter
-
-def palavra_1(numero_caracter,palavras_caracter,palavra,palavras):
-    i = 0
-    boolean = False
-    k = i
-
-    while(i<len(palavras)):
-        if(palavras[i]==palavra):
-            boolean = True
-            break
-        else:
-            if(not boolean):
-                k +=len(palavras[i])
-        i+=1
-    li = k
-    ls = (k + len(palavra))
-    while(li<ls):
-        numero_caracter[li] = 1
-        li+=1
     return numero_caracter
 
 def contar_palvra(data, palavra):
@@ -469,58 +158,69 @@ def matriz_confusao(label,predicao):
         i+=1
     return w
 
-def embeding(data):
+
+def embeding(data,label):
     import gensim
     # wang2vector
     w2v = gensim.models.KeyedVectors.load_word2vec_format("word2vec-pt-br-master/exemplo/skip_s50-1.txt")
 
     # distancia de palavra com no maximo 5
     data_documents =[]
+    label_documents = []
     len_data = len(data)
-    print(len_data)
     def word_embeding(word,number,rate):
-        words = [word]
-        similiar_words = w2v.most_similar(word, topn=number)
+        words = []
+        similiar_words = [(word,1)]
+        try:
+            similiar_words += w2v.most_similar(word, topn=number)
+        except Exception:
+            pass
         for similiar_word,freq in similiar_words:
             if(freq>rate):
                 words.append(similiar_word)
             else:
                 break
         return words
+    def op_embeding(op,number,rate):
+        len_opinion = len(op)
+        data_news = []
+        i = 0
+        while (i < len_opinion):
+            similiar_words = [(op[i],1)]
+            try:
+                similiar_words += w2v.most_similar(op[i], topn=number)
+            except Exception:
+                pass
+            for similiar_word,freq in similiar_words:
+                if(freq>rate):
+                    data_news.append(op[:i] + [similiar_word] + op[i+1:])
+                else:
+                    break
+            i+=1
+        return data_news
     i = 0
     while (i < len_data):#percorre as palavras da linha
-        j=0
-        len_opinion = len(data[i])
-        word_embedings = []
-        while (j < len_opinion):
-            try:
-                word_embedings = word_embeding(data[i][j],5,0.9)
-            except Exception:
-                word_embedings.append(data[i][j])
-
-            for word in word_embedings:
-                words=[]
-                words+=data[i][:j]
-                words.append(word)
-                words+=data[i][j+1:]
-                data_documents.append(words.copy())
-
-            j+=1
+        # j=0
+        # len_opinion = len(data[i])
+        # word_embedings = []
+        # while (j < len_opinion):
+        op_new = op_embeding(data[i],5,0.9)
+        data_documents += op_new
+        label_documents += [label[i]]*len(op_new)
         '''
-        for word in data[i]:
-            try:
-                words+=word_embeding(word,5)
-            except Exception:
-                words.append(word)
-            # else:
-            #     words.append(word)
-        
-        # print(words)
-        data_documents.append(words.copy())
+        # word_embedings = word_embeding(data[i][j],5,0.9)
+        for word in word_embedings:
+            words=[]
+            words+=data[i][:j]
+            words.append(word)
+            words+=data[i][j+1:]
+            data_documents.append(words.copy())
+            label_documents.append(label[i])
+        j+=1
         '''
         print(' - ' + str(i))
         i+=1
-    return data_documents
+    return data_documents,label_documents
 
 def get_all_words(data):
     # pegar todas as palavras
@@ -607,14 +307,13 @@ def get_data_freq_boolean(data, all_words):
     return data_number
 
 def get_data_freq_Count(data, all_words):
-    import random
+    # import random
     i=0
     data_number =[]
     len_data = len(data)
     all_word = [word for word in all_words]
     len_all_word = len(all_word)
-    print(len_all_word)
-    random.shuffle(all_word)
+    # random.shuffle(all_word)
     while (i < len_data):#percore as linhas
         w =[]
         j = 1
@@ -637,7 +336,6 @@ def get_data_freq_Count_space(data, all_words):
     len_data = len(data)
     all_word = [word for word in all_words]
     len_all_word = len(all_word)
-    print(len_all_word)
     random.shuffle(all_word)
     while (i < len_data):#percore as linhas
         w =[]

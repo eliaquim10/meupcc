@@ -25,7 +25,7 @@ import tensorflow as tf
 import random
 
 from tensorflow import keras
-from Util import readBase,trata,matriz_confusao
+from executaveis_teste.Util import matriz_confusao
 
 import numpy as np
 
@@ -76,6 +76,10 @@ def decode_review(text):
 
 decode_review(train_data[0])
 
+
+
+print(type(train_data[0]))
+print(train_data)
 train_data = keras.preprocessing.sequence.pad_sequences(train_data,
                                                         value=word_index["<PAD>"],
                                                         padding='post',
@@ -85,6 +89,11 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
                                                        value=word_index["<PAD>"],
                                                        padding='post',
                                                        maxlen=256)
+
+
+print(train_data)
+exit()
+
 # def transfor(matriz):
 #     i = 0
 #     j = 0

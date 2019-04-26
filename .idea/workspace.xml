@@ -4,6 +4,9 @@
     <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/executaveis_teste/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/executaveis_teste/Util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" beforeDir="false" afterPath="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining-text-tf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/result-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plots/result-1.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="94" column="7" lean-forward="true" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+            <state relative-caret-position="85">
+              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -72,31 +75,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="493" column="27" selection-start-line="493" selection-start-column="27" selection-end-line="493" selection-end-column="27" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-578">
+              <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
               <folding>
-                <element signature="e#24#34#0" expanded="true" />
-                <element signature="e#140#896#0" />
-                <element signature="e#929#1142#0" />
-                <element signature="e#1177#2993#0" />
-                <element signature="e#4331#7675#0" />
-                <element signature="e#7715#10504#0" />
-                <element signature="e#10566#10807#0" />
-                <element signature="e#10880#11246#0" />
-                <element signature="e#11286#11397#0" />
-                <element signature="e#11446#11536#0" />
-                <element signature="e#11578#11735#0" />
-                <element signature="e#11786#11841#0" />
-                <element signature="e#11872#12094#0" />
-                <element signature="e#12128#12380#0" />
-                <element signature="e#12408#12540#0" />
-                <element signature="e#12583#12693#0" />
-                <element signature="e#14315#14740#0" />
-                <element signature="e#14779#15086#0" />
-                <element signature="e#15116#16322#0" />
-                <element signature="e#16372#16628#0" />
-                <element signature="e#16676#17215#0" />
-                <element signature="e#17269#17703#0" />
+                <element signature="e#1142#1165#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,7 +95,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -118,9 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Dubai talvez seja</find>
-      <find>quantas</find>
-      <find>quantas besteiras,,vamos conhecer antes de criticar.</find>
       <find>copy(</find>
       <find>vive de rodeio não tem apenas um,</find>
       <find>colo</find>
@@ -144,10 +136,13 @@
       <find>add_graph</find>
       <find>verbo</find>
       <find>rec</find>
-      <find>print</find>
       <find>int6</find>
       <find>-1</find>
       <find>gpu_options</find>
+      <find>most_similar</find>
+      <find>print</find>
+      <find>matri</find>
+      <find>matr</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -251,6 +246,7 @@
         <option value="$PROJECT_DIR$/bib.py" />
         <option value="$PROJECT_DIR$/Util.py" />
         <option value="$PROJECT_DIR$/plots/result-1.txt" />
+        <option value="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" />
         <option value="$PROJECT_DIR$/mining-text-tf.py" />
         <option value="$PROJECT_DIR$/executaveis_teste/Util.py" />
       </list>
@@ -270,6 +266,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pcc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -277,16 +284,10 @@
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="pcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pcc" type="462c0819:PsiDirectoryNode" />
+              <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="plots" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -355,6 +356,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mining-text-tf-base" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pcc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/executaveis_teste" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mining-text-tf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pcc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -380,10 +403,12 @@
     <list>
       <item itemvalue="Python.mining-text-tf" />
       <item itemvalue="Python.Util" />
+      <item itemvalue="Python.mining-text-tf-base" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.mining-text-tf" />
+        <item itemvalue="Python.mining-text-tf-base" />
         <item itemvalue="Python.Util" />
       </list>
     </recent_temporary>
@@ -489,14 +514,9 @@
       <workItem from="1555968353514" duration="6540000" />
       <workItem from="1556024179685" duration="3240000" />
       <workItem from="1556195072384" duration="2021000" />
-      <workItem from="1556197139374" duration="2686000" />
-    </task>
-    <task id="LOCAL-00007" summary="1.03">
-      <created>1545442127850</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1545442127850</updated>
+      <workItem from="1556197139374" duration="3326000" />
+      <workItem from="1556201959699" duration="393000" />
+      <workItem from="1556224694773" duration="12837000" />
     </task>
     <task id="LOCAL-00008" summary="1.03">
       <created>1545443419188</created>
@@ -834,11 +854,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556199601779</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="1.1 v&#10;Aumento da base">
+      <created>1556199843618</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1556199843618</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330887000" />
+    <option name="totallyTimeSpent" value="344757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -853,7 +880,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.17927383" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.18381241" />
       <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info id="Favorites" order="2" sideWeight="0.50808316" side_tool="true" weight="0.1633888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -958,7 +985,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mining-text-tf.py</url>
-          <line>150</line>
+          <line>154</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -978,8 +1005,9 @@
     <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1555123158957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
     <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1556199198181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
     <SUITE FILE_PATH="coverage/pcc$bib.coverage" NAME="bib Coverage Results" MODIFIED="1555526288032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556199691611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556258147351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1555455810413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf_base.coverage" NAME="mining-text-tf-base Coverage Results" MODIFIED="1556255537960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
@@ -996,13 +1024,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/keras/layers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/util/compat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -1108,13 +1129,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/keyedvectors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="337" selection-start-line="337" selection-end-line="337" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1266,10 +1280,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Util.py" />
-    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/keyedvectors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="94" column="7" lean-forward="true" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+        <state relative-caret-position="118">
+          <caret line="1324" column="39" selection-start-line="1324" selection-start-column="27" selection-end-line="1324" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
           </folding>
@@ -1277,36 +1298,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <folding>
+            <element signature="e#1142#1165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="493" column="27" selection-start-line="493" selection-start-column="27" selection-end-line="493" selection-end-column="27" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-            <element signature="e#140#896#0" />
-            <element signature="e#929#1142#0" />
-            <element signature="e#1177#2993#0" />
-            <element signature="e#4331#7675#0" />
-            <element signature="e#7715#10504#0" />
-            <element signature="e#10566#10807#0" />
-            <element signature="e#10880#11246#0" />
-            <element signature="e#11286#11397#0" />
-            <element signature="e#11446#11536#0" />
-            <element signature="e#11578#11735#0" />
-            <element signature="e#11786#11841#0" />
-            <element signature="e#11872#12094#0" />
-            <element signature="e#12128#12380#0" />
-            <element signature="e#12408#12540#0" />
-            <element signature="e#12583#12693#0" />
-            <element signature="e#14315#14740#0" />
-            <element signature="e#14779#15086#0" />
-            <element signature="e#15116#16322#0" />
-            <element signature="e#16372#16628#0" />
-            <element signature="e#16676#17215#0" />
-            <element signature="e#17269#17703#0" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

@@ -27,7 +27,7 @@ import tensorflow as tf
 from tensorflow import keras
 # from tensorflow.python.layers.convolutional import Conv2D
 
-from executaveis_teste.Util import readBase,trata_tf_palavra,trata_tf_tf_idf,trata_tf_3
+from executaveis_teste.Util import readBase,trata_tf_palavra
 # import TensorBoard
 # import time
 
@@ -52,19 +52,23 @@ dir = 'data_set\colecao_dourada_2_class_unbalanced.csv'
 # exit()
 vocab_size = len(train_data[0])+1
 # vocab_size = 10000
+# vocab_size = 10000
 # # vocab_size = 2267
 # # vocab_size = 59200
 # # vocab_size = 822577
 #
-train_data = keras.preprocessing.sequence.pad_sequences(train_data,
-                                                        value=0,
-                                                        padding='post',
-                                                        maxlen=vocab_size)
 
-test_data = keras.preprocessing.sequence.pad_sequences(test_data,
-                                                       value=0,
-                                                       padding='post',
-                                                       maxlen=vocab_size)
+# train_data = keras.preprocessing.sequence.pad_sequences(train_data,
+#                                                         value=0,
+#                                                         padding='post',
+#                                                         maxlen=vocab_size)
+#
+# test_data = keras.preprocessing.sequence.pad_sequences(test_data,
+#                                                        value=0,
+#                                                        padding='post',
+#                                                        maxlen=vocab_size)
+
+
 # tf.cast(train_data, tf.int32)
 # tf.cast(test_data, tf.int32)
 # eliaquim-m
@@ -80,15 +84,15 @@ test_data = keras.preprocessing.sequence.pad_sequences(test_data,
 # with tf.Session(tf.ConfigProto(gpu_options=gpu)) as sess:
 # with tf.Session() as sess:
 
-n =64
+n =32
 model = keras.Sequential()
 model.add(keras.layers.Embedding(vocab_size, n))
-# model.add(keras.layers.GlobalAveragePooling1D())
-# model.add(keras.layers.Flatten())
+model.add(keras.layers.GlobalAveragePooling1D())
+model.add(keras.layers.Flatten())
+# n /=2
+# model.add(keras.layers.LSTM(n,recurrent_activation='softmax'))
 n /=2
-model.add(keras.layers.LSTM(n,recurrent_activation='softmax'))
-n /=2
-# model.add(keras.layers.Dense(n, activation=tf.nn.relu))
+model.add(keras.layers.Dense(n, activation=tf.nn.relu))
 
 n /=2
 model.add(keras.layers.Dense(n, activation=tf.nn.sigmoid))
@@ -122,7 +126,7 @@ history = model.fit(train_data,
                     verbose=1)
 
 # sess
-# results = model.evaluate(test_data, test_labels)
+results = model.evaluate(test_data, test_labels)
 
 
 # model.save('epic_num_reader.model')
@@ -146,7 +150,7 @@ with open(path,mode='w', encoding='utf-8') as csv_file:
 # print(s)
 
 
-'''
+
 
 history_dict = history.history
 history_dict.keys()
@@ -186,4 +190,5 @@ plt.ylabel('Accuracy')
 plt.legend()
 
 plt.show()
+'''
 '''
