@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#@title MIT License
+# @title MIT License
 #
 # Copyright (c) 2017 François Chollet
 #
@@ -25,7 +25,7 @@ import tensorflow as tf
 from tensorflow import keras
 import numpy as np
 
-from executaveis_teste.Util import readBase,trata_tf_palavra
+from executaveis_teste.Util import read_base, trata_tf_palavra
 
 # print(tf.__version__)
 
@@ -35,9 +35,8 @@ from executaveis_teste.Util import readBase,trata_tf_palavra
 # imdb = keras.datasets.imdb
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
-dir = 'data_set\colecao_dourada_2_class_unbalanced.csv'
-(train_data, train_labels), (test_data, test_labels) = trata_tf_palavra(readBase(dir), 0.75)
-
+rooting = 'data_set/colecao_dourada_2_class_unbalanced.csv'
+(train_data, train_labels), (test_data, test_labels) = trata_tf_palavra(read_base(rooting), 0.70)
 
 # NAME = "test1-{}".format(int(time.time()))
 # tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
@@ -46,7 +45,7 @@ dir = 'data_set\colecao_dourada_2_class_unbalanced.csv'
 # A dictionary mapping words to an integer index
 # print(len(train_data[0]))
 # exit()
-vocab_size = len(train_data[0])+1
+vocab_size = len(train_data[0]) + 1
 
 # train_data = keras.preprocessing.sequence.pad_sequences(train_data,
 #                                                         value=0,
@@ -67,13 +66,11 @@ vocab_size = len(train_data[0])+1
 # len(train_data[0]), len(train_data[1])
 
 
-
 # input shape is the vocabulary count used for the movie reviews (10,000 words)np
 # vocab_size = 2282
 
 # with tf.Session(tf.ConfigProto(gpu_options=gpu)) as sess:
 with tf.Session() as sess:
-
     # n =np.int32(32)
     n = 32
     model = keras.Sequential()
@@ -82,22 +79,22 @@ with tf.Session() as sess:
     # model.add(keras.layers.Flatten())
     # n /=2
     # model.add(keras.layers.LSTM(n,activation='softmax'))
-    n =np.int32(n/2)
+    n /=2
+    model.add(keras.layers.Dense(n, activation=tf.nn.softmax))
+    n = np.int32(n / 2)
     model.add(keras.layers.SimpleRNN(n))
-    # n /=2
-    # model.add(keras.layers.Dense(n, activation=tf.nn.tanh))
     # n /=2
     # model.add(keras.layers.Dense(n, activation=tf.nn.relu6))
     #
     # # n /=2
-    model.add(keras.layers.Dense(1, activation=tf.nn.relu6))
+    model.add(keras.layers.Dense(1, activation=tf.nn.tanh))
     # model.add(keras.layers.Dense(1, activation=tf.nn.softmax))
 
     model.summary()
     # keras.layers.CuDNNLSTM
 
     model.compile(optimizer=tf.train.AdamOptimizer(),
-                  loss='binary_crossentropy',
+                  loss=tf.losses.sigmoid_cross_entropy,
                   metrics=['accuracy'])
 
     # limit = vocab_size
@@ -119,17 +116,15 @@ with tf.Session() as sess:
 
     # sess
     # results = model.evaluate(test_data, test_labels)
-
-
     # model.save('epic_num_reader.model')
     # new_model = keras.models.load_model('epic_num_reader.model')
     predictions = model.predict(test_data)
 
     path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
-    with open(path,mode='w', encoding='utf-8') as csv_file:
-        #writer = csv.writer(csv_file)
+    with open(path, mode='w', encoding='utf-8') as csv_file:
+        # writer = csv.writer(csv_file)
         for w in predictions:
-            csv_file.writelines(str(w)+'\n')
+            csv_file.writelines(str(w) + '\n')
 # sess.run()
 # for w in predictions:
 #     print(w)
