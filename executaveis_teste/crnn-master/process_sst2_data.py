@@ -7,7 +7,7 @@
 import logging
 from collections import namedtuple, defaultdict
 from six.moves import zip as izip
-import cPickle
+import _pickle as cPickle
 import sys
 import os
 import numpy as np
@@ -33,11 +33,15 @@ def read_su_sentiment_rotten_tomatoes(dirname, lowercase=True):
     has been expanded. It's not too big, so compose entirely into memory.
     """
     logging.info("loading corpus from %s" % dirname)
+    decoding = 'utf-8'
 
     # many mangled chars in sentences (datasetSentences.txt)
     chars_sst_mangled = ['à', 'á', 'â', 'ã', 'æ', 'ç', 'è', 'é', 'í',
                          'í', 'ï', 'ñ', 'ó', 'ô', 'ö', 'û', 'ü']
-    sentence_fixups = [(char.decode('utf-8').encode('latin1'), char) for char in chars_sst_mangled]
+    coding = lambda x: (x.encode('utf-8').decode('latin1','strict'), x)
+
+    sentence_fixups = [coding(char) for char in chars_sst_mangled]
+
     # more junk, and the replace necessary for sentence-phrase consistency
     sentence_fixups.extend([
         ('Â', ''),
