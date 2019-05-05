@@ -12,6 +12,7 @@ import sys
 import os
 import numpy as np
 import pandas as pd
+#4/QQEVvWsNOO-J1ssc6aT12Cp8EfaCaoqPv0HV-Bu2siE88SHaBPZe2GU
 
 class SentimentPhrase(object):
     def __init__(self, words, tags, split, sentiment, sentence_id):
@@ -57,10 +58,15 @@ def read_su_sentiment_rotten_tomatoes(dirname, lowercase=True):
     # read sentences to temp {sentence -> (id,split) dict, to correlate with dictionary.txt
     vocab = defaultdict(float)
     info_by_sentence = {}
+    count = 1000
     with open(os.path.join(dirname, 'datasetSentences.txt'), 'r') as sentences:
         with open(os.path.join(dirname, 'datasetSplit.txt'), 'r') as splits:
             next(sentences)  # legend
             next(splits)     # legend
+            print(count)
+            if(count>=0):
+                pass
+            print(info_by_sentence)
             for sentence_line, split_line in izip(sentences, splits):
                 (id, text) = sentence_line.split('\t')
                 id = int(id)
@@ -73,7 +79,8 @@ def read_su_sentiment_rotten_tomatoes(dirname, lowercase=True):
                     info_by_sentence[text] = (id, int(split_i))
                 else:
                     logging.info('Duplicates: %s' % text)
-
+    count-=1
+    exit()
     # read all phrase text
     phrases = [None] * 239232  # known size of phrases
     with open(os.path.join(dirname, 'dictionary.txt'), 'r') as phrase_lines:
@@ -187,24 +194,24 @@ def get_W(word_vecs, k=300):
         i += 1
     return W, word_idx_map
 
-if __name__ == '__main__':
-    w2v_file = sys.argv[1] # w2v pretrain file
-    sst_folder = sys.argv[2] # sst folder
-    print ('load corpus')
-    phrases, sentences, vocab = read_su_sentiment_rotten_tomatoes(sst_folder)
-    print ('load word2vec')
-    max_l = np.max([len(s.words) for s in sentences])
-    print ("number of sentences: " + str(len(sentences)))
-    print ("vocab size: " + str(len(vocab)))
-    print( "max sentence length: " + str(max_l))
-    w2v = load_bin_vec(w2v_file, vocab)
-    print ("%d words in w2v" % len(w2v))
-    add_unknown_words(w2v, vocab)
-    W, word_idx_map = get_W(w2v)
-    rand_vecs = {}
-    add_unknown_words(rand_vecs, vocab)
-    W2, _ = get_W(rand_vecs)
-    cPickle.dump([ phrases, sentences, W, W2, word_idx_map, vocab], open("sst2.p", "wb"))
-    x = cPickle.load(open("sst2.p","rb"))
-    phrases, sentences, W, W2, word_idx_map, vocab = x[0], x[1], x[2], x[3], x[4], x[5]
-    print ("dataset created!")
+# if __name__ == '__main__':
+w2v_file = 'word2vecs\GoogleNews-vectors-negative300.bin' # w2v pretrain file
+sst_folder = 'data\stanfordSentimentTreebank' # sst folder
+print ('load corpus')
+phrases, sentences, vocab = read_su_sentiment_rotten_tomatoes(sst_folder)
+print ('load word2vec')
+max_l = np.max([len(s.words) for s in sentences])
+print ("number of sentences: " + str(len(sentences)))
+print ("vocab size: " + str(len(vocab)))
+print( "max sentence length: " + str(max_l))
+w2v = load_bin_vec(w2v_file, vocab)
+print ("%d words in w2v" % len(w2v))
+add_unknown_words(w2v, vocab)
+W, word_idx_map = get_W(w2v)
+rand_vecs = {}
+add_unknown_words(rand_vecs, vocab)
+W2, _ = get_W(rand_vecs)
+cPickle.dump([ phrases, sentences, W, W2, word_idx_map, vocab], open("sst2.p", "wb"))
+x = cPickle.load(open("sst2.p","rb"))
+phrases, sentences, W, W2, word_idx_map, vocab = x[0], x[1], x[2], x[3], x[4], x[5]
+print ("dataset created!")
