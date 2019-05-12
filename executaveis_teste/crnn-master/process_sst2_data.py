@@ -4,15 +4,19 @@
 # Copyright (C) 2010 Radim Rehurek <radimrehurek@seznam.cz>
 # Licensed under the GNU LGPL v2.1 - http://www.gnu.org/licenses/lgpl.html
 
-import logging
+# import logging
 from collections import namedtuple, defaultdict
 from six.moves import zip as izip
 import _pickle as cPickle
-import sys
+# import sys
 import os
 import numpy as np
-import pandas as pd
+# import pandas as pd
 #4/QQEVvWsNOO-J1ssc6aT12Cp8EfaCaoqPv0HV-Bu2siE88SHaBPZe2GU
+
+
+count_features = 3
+limiar_dic = 296
 
 class SentimentPhrase(object):
     def __init__(self, words, tags, split, sentiment, sentence_id):
@@ -33,8 +37,7 @@ def read_su_sentiment_rotten_tomatoes(dirname, lowercase=True):
     http://nlp.stanford.edu/~socherr/stanfordSentimentTreebank.zip
     has been expanded. It's not too big, so compose entirely into memory.
     """
-    logging.info("loading corpus from %s" % dirname)
-    decoding = 'utf-8'
+    print("loading corpus from %s" % dirname)
 
     # many mangled chars in sentences (datasetSentences.txt)
     chars_sst_mangled = ['à', 'á', 'â', 'ã', 'æ', 'ç', 'è', 'é', 'í',
@@ -58,37 +61,40 @@ def read_su_sentiment_rotten_tomatoes(dirname, lowercase=True):
     # read sentences to temp {sentence -> (id,split) dict, to correlate with dictionary.txt
     vocab = defaultdict(float)
     info_by_sentence = {}
-    count = 1000
     with open(os.path.join(dirname, 'datasetSentences.txt'), 'r') as sentences:
         with open(os.path.join(dirname, 'datasetSplit.txt'), 'r') as splits:
             next(sentences)  # legend
             next(splits)     # legend
-            print(count)
-            if(count>=0):
-                pass
-            print(info_by_sentence)
             for sentence_line, split_line in izip(sentences, splits):
                 (id, text) = sentence_line.split('\t')
                 id = int(id)
-                text = text.rstrip()
-                for junk, fix in sentence_fixups:
-                    text = text.replace(junk, fix)
-                (id2, split_i) = split_line.split(',')
-                assert id == int(id2)
-                if text not in info_by_sentence:    # discard duplicates
-                    info_by_sentence[text] = (id, int(split_i))
-                else:
-                    logging.info('Duplicates: %s' % text)
-    count-=1
-    exit()
+                if(count_features>id):
+                    text = text.rstrip()
+
+                    for junk, fix in sentence_fixups:
+                        text = text.replace(junk, fix)
+                    (id2, split_i) = split_line.split(',')
+
+                    assert id == int(id2)
+                    if text not in info_by_sentence:    # discard duplicates
+                        info_by_sentence[text] = (id, int(split_i))
+                    else:
+                        print('Duplicates: %s' % text)
+
     # read all phrase text
-    phrases = [None] * 239232  # known size of phrases
+    phrases = [None] * limiar_dic  # known size of phrases
     with open(os.path.join(dirname, 'dictionary.txt'), 'r') as phrase_lines:
         for line in phrase_lines:
             (text, id) = line.split('|')
+            id = int(id) - 1
+            # if(limiar_dic>i):
             for junk, fix in phrase_fixups:
                 text = text.replace(junk, fix)
-            phrases[int(id)] = text.rstrip()  # for 1st pass just string
+            # print(text)
+            phrases[id] = text.rstrip()  # for 1st pass just string
+
+
+    # phrases = [line for line in phrases if line is snot None]
 
     test_str = ''
     train_str = ''
@@ -96,14 +102,15 @@ def read_su_sentiment_rotten_tomatoes(dirname, lowercase=True):
         next(sentiments)  # legend
         for line in sentiments:
             (id, sentiment) = line.split('|')
-            id = int(id)
-            sentiment = float(sentiment)
-            text = phrases[id]
-            (sentence_id, split_i) = info_by_sentence.get(text, (None, 0))
-            if split_i == 2:  # test data
-                test_str += text
-            elif split_i == 1:
-                train_str += text
+            id = int(id) - 1
+            # if(count_features>int(id)):
+            if(limiar_dic>int(id)):
+                text = phrases[id]
+                (sentence_id, split_i) = info_by_sentence.get(text, (None, 0))
+                if split_i == 2:  # test data
+                    test_str += text
+                elif split_i == 1:
+                    train_str += text
 
     # add sentiment labels, correlate with sentences
     with open(os.path.join(dirname, 'sentiment_labels.txt'), 'r') as sentiments:
@@ -111,8 +118,9 @@ def read_su_sentiment_rotten_tomatoes(dirname, lowercase=True):
         for line in sentiments:
             (id, sentiment) = line.split('|')
             id = int(id)
+
             sentiment = float(sentiment)
-            text = phrases[id]
+            text = str(phrases[id])
             words = text.split()
             if lowercase:
                 words = [word.lower() for word in words]
@@ -123,25 +131,53 @@ def read_su_sentiment_rotten_tomatoes(dirname, lowercase=True):
             split = [None, 'train', 'test', 'dev'][split_i]
             if sentence_id is None and (text in test_str or text not in train_str):  # skip phrase in test sentences and no substr of train sentences
                 phrases[id] = SentimentPhrase(words, [id], split, 0.5, sentence_id)  # 0.5 for remove
+
             else:
                 phrases[id] = SentimentPhrase(words, [id], split, sentiment, sentence_id)
+        # exit()
+    # print(type(phrases))
+    # print(len(phrases))
+    # print(phrases[0])
+    # phrases = [w for w in phrases if(type(w)==SentimentPhrase)]
+    # for w in phrases:
+    #     print(w)
+    # exit()
 
-    logging.info("loaded corpus with %i sentences and %i phrases from %s",
+    print("loaded corpus with %i sentences and %i phrases from %s",
                  len(info_by_sentence), len(phrases), dirname)
 
     # counts don't match 8544, 2210, 1101 because 13 TRAIN and 1 DEV sentences are duplicates
     # print len([phrase for phrase in phrases if phrase.split == 'train']) # == 8531  # 'train'
     # print len([phrase for phrase in phrases if phrase.split == 'test']) # == 2210  # 'test'
     # print len([phrase for phrase in phrases if phrase.split == 'dev']) # == 1100  # 'dev'
-    phrase0 = [phrase for phrase in phrases if phrase.sentence_id is None
-              and (phrase.sentiment > 0.6 or phrase.sentiment <= 0.4) ]
-    sentences = [phrase for phrase in phrases if phrase.sentence_id is not None
-              and (phrase.sentiment > 0.6 or phrase.sentiment <= 0.4) ]
+    def dividir(phrases):
+        new_phrases = []
+        new_sentences = []
+        for phrase in phrases:
+            try:
+                if(phrase.sentence_id is None and (phrase.sentiment > 0.6 or phrase.sentiment <= 0.4)):
+                    new_phrases.append(phrase)
+            except Exception:
+                pass
+            try:
+                if(phrase.sentence_id is not None and (phrase.sentiment > 0.6 or phrase.sentiment <= 0.4)):
+                    new_sentences.append(phrase)
+            except Exception:
+                pass
+        return new_phrases,new_sentences
+
+    phrase0, sentences = dividir(phrases)
+
+    # phrase0 = [phrase for phrase in phrases if phrase.sentence_id is None
+    #            and (phrase.sentiment > 0.6 or phrase.sentiment <= 0.4) ]
+    # sentences = [phrase for phrase in phrases if phrase.sentence_id is not None
+    #              and (phrase.sentiment > 0.6 or phrase.sentiment <= 0.4) ]
+
     print ('sentences %d phrase %d vocab %d' % (len(sentences),
-                                               len(phrase0), len(vocab)))
+                                                len(phrase0), len(vocab)))
     print ('Data example')
-    print (phrase0[10])
-    print (sentences[10])
+    # print (phrase0[0])
+    # print (sentences[0])
     return phrase0, sentences, vocab
 
 def load_bin_vec(fname, vocab):
@@ -152,18 +188,32 @@ def load_bin_vec(fname, vocab):
     with open(fname, "rb") as f:
         header = f.readline()
         vocab_size, layer1_size = map(int, header.split())
+
         binary_len = np.dtype('float32').itemsize * layer1_size
+        print('header',type(header))
+        print('header',header)
+        print('vocab_size',type(vocab_size))
+        print('vocab_size',vocab_size)
+        print('layer1_size',type(layer1_size))
+        print('layer1_size',layer1_size)
+        print('binary_len',type(binary_len))
+        print('binary_len',binary_len)
         for line in range(vocab_size):
             word = []
             while True:
                 ch = f.read(1)
+
+                print('ch',type(ch))
                 if ch == ' ':
                     word = ''.join(word)
+                    exit()
                     break
                 if ch != '\n':
                     word.append(ch)
+            exit()
             if word in vocab:
-               word_vecs[word] = np.fromstring(f.read(binary_len), dtype='float32')
+                word_vecs[word] = np.fromstring(f.read(binary_len), dtype='float32')
+                exit()
             else:
                 f.read(binary_len)
     return word_vecs

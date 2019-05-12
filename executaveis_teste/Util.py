@@ -32,7 +32,7 @@ def read_base(csvFile=str):
 def trata_tf_palavra(base, porc_traing):
     import nltk
     import numpy as np
-    b_w2v = False
+    b_w2v = True
 
     # montar base baseado se tem a palavra/character , com a sequencia
     data = []
@@ -194,16 +194,18 @@ def embeding(data, label):
         data_news = []
         i = 0
         while (i < len_opinion):
-            similiar_words = [(op[i], 1)]
+            similiar_words = [(op[i], float(1) )]
             try:
                 similiar_words += w2v.most_similar(op[i], topn=number)
             except Exception:
                 pass
             for similiar_word, freq in similiar_words:
+                print(type(freq))
                 if (freq > rate):
                     data_news.append(op[:i] + [similiar_word] + op[i + 1:])
                 else:
                     break
+            exit()
             i += 1
         return data_news
 

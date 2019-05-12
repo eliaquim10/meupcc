@@ -1,4 +1,4 @@
-import cPickle
+import _pickle as cPickle
 import numpy as np
 from process_sst2_data import SentimentPhrase
 

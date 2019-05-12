@@ -23,6 +23,7 @@ from keras.utils import generic_utils
 from keras.models import Model
 from keras.optimizers import Adadelta
 import time
+import mr_data
 
 
 batch_size = 50
@@ -36,7 +37,6 @@ folds = 10
 
 print('Loading data...')
 
-import mr_data
 X_train, y_train, X_test, y_test, W, W2 = mr_data.load_data(fold=0)
 maxlen = X_train.shape[1]
 max_features = len(W)
