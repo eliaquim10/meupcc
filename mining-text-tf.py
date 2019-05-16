@@ -25,7 +25,7 @@ import tensorflow as tf
 from tensorflow import keras
 import numpy as np
 
-from executaveis_teste.Util import read_base, trata_tf_palavra
+from Util import read_base, trata_tf_palavra
 
 # print(tf.__version__)
 
@@ -36,7 +36,7 @@ from executaveis_teste.Util import read_base, trata_tf_palavra
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
 rooting = 'data_set/colecao_dourada_2_class_unbalanced.csv'
-(train_data, train_labels), (test_data, test_labels) = trata_tf_palavra(read_base(rooting), 0.70)
+(train_data, train_labels), (test_data, test_labels) = trata_tf_palavra(read_base(rooting), 0.70,'word2vecs/skip_s50.txt')
 
 # NAME = "test1-{}".format(int(time.time()))
 # tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
@@ -94,7 +94,7 @@ with tf.Session() as sess:
     # keras.layers.CuDNNLSTM
 
     model.compile(optimizer=tf.train.AdamOptimizer(),
-                  loss=tf.losses.sigmoid_cross_entropy,
+                  loss='binary_crossentropy',
                   metrics=['accuracy'])
 
     # limit = vocab_size
@@ -110,7 +110,7 @@ with tf.Session() as sess:
     history = model.fit(train_data,
                         train_labels,
                         epochs=30,
-                        batch_size=1,
+                        batch_size=84,
                         validation_split=0.2,
                         verbose=1)
 

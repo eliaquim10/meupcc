@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding">
     <file url="file://$USER_HOME$/Downloads/data_base-vinicius-a-2000.csv" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/data_set/data_base-dilva-1000.csv" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/teste.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/executaveis_teste/crnn-master/data/stanfordSentimentTreebank/SOStr.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/executaveis_teste/crnn-master/data/stanfordSentimentTreebank/datasetSplit.txt" charset="windows-1252" />
     <file url="PROJECT" charset="windows-1252" />
   </component>
 </project>

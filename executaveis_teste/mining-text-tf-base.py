@@ -22,13 +22,9 @@
 # DEALINGS IN THE SOFTWARE.
 
 import tensorflow as tf
-import random
 
 from tensorflow import keras
-from executaveis_teste.Util import matriz_confusao
-
-import numpy as np
-
+from Util import matriz_confusao
 
 # readBase('colecao_dourada_2_class_unbalanced.csv')
 
