@@ -4,9 +4,8 @@ import _pickle as cPickle
 from Util import get_data_freq_Count
 from Util import remocaopontos
 from Util import get_all_words
-
-from six.moves import zip as izip
 import sys
+
 # from Util import tf_idf
 # from Util import contar_palavra_doc
 # from Util import get_numbers
@@ -49,23 +48,24 @@ def get_W2V_numbers(word_vecs,all_words, limiar=50):
         i += 1
     return W, word_idx_map
 
-def embeding(data, label,dir_w2v):
+def embeding(data, dir_w2v):
     import gensim
     # wang2vector
     # w2v = gensim.models.KeyedVectors.load_word2vec_format(dir_w2v,binary=True)
     w2v = gensim.models.KeyedVectors.load_word2vec_format(dir_w2v)
     data_w2v = {}
-    # distancia de palavra com no maximo 5
-    data_documents = []
-    label_documents = []
     len_data = len(data)
 
     def word_embeding(op,data_w2v, limiar = 50):
         len_opinion = len(op)
         i = 0
         while (i < len_opinion):
+            print(op[i])
             if(data_w2v.get(op[i]) is None):
-                data_w2v[op[i]] = w2v.distance(op[i])[:limiar]
+                try:
+                    data_w2v[op[i]] = w2v.distance(op[i])[:limiar]
+                except Exception:
+                    pass
             i += 1
         return data_w2v
 
@@ -114,19 +114,12 @@ def embeding(data, label,dir_w2v):
 
     i = 0
     while (i < len_data):  # percorre as palavras da linha
-        op_new,aux_w2v = op_embeding_news_skip(data[i], 0.9,data_w2v)
-
-
+        # op_new,aux_w2v = op_embeding_news_skip(data[i], 0.9,data_w2v)
+        aux_w2v = word_embeding(data[i],data_w2v)
         data_w2v.update(aux_w2v)
-        data_documents.append(data[i])
-        data_documents += op_new
-        label_documents.append(label[i])
-        label_documents += [label[i]] * (len(op_new))
-
         print(' - ' + str(i))
         i += 1
-
-    return data_documents, label_documents,data_w2v
+    return data_w2v
 
 def trata_tf_palavra(base,dir_w2v,b_w2v = True,len_data_init=100):
     import nltk
@@ -152,7 +145,7 @@ def trata_tf_palavra(base,dir_w2v,b_w2v = True,len_data_init=100):
     data_w2v = {}
     print('all_words',len(all_words))
     if(b_w2v):
-        data, data_labels,data_w2v = embeding(data, data_labels, dir_w2v)
+        data_w2v = embeding(data, dir_w2v)
 
     # pega todas as palavras
 
@@ -164,27 +157,26 @@ def trata_tf_palavra(base,dir_w2v,b_w2v = True,len_data_init=100):
 
     # data_number = get_numbers(data,all_words)
     data_number = get_data_freq_Count(data,all_words)
-    W,_ = get_W2V_numbers(data_w2v,all_words)
-
+    data_w2v,_ = get_W2V_numbers(data_w2v,all_words)
 
     # data_number = get_data_freq_Count_space(data, all_words)
     # data_number = get_data_idf(data)
     data_number = [tuple(u) for u in data_number]
 
-    return data_number.copy(), data_labels.copy(),W
+    return data_number.copy(), data_labels.copy(),data_w2v
 
-# if __name__ == '__main__':
-# w2v,data_name,pickle_name = sys.argv[1],sys.argv[2],sys.argv[3]
-w2v = 'word2vecs/skip_s50-1.txt'
-data_name = 'data_set/colecao_dourada_2_class_unbalanced.csv'
-pickle_name = 'data_set/data_with_count_w2v.txt'
-# # data_name = 'data_set/data_with_tfidf_w2v.txt'
-data_number, data_labels, data_w2v = trata_tf_palavra(read_base(data_name), w2v)
-cPickle.dump([ data_number, data_labels,data_w2v], open(pickle_name, "wb"))
-x = cPickle.load(open(pickle_name, "rb"))
-d_n, d_l, wv = x[0], x[1],x[2]
+if __name__ == '__main__':
+    w2v,data_name,pickle_name = sys.argv[1],sys.argv[2],sys.argv[3]
+    # w2v = 'word2vecs/skip_s50-1.txt'
+    # data_name = 'data_set/colecao_dourada_2_class_unbalanced.csv'
+    # pickle_name = 'data_set/data_with_count_w2v.txt'
+    # # data_name = 'data_set/data_with_tfidf_w2v.txt'
+    data_number, data_labels, data_w2v = trata_tf_palavra(read_base(data_name), w2v)
+    cPickle.dump([ data_number, data_labels,data_w2v], open(pickle_name, "wb"))
+    x = cPickle.load(open(pickle_name, "rb"))
+    d_n, d_l, wv = x[0], x[1],x[2]
 # print(wv)
 # print(d_l)
 
-print ("dataset created!")
+    print ("dataset created!")
 #python create_data.py word2vecs/skip_s50-1.txt data_set/colecao_dourada_2_class_unbalanced.csv data_set/data_with_count_w2v.txt

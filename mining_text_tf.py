@@ -131,7 +131,7 @@ with tf.Session() as sess:
     history = model.fit(train_data,
                         train_labels,
                         epochs=30,
-                        batch_size=10,
+                        batch_size=1,
                         validation_split=0.2,
                         verbose=1)
 
