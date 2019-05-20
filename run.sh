@@ -1,0 +1,2 @@
+python create_data.py word2vecs/skip_s50-1.txt data_set/colecao_dourada_2_class_unbalanced.csv data_set/data_with_count_w2v_wang.txt
+python mining_text_tf.py
