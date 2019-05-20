@@ -29,8 +29,7 @@ def read_base(csvFile):
                 pass
         return base
 
-
-def get_W2V_numbers(word_vecs,all_words, limiar=50):
+def get_W2V_numbers(word_vecs,all_words, limiar):
     """
     Get word matrix. W[i] is the vector for word indexed by i
     """
@@ -43,27 +42,61 @@ def get_W2V_numbers(word_vecs,all_words, limiar=50):
         if(word_vecs.get(word) is None):
             W[i] = np.random.uniform(-0.25, 0.25, limiar)
         else:
-            W[i] = word_vecs[word]
+            W[i] = word_vecs[word][:limiar]
         word_idx_map[word] = i
         i += 1
     return W, word_idx_map
 
+def load_bin_vec(fname, vocab):
+    """
+    Loads 300x1 word vecs from Google (Mikolov) word2vec
+    """
+    word_vecs = {}
+    code = {
+        '':bytes('', 'utf-8'),
+        ' ':bytes(' ', 'utf-8'),
+        '\n':bytes('\n', 'utf-8')
+    }
+
+    with open(fname, "rb") as f:
+        header = f.readline()
+        vocab_size, layer1_size = map(int, header.split())
+        binary_len = np.dtype('float32').itemsize * layer1_size
+        for line in range(vocab_size):
+            word = []
+            while True:
+                ch = f.read(1)
+
+                if ch == code[' ']:
+                    word = code[''].join(word)
+                    break
+                if ch != code['\n']:
+                    word.append(ch)
+            word = word.decode('utf-8')
+            if word in vocab:
+                word_vecs[word] = np.fromstring(f.read(binary_len), dtype='float32')
+            else:
+                f.read(binary_len)
+    return word_vecs
+
 def embeding(data, dir_w2v):
     import gensim
     # wang2vector
-    # w2v = gensim.models.KeyedVectors.load_word2vec_format(dir_w2v,binary=True)
-    w2v = gensim.models.KeyedVectors.load_word2vec_format(dir_w2v)
+    if(dir_w2v[len(dir_w2v)-3:]=='bin'):
+        all_words = get_all_words(data)
+        w2v = load_bin_vec(dir_w2v, all_words.keys())
+    else:
+        w2v = gensim.models.KeyedVectors.load_word2vec_format(dir_w2v)
     data_w2v = {}
     len_data = len(data)
 
-    def word_embeding(op,data_w2v, limiar = 50):
+    def word_embeding(op,data_w2v):
         len_opinion = len(op)
         i = 0
         while (i < len_opinion):
-            print(op[i])
             if(data_w2v.get(op[i]) is None):
                 try:
-                    data_w2v[op[i]] = w2v.distance(op[i])[:limiar]
+                    data_w2v[op[i]] = w2v.distance(op[i])
                 except Exception:
                     pass
             i += 1
@@ -117,11 +150,10 @@ def embeding(data, dir_w2v):
         # op_new,aux_w2v = op_embeding_news_skip(data[i], 0.9,data_w2v)
         aux_w2v = word_embeding(data[i],data_w2v)
         data_w2v.update(aux_w2v)
-        print(' - ' + str(i))
         i += 1
     return data_w2v
 
-def trata_tf_palavra(base,dir_w2v,b_w2v = True,len_data_init=100):
+def trata_tf_palavra(base,dir_w2v,b_w2v = True,len_data_init=1000,limiar = 50):
     import nltk
     # import random
 
@@ -143,7 +175,7 @@ def trata_tf_palavra(base,dir_w2v,b_w2v = True,len_data_init=100):
     # pegar todas as palavras
     all_words = get_all_words(data)
     data_w2v = {}
-    print('all_words',len(all_words))
+    print('w2v embeding = >>')
     if(b_w2v):
         data_w2v = embeding(data, dir_w2v)
 
@@ -152,12 +184,11 @@ def trata_tf_palavra(base,dir_w2v,b_w2v = True,len_data_init=100):
     all_words = [w for w in get_all_words(data)]
     rand_idx = np.random.permutation(range(len(all_words)))
     all_words = [all_words[i] for i in rand_idx]
-    print('all_words',len(all_words))
     # all_words = random.shuffle(all_words)
 
     # data_number = get_numbers(data,all_words)
     data_number = get_data_freq_Count(data,all_words)
-    data_w2v,_ = get_W2V_numbers(data_w2v,all_words)
+    data_w2v,_ = get_W2V_numbers(data_w2v,all_words,limiar=limiar)
 
     # data_number = get_data_freq_Count_space(data, all_words)
     # data_number = get_data_idf(data)
@@ -179,4 +210,8 @@ if __name__ == '__main__':
 # print(d_l)
 
     print ("dataset created!")
-#python create_data.py word2vecs/skip_s50-1.txt data_set/colecao_dourada_2_class_unbalanced.csv data_set/data_with_count_w2v.txt
+
+#python create_data.py word2vecs/skip_s50-1.txt data_set/colecao_dourada_2_class_unbalanced.csv data_set/data_with_count_w2v_wang.txt
+#python create_data.py word2vecs/skip_s300.txt data_set/colecao_dourada_2_class_unbalanced.csv data_set/data_with_count_w2v_wang.txt
+
+#python create_data.py executaveis_teste/crnn_master/word2vecs/GoogleNews-vectors-negative300.bin data_set/colecao_dourada_2_class_unbalanced.csv data_set/data_with_count_w2v.txt

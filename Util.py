@@ -390,7 +390,9 @@ def dividir_base(data_number,data_labels,porc_traing):
     limiar = int(len_data * porc_traing)
     f = lambda x: np.array(x, dtype=np.float32)
     g = lambda y: [g(x) for x in y] if (type(y[0])==list) else np.max(y)
-    vocab_size = g(g(data_number))
+    vocab_size = 64
+    # vocab_size = g(g(data_number))
+
 
     train_data = data_number[0:limiar].copy()
     # train_data = [f(w) for w in train_data]

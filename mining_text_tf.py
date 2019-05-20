@@ -37,7 +37,7 @@ from keras.initializers import Constant
 # imdb = keras.datasets.imdb
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
-rooting = 'data_set/data_with_count_w2v.txt'
+rooting = 'data_set/data_with_count_w2v_wang_1.txt'
 x = cPickle.load(open(rooting,"rb"))
 data_number, data_labels, w2v = x[0], x[1], x[2]
 
@@ -46,14 +46,7 @@ data_number = [list(w) for w in data_number]
 # (train_data, train_labels), (test_data, test_labels) = trata_tf_palavra(read_base(rooting), 0.75,'word2vecs/skip_s50.txt')
 (train_data, train_labels), (test_data, test_labels) = dividir_base(data_number,data_labels,0.75)
 maxlen = train_data.shape[1]
-print(type(maxlen))
-print(type(maxlen))
-print(type(train_data))
-print(len(train_data))
-print(type(train_data[0]))
-print(len(train_data[1]))
-print('X_train shape:', train_data.shape[1])
-print('X_test shape:', test_data.shape)
+
 # exit()
 
 
@@ -62,7 +55,7 @@ print('X_test shape:', test_data.shape)
 
 
 # A dictionary mapping words to an integer index
-vocab_size = 447
+# vocab_size = 447
 
 # train_data = keras.preprocessing.sequence.pad_sequences(train_data,
 #                                                         value=0,
@@ -141,13 +134,13 @@ with tf.Session() as sess:
     # new_model = keras.models.load_model('epic_num_reader.model')
     predictions = model.predict(test_data)
 
-    path = 'plots/result-1.txt'
+    path = 'plots/s300.txt'
     len_labels = len(test_labels)
     with open(path, mode='w', encoding='utf-8') as csv_file:
         # writer = csv.writer(csv_file)
         i=0
         while(len_labels>i):
-            csv_file.writelines(str([predictions[i],test_labels[i]]) + '\n')
+            csv_file.writelines(str([predictions[i][0],test_labels[i]]) + '\n')
             i+=1
 # sess.run()
 # for w in predictions:

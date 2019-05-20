@@ -1,170 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.2 v&#10;Aumento da base">
-      <change afterPath="$PROJECT_DIR$/create_data.py" afterDir="false" />
+    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.3 v&#10;Aumento da base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38214" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38215" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38216" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38217" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38218" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38219" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38220" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38221" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38222" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38223" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38224" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38225" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38226" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38227" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38228" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38229" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38230" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38231" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38232" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38233" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38234" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38235" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38236" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38237" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38238" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38239" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38240" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38241" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38242" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38243" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38244" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38245" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38246" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38247" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38248" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38249" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38250" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38251" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38252" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38255" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38256" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38257" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38258" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38259" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38260" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38261" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38262" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38263" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38264" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38265" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38266" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38267" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38268" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38269" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38440" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38441" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38442" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38443" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38444" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38445" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38446" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38448" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38449" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38450" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38452" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38453" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38454" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38455" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38456" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38457" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38458" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38459" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38460" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38461" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38462" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38463" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38464" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38465" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38466" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38467" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38468" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38469" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38470" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38471" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38472" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38473" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38474" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38475" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38476" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38477" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38478" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38479" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38480" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38481" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38482" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38483" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38484" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38485" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38486" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38487" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38488" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38489" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38490" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38491" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38492" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38493" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38494" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38495" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38496" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38497" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38498" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38499" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38600" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38601" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38602" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38603" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38604" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38605" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38606" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38608" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38609" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38680" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38681" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38682" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38683" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38684" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38685" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38686" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38687" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38688" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38690" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38691" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38692" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38693" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38694" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38695" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38696" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38697" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38698" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38699" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38830" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38831" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38832" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38833" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38834" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38835" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38836" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38837" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38838" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38839" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38841" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38842" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38843" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38844" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38845" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38846" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38847" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/38848" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-text-tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining_text_tf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining_text_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/mining_text_tf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plots/result-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plots/result-1.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -222,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/sst2_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
+            <state relative-caret-position="731">
               <caret line="45" column="46" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="46" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
@@ -231,16 +72,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/create_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
+            <state relative-caret-position="2431">
+              <caret line="148" column="58" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
-                <element signature="e#335#792#0" />
-                <element signature="e#1587#2124#0" />
-                <element signature="e#2201#3087#0" />
               </folding>
             </state>
           </provider>
@@ -249,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/process_sst2_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="233" column="37" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="37" />
+            <state relative-caret-position="2975">
+              <caret line="180" selection-start-line="180" selection-end-line="210" selection-end-column="20" />
               <folding>
                 <element signature="e#324#371#0" expanded="true" />
               </folding>
@@ -261,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/sst2_cnn_rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="1309">
+              <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
               <folding>
                 <element signature="e#108#145#0" expanded="true" />
               </folding>
@@ -273,17 +111,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="394" column="45" selection-start-line="394" selection-start-column="45" selection-end-line="394" selection-end-column="45" />
+            <state relative-caret-position="6715">
+              <caret line="395" selection-start-line="395" selection-end-line="395" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mining_text_tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="150" column="16" lean-forward="true" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
+            <state relative-caret-position="-952">
+              <caret line="7" column="75" lean-forward="true" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
               <folding>
                 <element signature="e#1143#1166#0" expanded="true" />
               </folding>
@@ -294,17 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6851">
-              <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/input_layer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="141" column="4" selection-start-line="141" selection-start-column="4" selection-end-line="141" selection-end-column="4" />
+            <state relative-caret-position="85">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -320,11 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>remocaopontos</find>
-      <find>get_numbers</find>
-      <find>get_all_words</find>
-      <find>cPi</find>
-      <find>weight</find>
       <find>weigh</find>
       <find>weig</find>
       <find>wei</find>
@@ -350,6 +174,11 @@
       <find>izip</find>
       <find>0.25</find>
       <find>get_W</find>
+      <find>' -</find>
+      <find>all</find>
+      <find>print</find>
+      <find>[:</find>
+      <find>get_W2V_numbers</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -454,12 +283,12 @@
         <option value="$PROJECT_DIR$/executaveis_teste/crnn_master/sst2_data.py" />
         <option value="$PROJECT_DIR$/executaveis_teste/crnn_master/sst1_cnn_rnn.py" />
         <option value="$PROJECT_DIR$/mining-text-tf.py" />
-        <option value="$PROJECT_DIR$/Util.py" />
         <option value="$PROJECT_DIR$/Codigos/processamento/resultado_taia_palavra_aleatorio_ca.csv" />
-        <option value="$PROJECT_DIR$/executaveis_teste/crnn_master/process_sst2_data.py" />
         <option value="$PROJECT_DIR$/executaveis_teste/crnn_master/sst2_cnn_rnn.py" />
-        <option value="$PROJECT_DIR$/mining_text_tf.py" />
+        <option value="$PROJECT_DIR$/executaveis_teste/crnn_master/process_sst2_data.py" />
+        <option value="$PROJECT_DIR$/Util.py" />
         <option value="$PROJECT_DIR$/create_data.py" />
+        <option value="$PROJECT_DIR$/mining_text_tf.py" />
       </list>
     </option>
   </component>
@@ -477,6 +306,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pcc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -487,18 +327,7 @@
             <path>
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="plots" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="pcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pcc" type="462c0819:PsiDirectoryNode" />
+              <item name="word2vecs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -811,21 +640,9 @@
       <workItem from="1558052609043" duration="24490000" />
       <workItem from="1558118969474" duration="599000" />
       <workItem from="1558131071958" duration="8495000" />
-      <workItem from="1558213556269" duration="30942000" />
-    </task>
-    <task id="LOCAL-00019" summary="1.03">
-      <created>1545480123511</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1545480123511</updated>
-    </task>
-    <task id="LOCAL-00020" summary="1.03">
-      <created>1545480274630</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1545480274630</updated>
+      <workItem from="1558213556269" duration="36278000" />
+      <workItem from="1558329847346" duration="9915000" />
+      <workItem from="1558376754960" duration="1337000" />
     </task>
     <task id="LOCAL-00021" summary="1.03">
       <created>1545480747986</created>
@@ -1156,11 +973,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557987941443</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="1.3 v&#10;Aumento da base">
+      <created>1558253918362</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1558253918363</updated>
+    </task>
+    <task id="LOCAL-00069" summary="1.3 v&#10;Aumento da base">
+      <created>1558255428685</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1558255428685</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="596513000" />
+    <option name="totallyTimeSpent" value="613101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1175,12 +1006,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.22768533" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.23524962" />
       <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
       <window_info id="Favorites" order="2" sideWeight="0.50808316" side_tool="true" weight="0.1633888" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5816944" visible="true" weight="0.2913257" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5816944" weight="0.2913257" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.54236007" weight="0.39116204" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1274,14 +1105,15 @@
     <MESSAGE value="1.1 s&#10;Aumento da base" />
     <MESSAGE value="1.1 v&#10;Aumento da base" />
     <MESSAGE value="1.2 v&#10;Aumento da base" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.2 v&#10;Aumento da base" />
+    <MESSAGE value="1.3 v&#10;Aumento da base" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.3 v&#10;Aumento da base" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mining_text_tf.py</url>
-          <line>159</line>
+          <line>152</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1316,8 +1148,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/create_data.py</url>
-          <line>41</line>
+          <line>39</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/create_data.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1336,7 +1173,7 @@
     <SUITE FILE_PATH="coverage/pcc$sst2_cnn_rnn_kera1.coverage" NAME="sst2_cnn_rnn_kera1 Coverage Results" MODIFIED="1557638423770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste/crnn-master" />
     <SUITE FILE_PATH="coverage/pcc$sst2_cnn_rnn_kera1__1_.coverage" NAME="sst2_cnn_rnn_kera1 (1) Coverage Results" MODIFIED="1557891182086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste/crnn_master" />
     <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1558062102161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1558252783323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1558331093916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$sst2_data.coverage" NAME="sst2_data Coverage Results" MODIFIED="1557638982471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste/crnn-master" />
     <SUITE FILE_PATH="coverage/pcc$helper.coverage" NAME="helper Coverage Results" MODIFIED="1557619575186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste/crnn-master" />
     <SUITE FILE_PATH="coverage/pcc$mr_cnn_rnn.coverage" NAME="mr_cnn_rnn Coverage Results" MODIFIED="1557327991434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste/crnn-master" />
@@ -1350,7 +1187,7 @@
     <SUITE FILE_PATH="coverage/pcc$bib.coverage" NAME="bib Coverage Results" MODIFIED="1555526288032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$sst2_cnn_rnn.coverage" NAME="sst2_cnn_rnn Coverage Results" MODIFIED="1558242596065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste/crnn_master" />
     <SUITE FILE_PATH="coverage/pcc$process_mr_data.coverage" NAME="process_mr_data Coverage Results" MODIFIED="1557630523510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste/crnn-master" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining_text_tf Coverage Results" MODIFIED="1558253227292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining_text_tf Coverage Results" MODIFIED="1558338764065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$mining_text_tf_base.coverage" NAME="mining-text-tf-base Coverage Results" MODIFIED="1556255537960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
   </component>
   <component name="debuggerHistoryManager">
@@ -1368,15 +1205,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/mr_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-938">
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/process_mr_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2142">
@@ -1607,13 +1435,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Codigos/processamento/resultado_taia_palavra_aleatorio_ca.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
           <caret selection-end-line="13" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_set/data_with_count_w2v.txt">
@@ -1625,26 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="231" column="42" selection-start-line="231" selection-start-column="31" selection-end-line="231" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/sst2_cnn_rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="e#108#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/sst2_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1669,24 +1477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="394" column="45" selection-start-line="394" selection-start-column="45" selection-end-line="394" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/input_layer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119">
           <caret line="141" column="4" selection-start-line="141" selection-start-column="4" selection-end-line="141" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/keyedvectors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="1076" column="8" selection-start-line="1076" selection-start-column="8" selection-end-line="1076" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1697,42 +1491,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mining_text_tf.py">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/keyedvectors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="150" column="16" lean-forward="true" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
-          <folding>
-            <element signature="e#1143#1166#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="697">
+          <caret line="273" selection-start-line="273" selection-end-line="273" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/numpy/matrixlib/defmatrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6851">
-          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="15" />
+        <state relative-caret-position="-527">
+          <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/process_sst2_data.py">
+    <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/sst2_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="233" column="37" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="37" />
+        <state relative-caret-position="731">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="46" />
           <folding>
-            <element signature="e#324#371#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/create_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
+        <state relative-caret-position="2431">
+          <caret line="148" column="58" selection-start-line="148" selection-start-column="58" selection-end-line="148" selection-end-column="58" />
           <folding>
             <element signature="e#24#42#0" expanded="true" />
-            <element signature="e#335#792#0" />
-            <element signature="e#1587#2124#0" />
-            <element signature="e#2201#3087#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/process_sst2_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2975">
+          <caret line="180" selection-start-line="180" selection-end-line="210" selection-end-column="20" />
+          <folding>
+            <element signature="e#324#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/executaveis_teste/crnn_master/sst2_cnn_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+          <folding>
+            <element signature="e#108#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6715">
+          <caret line="395" selection-start-line="395" selection-end-line="395" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining_text_tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952">
+          <caret line="7" column="75" lean-forward="true" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+          <folding>
+            <element signature="e#1143#1166#0" expanded="true" />
           </folding>
         </state>
       </provider>
