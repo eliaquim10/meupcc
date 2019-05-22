@@ -22,13 +22,9 @@ class DummyModel(object):
             return True
         return qualquer_coisa
 
-# model = DummyModel()
+model = DummyModel()
 
-# model = gensim.models.KeyedVectors.load_word2vec_format("wiki.pt.trigram.vector", binary=True)
-model = gensim.models.KeyedVectors.load_word2vec_format("skip_s50-1.txt")
-
-# sent_similiar = lambda x: w2v[x] if x in w2v.vocab() else x
-
+model = gensim.models.KeyedVectors.load_word2vec_format("wiki.pt.trigram.vector", binary=True)
 
 @app.route('/', methods=['GET'])
 def index():
@@ -72,7 +68,7 @@ def hello():
         json_data = json.dumps(data_array)
         print(json_data)
 
-        return jsonify({request.args.get('most_similar'): data_array})
+    	return jsonify({request.args.get('most_similar'): data_array})
 
     if (request.args.get('context')):
         return jsonify({'context': model.doesnt_match(request.args.get('context').split())})
@@ -84,7 +80,6 @@ def hello():
 
         if array_words[1] == '-':
             similares = model.most_similar(negative=[array_words[0], array_words[2]])
-            # similares.
             data_array = []
 
             number_nearest_words = len(similares)
@@ -126,16 +121,13 @@ def hello():
             print (data_array)
         
             json_data = json.dumps(data_array)
-            print (json_data)
+            print json_data
 
             return jsonify({request.args.get('operation'): data_array})
         
 
     if request.args.get('graph'):
         similares = model.most_similar(request.args.get('graph'), topn=10)
-
-        print('aqui')
-        print(similares)
         data_array = []
 
         if request.args.get('type') is "Global":
@@ -159,7 +151,7 @@ def hello():
         return json_data
 
     if request.args.get('mais_distante'):
-        return jsonify({'mais_distante': model.doesnt_match(request.args.get('mais_distante').split())})
+    	return jsonify({'mais_distante': model.doesnt_match(request.args.get('mais_distante').split())})
 
 if __name__ == "__main__":
     app.run()

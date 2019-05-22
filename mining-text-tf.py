@@ -22,46 +22,67 @@
 # DEALINGS IN THE SOFTWARE.
 
 import tensorflow as tf
+import random
+
 from tensorflow import keras
+from Util import readBase,trata,arrays
+
 import numpy as np
 
-from executaveis_teste.Util import readBase,trata_tf_palavra
 
-# print(tf.__version__)
+# readBase('colecao_dourada_2_class_unbalanced.csv')
 
-# gpu =  tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
-# sess = tf.Session(tf.ConfigProto(gpu_options=gpu))
 
-# imdb = keras.datasets.imdb
+print(tf.__version__)
+
+
+imdb = keras.datasets.imdb
 
 # (train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
-dir = 'data_set\colecao_dourada_2_class_unbalanced.csv'
-(train_data, train_labels), (test_data, test_labels) = trata_tf_palavra(readBase(dir), 0.75)
+
+(train_data, train_labels), (test_data, test_labels) = trata(readBase('colecao_dourada_2_class_unbalanced.csv'),0.7)
 
 
-# NAME = "test1-{}".format(int(time.time()))
-# tensor_board = tf.keras.callbacks.TensorBoard(log_dir='log/{}'.format(NAME))
 
+# print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
+
+
+
+len(train_data[0]), len(train_data[1])
 
 # A dictionary mapping words to an integer index
-# print(len(train_data[0]))
-# exit()
-vocab_size = len(train_data[0])+1
+'''
+word_index = imdb.get_word_index()
 
-# train_data = keras.preprocessing.sequence.pad_sequences(train_data,
-#                                                         value=0,
-#                                                         padding='post',
-#                                                         maxlen=vocab_size)
-#
-# test_data = keras.preprocessing.sequence.pad_sequences(test_data,
-#                                                        value=0,
-#                                                        padding='post',
-#                                                        maxlen=vocab_size)
+# The first indices are reserved
+word_index = {k:(v+3) for k,v in word_index.items()}
+word_index["<PAD>"] = 0
+word_index["<START>"] = 1
+word_index["<UNK>"] = 2  # unknown
+word_index["<UNUSED>"] = 3
+
+reverse_word_index = dict([(value, key) for (key, value) in word_index.items()])
 
 
-# tf.cast(train_data, tf.int32)
-# tf.cast(test_data, tf.int32)
-# eliaquim-m
+
+def decode_review(text):
+    return ' '.join([reverse_word_index.get(i, '?') for i in text])
+
+decode_review(train_data[0])
+'''
+
+train_data = keras.preprocessing.sequence.pad_sequences(train_data,
+                                                        value=0,
+                                                        padding='post',
+                                                        maxlen=256)
+
+test_data = keras.preprocessing.sequence.pad_sequences(test_data,
+                                                       value=0,
+                                                       padding='post',
+                                                       maxlen=256)
+
+
+# eliaquim-m-n
 # print(train_data[0])
 # print(train_data[1])
 # len(train_data[0]), len(train_data[1])
@@ -69,79 +90,39 @@ vocab_size = len(train_data[0])+1
 
 
 # input shape is the vocabulary count used for the movie reviews (10,000 words)np
-# vocab_size = 2282
+vocab_size = 2282
 
-# with tf.Session(tf.ConfigProto(gpu_options=gpu)) as sess:
-with tf.Session() as sess:
+model = keras.Sequential()
+model.add(keras.layers.Embedding(vocab_size, 16))
+model.add(keras.layers.GlobalAveragePooling1D())
+model.add(keras.layers.Dense(16, activation=tf.nn.relu))
+model.add(keras.layers.Dense(1, activation=tf.nn.sigmoid))
 
-    # n =np.int32(32)
-    n = 32
-    model = keras.Sequential()
-    model.add(keras.layers.Embedding(vocab_size, n))
-    # model.add(keras.layers.GlobalAveragePooling1D())
-    # model.add(keras.layers.Flatten())
-    # n /=2
-    # model.add(keras.layers.LSTM(n,activation='softmax'))
-    n =np.int32(n/2)
-    model.add(keras.layers.SimpleRNN(n))
-    # n /=2
-    # model.add(keras.layers.Dense(n, activation=tf.nn.tanh))
-    # n /=2
-    # model.add(keras.layers.Dense(n, activation=tf.nn.relu6))
-    #
-    # # n /=2
-    model.add(keras.layers.Dense(1, activation=tf.nn.relu6))
-    # model.add(keras.layers.Dense(1, activation=tf.nn.softmax))
+model.summary()
 
-    model.summary()
-    # keras.layers.CuDNNLSTM
+model.compile(optimizer=tf.train.AdamOptimizer(),
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
 
-    model.compile(optimizer=tf.train.AdamOptimizer(),
-                  loss='binary_crossentropy',
-                  metrics=['accuracy'])
+print(len(train_data))
 
-    # limit = vocab_size
-    # limit = 10
-    # x_val = train_data[:limit]
-    # partial_x_train = train_data[limit:]
-    #
-    #
-    # y_val = train_labels[:limit]
-    # partial_y_train = train_labels[limit:]
-
-    # sess = tf.Session()
-    history = model.fit(train_data,
-                        train_labels,
-                        epochs=30,
-                        batch_size=1,
-                        validation_split =0.2,
-                        verbose=1)
-
-    # sess
-    # results = model.evaluate(test_data, test_labels)
+x_val = train_data[:159]
+partial_x_train = train_data[159:]
 
 
-    # model.save('epic_num_reader.model')
-    # new_model = keras.models.load_model('epic_num_reader.model')
-    predictions = model.predict(test_data)
+y_val = train_labels[:159]
+partial_y_train = train_labels[159:]
 
-    path = 'C:/Users/User/PycharmProjects/pcc/plots/result-1.txt'
-    with open(path,mode='w', encoding='utf-8') as csv_file:
-        #writer = csv.writer(csv_file)
-        for w in predictions:
-            csv_file.writelines(str(w)+'\n')
-# sess.run()
-# for w in predictions:
-#     print(w)
-# exit()
-# with tf.Session() as sess:
-#
-#     print(results)
-#     exit()
-# print('---')
-# print(s)
+history = model.fit(partial_x_train,
+                    partial_y_train,
+                    epochs=80,
+                    batch_size=512,
+                    validation_data=(x_val, y_val),
+                    verbose=1)
 
-'''
+results = model.evaluate(test_data, test_labels)
+
+print(results)
 
 history_dict = history.history
 history_dict.keys()
@@ -149,7 +130,6 @@ history_dict.keys()
 
 ## Inicio da classificação
 import matplotlib.pyplot as plt
-
 
 acc = history.history['acc']
 val_acc = history.history['val_acc']
@@ -181,4 +161,3 @@ plt.ylabel('Accuracy')
 plt.legend()
 
 plt.show()
-'''

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.1 v&#10;Aumento da base">
+    <list default="true" id="9781334a-2f3e-4a89-a594-40e0a58afb77" name="Default" comment="1.03">
+      <change afterPath="$PROJECT_DIR$/experimento/e1/sce/balanced/balanceando.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimento/e1/sce/balanced/colecao_dourada.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimento3/colecao_dourada_2_class_unbalanced.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executaveis_teste/Util.py" beforeDir="false" afterPath="$PROJECT_DIR$/executaveis_teste/Util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word2vec-pt-br-master.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,56 +14,131 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/pcc$nltk_downloading.coverage" NAME="nltk-downloading Coverage Results" MODIFIED="1545409707979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text.coverage" NAME="mining-text Coverage Results" MODIFIED="1541784473060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1545409558362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$nltk__1_.coverage" NAME="nltk (1) Coverage Results" MODIFIED="1538604220302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled$mining_text.coverage" NAME="mining-text Coverage Results" MODIFIED="1538595086297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$Stopwords.coverage" NAME="Stopwords Coverage Results" MODIFIED="1545283023344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$nltk.coverage" NAME="nltk Coverage Results" MODIFIED="1538596226928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$mining_text__3_.coverage" NAME="mining-text (3) Coverage Results" MODIFIED="1538595911623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/untitled$teste.coverage" NAME="teste Coverage Results" MODIFIED="1538539133079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/untitled$mining_text.coverage" NAME="mining-text Coverage Results" MODIFIED="1538595086297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text.coverage" NAME="mining-text Coverage Results" MODIFIED="1541784473060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/untitled$nltk__2_.coverage" NAME="nltk (2) Coverage Results" MODIFIED="1538595346484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1553700509495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$cria.coverage" NAME="cria Coverage Results" MODIFIED="1545013098885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$nltk__1_.coverage" NAME="nltk (1) Coverage Results" MODIFIED="1538604220302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$Stopwords__1_.coverage" NAME="Stopwords (1) Coverage Results" MODIFIED="1545053411665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Codigos/execução" />
-    <SUITE FILE_PATH="coverage/untitled$mining_text__2_.coverage" NAME="mining-text (2) Coverage Results" MODIFIED="1538595382329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/pcc$Util__1_.coverage" NAME="Util (1) Coverage Results" MODIFIED="1545054457025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$Stopwords.coverage" NAME="Stopwords Coverage Results" MODIFIED="1545283023344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$nltk_downloading.coverage" NAME="nltk-downloading Coverage Results" MODIFIED="1545409707979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$cria.coverage" NAME="cria Coverage Results" MODIFIED="1545013098885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled$nltk__2_.coverage" NAME="nltk (2) Coverage Results" MODIFIED="1538595346484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$mining_text__2_.coverage" NAME="mining-text (2) Coverage Results" MODIFIED="1538595382329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/pcc$Stopwords__1_.coverage" NAME="Stopwords (1) Coverage Results" MODIFIED="1545053411665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Codigos/execução" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf_base.coverage" NAME="mining-text-tf-base Coverage Results" MODIFIED="1545441456086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled$nltk__1_.coverage" NAME="nltk (1) Coverage Results" MODIFIED="1538595188800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1545013862646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
+    <SUITE FILE_PATH="coverage/untitled$teste.coverage" NAME="teste Coverage Results" MODIFIED="1538539133079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/pcc$nltk__3_.coverage" NAME="nltk (3) Coverage Results" MODIFIED="1538596310427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1545451458425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1545013548789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pcc$mining_text__1_.coverage" NAME="mining-text (1) Coverage Results" MODIFIED="1545013116196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pcc$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1545013846035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master" />
     <SUITE FILE_PATH="coverage/untitled$nltk.coverage" NAME="nltk Coverage Results" MODIFIED="1538593846563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pcc" />
-    <SUITE FILE_PATH="coverage/untitled$nltk__1_.coverage" NAME="nltk (1) Coverage Results" MODIFIED="1538595188800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1553700501079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text__1_.coverage" NAME="mining-text (1) Coverage Results" MODIFIED="1545013116196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/meupcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1546030036519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1550688276120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf_base.coverage" NAME="mining-text-tf-base Coverage Results" MODIFIED="1553108440955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$mining_text__1_.coverage" NAME="mining-text (1) Coverage Results" MODIFIED="1538595130717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1553099778827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="pcc" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="258129356">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.39" value="4" />
+          <entry key="project.open.time.40" value="2" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.44" value="2" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.94" value="1" />
+          <entry key="project.opened" value="23" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="csv" value="8" />
+          <entry key="dummy" value="4" />
+          <entry key="py" value="2911" />
+          <entry key="txt" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSV" value="8" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="2911" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="LICENSE" value="1" />
+          <entry key="cfg" value="2" />
+          <entry key="csv" value="33" />
+          <entry key="ipynb" value="1" />
+          <entry key="py" value="40" />
+          <entry key="txt" value="3" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="16" />
+          <entry key="IPNB" value="1" />
+          <entry key="Ini" value="2" />
+          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="Python" value="40" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.revision" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stopwords.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+              <folding>
+                <element signature="e#24#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nltk-downloading.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2329">
-              <caret line="137" column="1" lean-forward="true" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+            <state relative-caret-position="199">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
               <folding>
                 <element signature="e#1142#1165#0" expanded="true" />
               </folding>
@@ -71,24 +147,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/losses/__init__.py">
+        <entry file="file://$PROJECT_DIR$/teste.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="69" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="69" />
+            <state relative-caret-position="204">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1275">
+              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="663">
+              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+              <folding>
+                <element signature="e#24#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,86 +187,24 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>colo</find>
-      <find>CADA UM TEM A</find>
-      <find>CADA UM TEM A CULTURA QUE QUER,DIVERSIDADES EXISTEM NO MUNDO TODO E CADA UM GOSTA DO QUE QUER.</find>
-      <find>coh</find>
-      <find>i=</find>
-      <find>,,'</find>
-      <find>kap</find>
-      <find>add</find>
-      <find>gp</find>
-      <find>ffl</find>
-      <find>model</find>
-      <find>model.</find>
-      <find>words</find>
-      <find>voca</find>
-      <find>vocab_size</find>
-      <find>accura</find>
+      <find>np</find>
+      <find>random</find>
+      <find>model_cgp</find>
+      <find>Não'</find>
       <find>exit</find>
-      <find>graph()</find>
-      <find>add_graph</find>
-      <find>verbo</find>
-      <find>rec</find>
-      <find>int6</find>
-      <find>-1</find>
-      <find>gpu_options</find>
-      <find>most_similar</find>
-      <find>print</find>
-      <find>matri</find>
-      <find>matr</find>
-      <find>go_backwards</find>
-      <find>loss</find>
+      <find>rando</find>
     </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\User\PycharmProjects\pcc\log</dir>
-    </dirStrings>
   </component>
   <component name="Git.Rebase.Settings">
     <option name="SHOW_TAGS" value="true" />
     <option name="ONTO" value="refs/heads/master" />
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Eliaquim" />
-      </list>
-    </option>
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_COMMON_BRANCH" value="meupcc" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info source="meupcc" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
-    <excluded-from-favorite>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info source="master" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </excluded-from-favorite>
   </component>
   <component name="GithubProjectSettings">
     <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
@@ -200,6 +221,7 @@
         <option value="$PROJECT_DIR$/venv/nltk.py" />
         <option value="$PROJECT_DIR$/venv/mining-text-tf.py" />
         <option value="$PROJECT_DIR$/venv/mining-text.py" />
+        <option value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" />
         <option value="$PROJECT_DIR$/venv/nltk-downloading.py" />
         <option value="$USER_HOME$/Dropbox/pic/Codigos/execução/Stopwords.py" />
         <option value="$PROJECT_DIR$/cria.py" />
@@ -211,47 +233,28 @@
         <option value="$PROJECT_DIR$/experimento/e1/sce/unbalanced/colecao_dourada_2_class_unbalanced.csv" />
         <option value="$PROJECT_DIR$/experimento/e1/sce/unbalanced/colecao_dourada_3_class_unbalanced.csv" />
         <option value="$PROJECT_DIR$/experimento/e5/sce/balanced/colecao_dourada_2_class_balanced.csv" />
-        <option value="$PROJECT_DIR$/nltk-downloading.py" />
-        <option value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/requirements.txt" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.csv" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/data_base.csv" />
-        <option value="$PROJECT_DIR$/data_base.csv" />
-        <option value="$PROJECT_DIR$/data_base-dilva-1000.csv" />
-        <option value="$PROJECT_DIR$/data_base-silvia-1000.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base-vinicius-a-2000-1.csv" />
         <option value="$PROJECT_DIR$/Stopwords.py" />
-        <option value="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_2.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base-silvia-1000.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base-dilva-1000.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base_vinicius_a_2000_1.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base-1.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base_g_3000.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base_s_1000.csv" />
-        <option value="$PROJECT_DIR$/data_set/data_base_v_o_2000_1.csv" />
-        <option value="$PROJECT_DIR$/mining-text-tf-base.py" />
-        <option value="$PROJECT_DIR$/data_set/colecao_dourada_2_class_unbalanced.csv" />
-        <option value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py" />
-        <option value="$PROJECT_DIR$/teste.py" />
-        <option value="$PROJECT_DIR$/bib.py" />
+        <option value="$PROJECT_DIR$/nltk-downloading.py" />
         <option value="$PROJECT_DIR$/Util.py" />
-        <option value="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" />
-        <option value="$PROJECT_DIR$/plots/result-1.txt" />
+        <option value="$PROJECT_DIR$/mining-text-tf-base.py" />
         <option value="$PROJECT_DIR$/mining-text-tf.py" />
-        <option value="$PROJECT_DIR$/executaveis_teste/Util.py" />
+        <option value="$PROJECT_DIR$/word2vec-pt-br-master/exemplo/requirements.txt" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="229" />
-    <option name="y" value="-17" />
-    <option name="width" value="1040" />
-    <option name="height" value="784" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1376" />
+    <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -273,7 +276,7 @@
           <expand>
             <path>
               <item name="pcc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\User\PycharmProjects\pcc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -282,29 +285,24 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="hsqldb" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ToolWindowConcurrent Activities Diagram.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="csv" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_set/testes" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e6" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e5" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e4" />
+      <recent name="C:\Users\Usuário\PycharmProjects\pcc\experimento\e3" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\PycharmProjects\pcc\log" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc" />
       <recent name="C:\Users\Usuário\PycharmProjects\pcc\venv" />
       <recent name="C:\Users\Usuário\PycharmProjects\untitled" />
       <recent name="C:\Users\Usuário\PycharmProjects\untitled\venv" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\PycharmProjects\pcc\data_set\testes" />
-      <recent name="C:\Users\User\PycharmProjects\pcc\plots" />
-      <recent name="C:\Users\User\PycharmProjects\pcc\log\test1-1553059382" />
-      <recent name="C:\Users\User\PycharmProjects\pcc\log" />
-      <recent name="C:\Users\Usuário\PycharmProjects\pcc\data_set" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -320,6 +318,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.mining-text-tf">
+    <configuration name="Stopwords" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pcc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stopwords.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Util" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pcc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -328,12 +348,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/executaveis_teste" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/executaveis_teste/Util.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Util.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -350,12 +370,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/executaveis_teste" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mining-text-tf-base.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -386,16 +406,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="nltk-downloading" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pcc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nltk-downloading.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.mining-text-tf" />
       <item itemvalue="Python.Util" />
+      <item itemvalue="Python.mining-text-tf" />
+      <item itemvalue="Python.Stopwords" />
+      <item itemvalue="Python.nltk-downloading" />
       <item itemvalue="Python.mining-text-tf-base" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.mining-text-tf" />
         <item itemvalue="Python.mining-text-tf-base" />
+        <item itemvalue="Python.nltk-downloading" />
         <item itemvalue="Python.Util" />
+        <item itemvalue="Python.Stopwords" />
       </list>
     </recent_temporary>
   </component>
@@ -409,101 +455,76 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538518113763</updated>
-      <workItem from="1546028193530" duration="1909000" />
-      <workItem from="1547053888016" duration="1337000" />
-      <workItem from="1547055433078" duration="823000" />
-      <workItem from="1547067237506" duration="3865000" />
-      <workItem from="1547225644911" duration="508000" />
-      <workItem from="1547347313963" duration="4660000" />
-      <workItem from="1547413386920" duration="1832000" />
-      <workItem from="1547429643108" duration="2199000" />
-      <workItem from="1547435466763" duration="9857000" />
-      <workItem from="1547485966744" duration="176000" />
-      <workItem from="1547513343884" duration="6250000" />
-      <workItem from="1547519835670" duration="11343000" />
-      <workItem from="1547553453480" duration="1557000" />
-      <workItem from="1548263072432" duration="447000" />
-      <workItem from="1548296118201" duration="1868000" />
-      <workItem from="1548298267803" duration="5153000" />
-      <workItem from="1548305026433" duration="2861000" />
-      <workItem from="1548360051233" duration="4843000" />
-      <workItem from="1548364930523" duration="2249000" />
-      <workItem from="1548379994841" duration="1565000" />
-      <workItem from="1548718714611" duration="8662000" />
-      <workItem from="1548736413294" duration="1972000" />
-      <workItem from="1548818649992" duration="11394000" />
-      <workItem from="1549163803408" duration="3382000" />
-      <workItem from="1549213214350" duration="2360000" />
-      <workItem from="1549242302588" duration="1614000" />
-      <workItem from="1549413508476" duration="11443000" />
-      <workItem from="1549480162587" duration="1216000" />
-      <workItem from="1549522205273" duration="421000" />
-      <workItem from="1549522831007" duration="1939000" />
-      <workItem from="1549948857786" duration="2779000" />
-      <workItem from="1549952232678" duration="2759000" />
-      <workItem from="1549975479727" duration="7804000" />
-      <workItem from="1550459010958" duration="498000" />
-      <workItem from="1550466805677" duration="8777000" />
-      <workItem from="1550523516288" duration="572000" />
-      <workItem from="1550588886772" duration="1970000" />
-      <workItem from="1550593652282" duration="70000" />
-      <workItem from="1550596171677" duration="4333000" />
-      <workItem from="1550601590016" duration="2037000" />
-      <workItem from="1550681851146" duration="1926000" />
-      <workItem from="1550687819607" duration="2236000" />
-      <workItem from="1551110985037" duration="1226000" />
-      <workItem from="1551206463558" duration="757000" />
-      <workItem from="1551207638603" duration="1338000" />
-      <workItem from="1551895767657" duration="108000" />
-      <workItem from="1551895987576" duration="800000" />
-      <workItem from="1552016335022" duration="2592000" />
-      <workItem from="1552237395697" duration="11761000" />
-      <workItem from="1552613477922" duration="974000" />
-      <workItem from="1553022271966" duration="1247000" />
-      <workItem from="1553053099846" duration="12024000" />
-      <workItem from="1553092207093" duration="10583000" />
-      <workItem from="1553109860835" duration="398000" />
-      <workItem from="1553654224880" duration="1651000" />
-      <workItem from="1553699767797" duration="1234000" />
-      <workItem from="1553701315129" duration="304000" />
-      <workItem from="1553709350993" duration="1816000" />
-      <workItem from="1553711270848" duration="3107000" />
-      <workItem from="1553716749974" duration="4436000" />
-      <workItem from="1554138349494" duration="3587000" />
-      <workItem from="1554146415743" duration="2009000" />
-      <workItem from="1554240709720" duration="2392000" />
-      <workItem from="1554244508391" duration="6691000" />
-      <workItem from="1554260632132" duration="7274000" />
-      <workItem from="1554298942498" duration="592000" />
-      <workItem from="1554301187487" duration="3219000" />
-      <workItem from="1554310400848" duration="2271000" />
-      <workItem from="1554314506109" duration="1229000" />
-      <workItem from="1554319466124" duration="158000" />
-      <workItem from="1554320801855" duration="1950000" />
-      <workItem from="1554324172213" duration="998000" />
-      <workItem from="1554328250053" duration="2972000" />
-      <workItem from="1554843809759" duration="10068000" />
-      <workItem from="1554856611119" duration="353000" />
-      <workItem from="1554864907238" duration="2188000" />
-      <workItem from="1554913838960" duration="3783000" />
-      <workItem from="1554917876882" duration="6829000" />
-      <workItem from="1555096514080" duration="4703000" />
-      <workItem from="1555123625960" duration="8049000" />
-      <workItem from="1555161346143" duration="3141000" />
-      <workItem from="1555453335478" duration="2572000" />
-      <workItem from="1555468381327" duration="2091000" />
-      <workItem from="1555518240083" duration="13408000" />
-      <workItem from="1555538023593" duration="9199000" />
-      <workItem from="1555950409367" duration="7437000" />
-      <workItem from="1555958752308" duration="234000" />
-      <workItem from="1555960492143" duration="5181000" />
-      <workItem from="1555968353514" duration="6540000" />
-      <workItem from="1556024179685" duration="3240000" />
-      <workItem from="1556195072384" duration="2021000" />
-      <workItem from="1556197139374" duration="3326000" />
-      <workItem from="1556201959699" duration="393000" />
-      <workItem from="1556224694773" duration="20580000" />
-      <workItem from="1556290165004" duration="4655000" />
+    </task>
+    <task id="LOCAL-00001" summary="1.01">
+      <created>1545396864139</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545396864139</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.01">
+      <created>1545396930247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1545396930247</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.02">
+      <created>1545417176895</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545417179218</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.02">
+      <created>1545440922071</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545440922071</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.03">
+      <created>1545441347375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545441347375</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.03">
+      <created>1545441979885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545441979885</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.03">
+      <created>1545442127850</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545442127850</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1.03">
+      <created>1545443419188</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545443419188</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1.03">
+      <created>1545448558454</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545448558454</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1.03">
+      <created>1545448583691</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545448583691</updated>
     </task>
     <task id="LOCAL-00011" summary="1.03">
       <created>1545448991578</created>
@@ -547,353 +568,35 @@
       <option name="project" value="LOCAL" />
       <updated>1545452495886</updated>
     </task>
-    <task id="LOCAL-00017" summary="1.03">
-      <created>1545453320699</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1545453320699</updated>
-    </task>
-    <task id="LOCAL-00018" summary="1.03">
-      <created>1545453498450</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1545453498450</updated>
-    </task>
-    <task id="LOCAL-00019" summary="1.03">
-      <created>1545480123511</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1545480123511</updated>
-    </task>
-    <task id="LOCAL-00020" summary="1.03">
-      <created>1545480274630</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1545480274630</updated>
-    </task>
-    <task id="LOCAL-00021" summary="1.03">
-      <created>1545480747986</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1545480747987</updated>
-    </task>
-    <task id="LOCAL-00022" summary="1.03">
-      <created>1545481250185</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1545481250185</updated>
-    </task>
-    <task id="LOCAL-00023" summary="1.03">
-      <created>1545482346068</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1545482346068</updated>
-    </task>
-    <task id="LOCAL-00024" summary="1.03">
-      <created>1545483428369</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1545483428370</updated>
-    </task>
-    <task id="LOCAL-00025" summary="1.03">
-      <created>1545485887098</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1545485887098</updated>
-    </task>
-    <task id="LOCAL-00026" summary="1.03">
-      <created>1545526911628</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1545526911628</updated>
-    </task>
-    <task id="LOCAL-00027" summary="1.04">
-      <created>1545572816569</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1545572816569</updated>
-    </task>
-    <task id="LOCAL-00028" summary="1.04">
-      <created>1546012242824</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1546012242824</updated>
-    </task>
-    <task id="LOCAL-00029" summary="1.06">
-      <created>1546111625444</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1546111625444</updated>
-    </task>
-    <task id="LOCAL-00030" summary="1.06">
-      <created>1546117928549</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1546117928549</updated>
-    </task>
-    <task id="LOCAL-00031" summary="1.07">
-      <created>1547514702615</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1547514702615</updated>
-    </task>
-    <task id="LOCAL-00032" summary="1.08">
-      <created>1548305083665</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1548305083665</updated>
-    </task>
-    <task id="LOCAL-00033" summary="1.09&#10;a nivel de character">
-      <created>1548307953772</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1548307953772</updated>
-    </task>
-    <task id="LOCAL-00034" summary="1.1&#10;Aumento da base">
-      <created>1549416154757</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1549416154758</updated>
-    </task>
-    <task id="LOCAL-00035" summary="1.1&#10;Aumento da base">
-      <created>1549416239852</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1549416239852</updated>
-    </task>
-    <task id="LOCAL-00036" summary="1.1&#10;Aumento da base">
-      <created>1549422041089</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1549422041089</updated>
-    </task>
-    <task id="LOCAL-00037" summary="1.1&#10;Aumento da base">
-      <created>1549422556947</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1549422556947</updated>
-    </task>
-    <task id="LOCAL-00038" summary="1.1&#10;Aumento da base">
-      <created>1549523514226</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1549523514226</updated>
-    </task>
-    <task id="LOCAL-00039" summary="1.1 s&#10;Aumento da base">
-      <created>1549950142892</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1549950142893</updated>
-    </task>
-    <task id="LOCAL-00040" summary="1.1 v&#10;Aumento da base">
-      <created>1550589714973</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1550589714973</updated>
-    </task>
-    <task id="LOCAL-00041" summary="1.1 v&#10;Aumento da base">
-      <created>1550589841471</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1550589841471</updated>
-    </task>
-    <task id="LOCAL-00042" summary="1.1 v&#10;Aumento da base">
-      <created>1550682128772</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1550682128772</updated>
-    </task>
-    <task id="LOCAL-00043" summary="1.1 v&#10;Aumento da base">
-      <created>1553712227353</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1553712227353</updated>
-    </task>
-    <task id="LOCAL-00044" summary="1.1 v&#10;Aumento da base">
-      <created>1554246599081</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1554246599081</updated>
-    </task>
-    <task id="LOCAL-00045" summary="1.1 v&#10;Aumento da base">
-      <created>1554920519737</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1554920519737</updated>
-    </task>
-    <task id="LOCAL-00046" summary="1.1 v&#10;Aumento da base">
-      <created>1555161674666</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1555161674666</updated>
-    </task>
-    <task id="LOCAL-00047" summary="1.1 v&#10;Aumento da base">
-      <created>1555162576573</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1555162576573</updated>
-    </task>
-    <task id="LOCAL-00048" summary="1.1 v&#10;Aumento da base">
-      <created>1555162619468</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1555162619468</updated>
-    </task>
-    <task id="LOCAL-00049" summary="1.1 v&#10;Aumento da base">
-      <created>1555453410254</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1555453410254</updated>
-    </task>
-    <task id="LOCAL-00050" summary="1.1 v&#10;Aumento da base">
-      <created>1555955592795</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1555955592796</updated>
-    </task>
-    <task id="LOCAL-00051" summary="1.1 v&#10;Aumento da base">
-      <created>1555970661936</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1555970661937</updated>
-    </task>
-    <task id="LOCAL-00052" summary="1.1 v&#10;Aumento da base">
-      <created>1555974806909</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1555974806910</updated>
-    </task>
-    <task id="LOCAL-00053" summary="1.1 v&#10;Aumento da base">
-      <created>1556195537820</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1556195537821</updated>
-    </task>
-    <task id="LOCAL-00054" summary="1.1 v&#10;Aumento da base">
-      <created>1556195619412</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1556195619412</updated>
-    </task>
-    <task id="LOCAL-00055" summary="1.1 v&#10;Aumento da base">
-      <created>1556199601778</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1556199601779</updated>
-    </task>
-    <task id="LOCAL-00056" summary="1.1 v&#10;Aumento da base">
-      <created>1556199843618</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1556199843618</updated>
-    </task>
-    <task id="LOCAL-00057" summary="1.1 v&#10;Aumento da base">
-      <created>1556258592806</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1556258592806</updated>
-    </task>
-    <task id="LOCAL-00058" summary="1.1 v&#10;Aumento da base">
-      <created>1556292338297</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1556292338297</updated>
-    </task>
-    <task id="LOCAL-00059" summary="1.1 v&#10;Aumento da base">
-      <created>1556292435852</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1556292435852</updated>
-    </task>
-    <option name="localTasksCounter" value="60" />
+    <option name="localTasksCounter" value="17" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="357155000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49191687" visible="true" weight="0.18683812" />
-      <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" weight="0.21255673" />
-      <window_info id="Favorites" order="2" sideWeight="0.50808316" side_tool="true" weight="0.1633888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49744898" visible="true" weight="0.17700455" />
+      <window_info id="Structure" order="1" sideWeight="0.502551" side_tool="true" weight="0.15957446" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="SVN Repositories" sideWeight="0.49924356" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5816944" weight="0.2913257" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4969743" weight="0.39934534" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59531015" visible="true" weight="0.35737705" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4977307" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969743" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4183056" side_tool="true" weight="0.2667758" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49621785" weight="0.3289689" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" weight="0.32569557" />
-      <window_info anchor="bottom" id="SVN Repositories" order="13" sideWeight="0.49924356" weight="0.3295082" />
-      <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.3289689" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" show_stripe_button="false" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.40468988" side_tool="true" visible="true" weight="0.35737705" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49848714" weight="0.3295082" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49848714" weight="0.32786885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.33963692" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3290469" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.3290469" />
-      <window_info anchor="right" id="R Graphics" order="6" />
-      <window_info anchor="right" id="R Packages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -909,410 +612,336 @@
       </list>
     </option>
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
-      <path value="$PROJECT_DIR$/pcc" />
-    </ignored-roots>
     <MESSAGE value="1.01" />
     <MESSAGE value="1.02" />
     <MESSAGE value="1.03" />
-    <MESSAGE value="1.04" />
-    <MESSAGE value="1.06" />
-    <MESSAGE value="1.07" />
-    <MESSAGE value="1.08" />
-    <MESSAGE value="1.09&#10;a nivel de character" />
-    <MESSAGE value="1.1&#10;Aumento da base" />
-    <MESSAGE value="1.1 s&#10;Aumento da base" />
-    <MESSAGE value="1.1 v&#10;Aumento da base" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1 v&#10;Aumento da base" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mining-text-tf.py</url>
-          <line>145</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py</url>
-          <line>881</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="21" />
+          <line>12</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pcc$app.coverage" NAME="app Coverage Results" MODIFIED="1555123158957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec-pt-br-master/exemplo" />
-    <SUITE FILE_PATH="coverage/pcc$Util.coverage" NAME="Util Coverage Results" MODIFIED="1556199198181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
-    <SUITE FILE_PATH="coverage/pcc$bib.coverage" NAME="bib Coverage Results" MODIFIED="1555526288032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf.coverage" NAME="mining-text-tf Coverage Results" MODIFIED="1556266284974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$teste.coverage" NAME="teste Coverage Results" MODIFIED="1555455810413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pcc$mining_text_tf_base.coverage" NAME="mining-text-tf-base Coverage Results" MODIFIED="1556255537960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/executaveis_teste" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="setValue">
-      <expression>
-        <expression-string>15</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>16</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="260" column="8" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/nltk/corpus/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5487" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/flask/globals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/werkzeug/serving.py">
+    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        <state relative-caret-position="306">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="2308" selection-start-line="2308" selection-end-line="2308" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/werkzeug/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="344" selection-start-line="344" selection-end-line="344" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/werkzeug/datastructures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="299" selection-start-line="299" selection-end-line="299" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/.gitignore">
+    <entry file="file://$PROJECT_DIR$/Codigos/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alice.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/sce/balanced/colecao_dourada2.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/Experimento1/sce/balanced/colecao_dourada_2_class_balanced.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/Experimento1/sce/balanced/colecao_dourada_3_class_balanced.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/Experimento1/sce/balanced/colecao_dourada.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/sce/balanced/colecao_dourada.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/base.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7848" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/pic/Codigos/execução/Stopwords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2295">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining-text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cria.py" />
+    <entry file="file://$PROJECT_DIR$/Codigos/colecao_dourada3.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/colecao_dourada2.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/colecao_dourada.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/sce/unbalanced/colecao_dourada_2_class_unbalanced.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colecao_dourada2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/Util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyvenv.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/encodings/cp1252.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1061308513/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/Stopwords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="756" column="85" lean-forward="true" selection-start-line="756" selection-start-column="85" selection-end-line="756" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codigos/execução/Suavizacao+Stopwords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="785" selection-start-line="785" selection-end-line="792" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento3/colecao_dourada_2_class_unbalanced.csv" />
+    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/balanced/balanceando.py" />
+    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/balanced/colecao_dourada_2_class_balanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/balanced/colecao_dourada_3_class_balanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/unbalanced/colecao_dourada_2_class_unbalanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento/e1/sce/unbalanced/colecao_dourada_3_class_unbalanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento/e6/sce/balanced/colecao_dourada_2_class_balanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento/e5/sce/balanced/colecao_dourada_2_class_balanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento/e4/sce/balanced/colecao_dourada_2_class_balanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento/e3/sce/balanced/colecao_dourada_2_class_balanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colecao_dourada_2_class_unbalanced.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimento/e2/sce/balanced/colecao_dourada_2_class_balanced.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/preprocessing/sequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/data_base_d_s_1000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/teste_data_base_d_s_1000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="46" selection-end-line="496" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py" />
-    <entry file="file://$PROJECT_DIR$/data_set/colecao_dourada_2_class_unbalanced.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="364">
-          <caret line="815" selection-start-line="815" selection-end-line="815" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plots/eu.txt">
+    <entry file="file://$PROJECT_DIR$/Stopwords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="97" column="61" lean-forward="true" selection-start-line="97" selection-start-column="61" selection-end-line="97" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colecao_dourada2.csv" />
-    <entry file="file://$PROJECT_DIR$/colecao_dourada_2_class_unbalanced.csv" />
-    <entry file="file://$PROJECT_DIR$/data_set/per_person/data_base_v_a_2000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/per_person/data_base_s_1000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/per_person/data_base_v_o_2000.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/poincare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="1086" column="8" selection-start-line="1086" selection-start-column="8" selection-end-line="1086" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teste.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="46" column="11" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/summary/writer/writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="161" column="15" selection-start-line="161" selection-start-column="6" selection-end-line="161" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_set/testes/20news-18828/comp.graphics/37261">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plots/result-1-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plots/result-1-2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/acc_e_2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bib.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training_arrays.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/core/protobuf/config_pb2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="667" column="23" selection-start-line="667" selection-start-column="12" selection-end-line="667" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="1196" selection-start-line="1196" selection-end-line="1196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/layers/convolutional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="278" column="6" selection-start-line="278" selection-start-column="6" selection-end-line="278" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util.py" />
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/gensim/models/keyedvectors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="1324" column="39" selection-start-line="1324" selection-start-column="27" selection-end-line="1324" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="1199" column="12" selection-start-line="1199" selection-start-column="6" selection-end-line="1199" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/nn_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/gen_nn_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7349" column="4" selection-start-line="7349" selection-start-column="4" selection-end-line="7349" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/framework/errors_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="527" selection-start-line="527" selection-end-line="527" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="903" column="6" selection-start-line="903" selection-start-column="6" selection-end-line="903" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/executaveis_teste/mining-text-tf-base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-884">
-          <caret line="90" column="66" lean-forward="true" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
+        <state relative-caret-position="986">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
           <folding>
-            <element signature="e#1142#1165#0" expanded="true" />
+            <element signature="e#24#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/recurrent.py">
+    <entry file="file://$PROJECT_DIR$/nltk-downloading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="466" column="36" selection-start-line="466" selection-start-column="24" selection-end-line="466" selection-end-column="36" />
+        <state relative-caret-position="102">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/cudnn_recurrent.py">
+    <entry file="file://$PROJECT_DIR$/mining-text-tf-base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="417" column="53" lean-forward="true" selection-start-line="417" selection-start-column="53" selection-end-line="417" selection-end-column="53" />
+        <state relative-caret-position="1275">
+          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/losses/losses_impl.py">
+    <entry file="file://$PROJECT_DIR$/Util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="861" column="4" selection-start-line="861" selection-start-column="4" selection-end-line="861" selection-end-column="32" />
+        <state relative-caret-position="663">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/__init__.py">
+    <entry file="file://$PROJECT_DIR$/teste.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="37" />
+        <state relative-caret-position="204">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/embeddings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/regularizers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="148" column="26" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/_api/v1/losses/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plots/result-1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ide.general.xml">
+    <entry file="file://$PROJECT_DIR$/word2vec-pt-br-master/exemplo/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="5" selection-end-column="14" />
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mining-text-tf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
-          <caret line="137" column="1" lean-forward="true" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+        <state relative-caret-position="199">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="e#1142#1165#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/executaveis_teste/Util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
